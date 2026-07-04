@@ -25,6 +25,13 @@ interface LoginResolution {
   message?: string;
 }
 
+function shouldStopAfterApiLoginFailure(message: string | undefined): boolean {
+  const normalized = String(message || "").toLowerCase();
+  return normalized.includes("temporarily locked")
+    || normalized.includes("invalid email or password")
+    || normalized.includes("account has been deactivated");
+}
+
 export class PortalSession {
   private browser?: Browser;
   private context?: BrowserContext;
@@ -72,6 +79,9 @@ export class PortalSession {
 
     const apiSession = await this.loginViaApi(credentials).catch((error) => {
       logger.warn({ error }, "Portal API login path failed");
+      if (error instanceof Error && shouldStopAfterApiLoginFailure(error.message)) {
+        throw error;
+      }
       return null;
     });
     if (apiSession) {
