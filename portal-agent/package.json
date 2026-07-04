@@ -1,0 +1,33 @@
+{
+  "name": "@monflow/portal-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-learning portal exploration and knowledge agent for Monflow",
+  "scripts": {
+    "dev:learn": "tsx src/cli/learn.ts",
+    "dev:ask": "tsx src/cli/ask.ts",
+    "build": "tsc -p tsconfig.json",
+    "learn": "node dist/cli/learn.js",
+    "ask": "node dist/cli/ask.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.62",
+    "@langchain/langgraph": "^0.2.39",
+    "@langchain/ollama": "^0.2.0",
+    "chromadb": "^1.10.5",
+    "dotenv": "^16.6.1",
+    "pino-pretty": "^13.1.1",
+    "p-limit": "^6.2.0",
+    "pino": "^9.9.0",
+    "playwright": "^1.54.2",
+    "uuid": "^11.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  }
+}

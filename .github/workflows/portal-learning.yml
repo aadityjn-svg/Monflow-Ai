@@ -1,0 +1,61 @@
+name: Portal Learning
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 20 * * *"
+
+jobs:
+  crawl-and-learn:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portal-agent
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: portal-agent/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium
+
+      - name: Create env file
+        run: |
+          cat > .env <<'EOF'
+          PORTAL_BASE_URL=${{ secrets.PORTAL_BASE_URL }}
+          PORTAL_API_BASE_URL=${{ secrets.PORTAL_API_BASE_URL }}
+          PORTAL_LOGIN_URL=${{ secrets.PORTAL_LOGIN_URL }}
+          PORTAL_USERNAME=${{ secrets.PORTAL_USERNAME }}
+          PORTAL_PASSWORD=${{ secrets.PORTAL_PASSWORD }}
+          PORTAL_ROLE=${{ secrets.PORTAL_ROLE }}
+          PORTAL_WORKSPACE_OWNER=${{ secrets.PORTAL_WORKSPACE_OWNER }}
+          AGENT_ENABLE_LLM=false
+          AGENT_HEADLESS=true
+          AGENT_MAX_PAGES=250
+          AGENT_MAX_DEPTH=6
+          AGENT_SAFE_MODE=true
+          AGENT_USE_ROUTE_SEED=true
+          AGENT_PUSH_TO_BACKEND=true
+          AGENT_INGEST_ENDPOINT=${{ secrets.AGENT_INGEST_ENDPOINT }}
+          AGENT_INGEST_TOKEN=${{ secrets.AGENT_INGEST_TOKEN }}
+          EOF
+
+      - name: Run portal learning
+        run: npm run dev:learn
+
+      - name: Upload crawl artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portal-learning-artifacts
+          path: portal-agent/artifacts
