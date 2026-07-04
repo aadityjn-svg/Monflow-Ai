@@ -117,16 +117,18 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
         observation.networkRequests = session.drainNetworkRequests();
 
         const nextQueue = [...state.queue];
-        for (const discovered of observation.discoveredLinks) {
-          const normalized = normalizePath(discovered.path);
-          const sameOrigin = normalized.startsWith("/") && state.currentTarget.depth + 1 <= agentConfig.crawl.maxDepth;
-          const unseen = !state.visited.has(normalized) && !nextQueue.some((item) => normalizePath(item.path) === normalized);
-          if (sameOrigin && unseen) {
-            nextQueue.push({
-              ...discovered,
-              depth: state.currentTarget.depth + 1,
-              navigationPath: [...state.currentTarget.navigationPath, discovered.label || discovered.path]
-            });
+        if (agentConfig.crawl.followDiscoveredLinks) {
+          for (const discovered of observation.discoveredLinks) {
+            const normalized = normalizePath(discovered.path);
+            const sameOrigin = normalized.startsWith("/") && state.currentTarget.depth + 1 <= agentConfig.crawl.maxDepth;
+            const unseen = !state.visited.has(normalized) && !nextQueue.some((item) => normalizePath(item.path) === normalized);
+            if (sameOrigin && unseen) {
+              nextQueue.push({
+                ...discovered,
+                depth: state.currentTarget.depth + 1,
+                navigationPath: [...state.currentTarget.navigationPath, discovered.label || discovered.path]
+              });
+            }
           }
         }
 

@@ -27,6 +27,7 @@ const envSchema = z.object({
   AGENT_ALLOWED_ORIGINS: z.string().default("http://localhost:3000,http://localhost:5000"),
   AGENT_SAFE_MODE: z.coerce.boolean().default(true),
   AGENT_USE_ROUTE_SEED: z.coerce.boolean().default(true),
+  AGENT_FOLLOW_DISCOVERED_LINKS: z.coerce.boolean().default(false),
   AGENT_PUSH_TO_BACKEND: z.coerce.boolean().default(false),
   AGENT_INGEST_ENDPOINT: z.string().url().optional(),
   AGENT_INGEST_TOKEN: z.string().optional()
@@ -66,6 +67,7 @@ export const agentConfig = {
     allowedOrigins: env.AGENT_ALLOWED_ORIGINS.split(",").map((value) => value.trim()).filter(Boolean),
     safeMode: env.AGENT_SAFE_MODE,
     useRouteSeed: env.AGENT_USE_ROUTE_SEED,
+    followDiscoveredLinks: env.AGENT_FOLLOW_DISCOVERED_LINKS,
     pushToBackend: env.AGENT_PUSH_TO_BACKEND,
     ingestEndpoint: env.AGENT_INGEST_ENDPOINT,
     ingestToken: env.AGENT_INGEST_TOKEN
