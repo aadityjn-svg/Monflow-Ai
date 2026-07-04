@@ -83,7 +83,7 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
       logger.info({ targetPath }, "Visiting page");
 
       try {
-        await withRetry(() => page.goto(url, { waitUntil: "networkidle" }), 2);
+        await withRetry(() => session.gotoAndSettle(url), 2);
         const safeActions = await performSafeInteractions(page);
         const formActions = await fillFormsWithSampleData(page);
         const screenshotPath = path.join(screenshotDir, `${targetPath.replace(/[^\w-]+/g, "_") || "home"}.png`);

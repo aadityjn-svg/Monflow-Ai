@@ -46,7 +46,7 @@ export class PortalSession {
 
   async login(credentials: PortalCredentials): Promise<void> {
     const page = this.getPage();
-    await page.goto(agentConfig.portal.loginUrl, { waitUntil: "networkidle" });
+    await this.gotoAndSettle(agentConfig.portal.loginUrl);
 
     const emailSelector = 'input[type="email"], input[name="email"], input[name="username"]';
     const passwordSelector = 'input[type="password"], input[name="password"]';
@@ -56,7 +56,8 @@ export class PortalSession {
 
     const submit = page.getByRole("button", { name: /login|sign in|continue/i }).first();
     await submit.click();
-    await page.waitForLoadState("networkidle");
+    await page.waitForLoadState("domcontentloaded");
+    await page.waitForTimeout(1500);
 
     const currentUrl = page.url();
     if (/login/i.test(currentUrl)) {
@@ -92,5 +93,12 @@ export class PortalSession {
     if (existing) {
       existing.status = response.status();
     }
+  }
+
+  async gotoAndSettle(url: string): Promise<void> {
+    const page = this.getPage();
+    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60_000 });
+    await page.waitForLoadState("load", { timeout: 15_000 }).catch(() => {});
+    await page.waitForTimeout(1200);
   }
 }
