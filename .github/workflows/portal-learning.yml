@@ -8,6 +8,7 @@ on:
 jobs:
   crawl-and-learn:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: portal-agent
@@ -41,8 +42,8 @@ jobs:
           PORTAL_WORKSPACE_OWNER=${{ secrets.PORTAL_WORKSPACE_OWNER }}
           AGENT_ENABLE_LLM=false
           AGENT_HEADLESS=true
-          AGENT_MAX_PAGES=250
-          AGENT_MAX_DEPTH=6
+          AGENT_MAX_PAGES=40
+          AGENT_MAX_DEPTH=4
           AGENT_SAFE_MODE=true
           AGENT_USE_ROUTE_SEED=true
           AGENT_PUSH_TO_BACKEND=true
