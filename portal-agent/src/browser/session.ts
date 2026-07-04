@@ -70,7 +70,10 @@ export class PortalSession {
   async login(credentials: PortalCredentials): Promise<void> {
     logger.info({ loginUrl: agentConfig.portal.loginUrl, apiBaseUrl: agentConfig.portal.apiBaseUrl }, "Starting portal login");
 
-    const apiSession = await this.loginViaApi(credentials).catch(() => null);
+    const apiSession = await this.loginViaApi(credentials).catch((error) => {
+      logger.warn({ error }, "Portal API login path failed");
+      return null;
+    });
     if (apiSession) {
       logger.info("Portal API login succeeded, applying browser session");
       await this.applySession(apiSession.accessToken, apiSession.refreshToken);
@@ -222,6 +225,11 @@ export class PortalSession {
       throw new Error("Portal crawler account requires MFA. Use a dedicated non-MFA automation user for GitHub Actions.");
     }
 
+    logger.warn({
+      resolution,
+      currentUrl: page.url()
+    }, "UI login failed to resolve");
+
     logger.warn({ resolution }, "UI login failed to resolve");
     throw new Error(resolution.message || "Login appears to have failed because the browser remained on the login page");
   }
@@ -244,6 +252,11 @@ export class PortalSession {
               normalizedText.includes("complete secure verification")
               || normalizedText.includes("password verified for")
               || normalizedText.includes("verification method"),
+            hasDashboardHint:
+              normalizedText.includes("dashboard")
+              || normalizedText.includes("logout")
+              || normalizedText.includes("profile")
+              || normalizedText.includes("admin"),
             errorMessage:
               bodyText.match(/invalid email or password|account temporarily locked|login failed|mfa verification required/i)?.[0]
               || ""
@@ -253,6 +266,10 @@ export class PortalSession {
       );
 
       if (!/\/login\b/i.test(currentUrl)) {
+        return { status: "authenticated" };
+      }
+
+      if (state.hasDashboardHint && state.hasAccessToken) {
         return { status: "authenticated" };
       }
 
