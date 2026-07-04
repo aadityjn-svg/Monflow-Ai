@@ -1,6 +1,7 @@
 import { chromium, type Browser, type BrowserContext, type ConsoleMessage, type Page, type Request, type Response } from "playwright";
 import { agentConfig } from "../config/env.js";
 import type { ConsoleEventInfo, NetworkRequestInfo, PortalCredentials } from "../types/index.js";
+import { logger } from "../utils/logger.js";
 
 const ACCESS_TOKEN_STORAGE_KEY = "monflow_access_token";
 const REFRESH_TOKEN_STORAGE_KEY = "monflow_refresh_token";
@@ -17,6 +18,11 @@ interface LoginApiResponse {
   user?: {
     role?: string;
   };
+}
+
+interface LoginResolution {
+  status: "authenticated" | "mfa" | "pending" | "error";
+  message?: string;
 }
 
 export class PortalSession {
@@ -62,13 +68,18 @@ export class PortalSession {
   }
 
   async login(credentials: PortalCredentials): Promise<void> {
+    logger.info({ loginUrl: agentConfig.portal.loginUrl, apiBaseUrl: agentConfig.portal.apiBaseUrl }, "Starting portal login");
+
     const apiSession = await this.loginViaApi(credentials).catch(() => null);
     if (apiSession) {
+      logger.info("Portal API login succeeded, applying browser session");
       await this.applySession(apiSession.accessToken, apiSession.refreshToken);
       const verified = await this.verifyAuthenticatedRoute(apiSession.postLoginPath);
       if (verified) return;
+      logger.warn("Portal API session was applied but browser verification still returned to login page");
     }
 
+    logger.info("Falling back to UI login");
     await this.loginViaUi(credentials);
   }
 
@@ -115,11 +126,14 @@ export class PortalSession {
     }
 
     const endpoint = new URL("auth/login", `${agentConfig.portal.apiBaseUrl.replace(/\/+$/, "")}/`).toString();
+    logger.info({ endpoint }, "Attempting portal API login");
+
     const response = await fetch(endpoint, {
       method: "POST",
       headers: {
         "content-type": "application/json"
       },
+      signal: AbortSignal.timeout(20_000),
       body: JSON.stringify({
         email: credentials.username,
         password: credentials.password
@@ -128,14 +142,17 @@ export class PortalSession {
 
     const body = await response.json() as LoginApiResponse;
     if (!response.ok) {
+      logger.warn({ status: response.status, body }, "Portal API login failed");
       throw new Error(body.message || `Portal login API failed with status ${response.status}`);
     }
 
     if (body.requiresMfa) {
+      logger.warn("Portal API login requires MFA");
       throw new Error("Portal crawler account requires MFA. Use a dedicated non-MFA automation user for GitHub Actions.");
     }
 
     if (!body.session?.accessToken) {
+      logger.warn({ body }, "Portal API login did not return session tokens");
       throw new Error(body.message || "Portal login API did not return an access token");
     }
 
@@ -166,11 +183,14 @@ export class PortalSession {
   }
 
   private async verifyAuthenticatedRoute(postLoginPath: string): Promise<boolean> {
+    logger.info({ postLoginPath }, "Verifying authenticated browser route");
     await this.gotoAndSettle(new URL(postLoginPath, agentConfig.portal.baseUrl).toString());
     const resolution = await this.waitForLoginResolution(15_000);
     if (resolution.status === "authenticated") {
+      logger.info({ postLoginPath }, "Authenticated browser route verified");
       return true;
     }
+    logger.warn({ resolution, postLoginPath }, "Authenticated browser route verification failed");
     return false;
   }
 
@@ -193,17 +213,20 @@ export class PortalSession {
 
     const resolution = await this.waitForLoginResolution(20_000);
     if (resolution.status === "authenticated") {
+      logger.info("UI login reached authenticated state");
       return;
     }
 
     if (resolution.status === "mfa") {
+      logger.warn("UI login requires MFA");
       throw new Error("Portal crawler account requires MFA. Use a dedicated non-MFA automation user for GitHub Actions.");
     }
 
+    logger.warn({ resolution }, "UI login failed to resolve");
     throw new Error(resolution.message || "Login appears to have failed because the browser remained on the login page");
   }
 
-  private async waitForLoginResolution(timeoutMs: number): Promise<{ status: "authenticated" | "mfa" | "pending" | "error"; message?: string; }> {
+  private async waitForLoginResolution(timeoutMs: number): Promise<LoginResolution> {
     const page = this.getPage();
     const startedAt = Date.now();
 
@@ -252,7 +275,7 @@ export class PortalSession {
       await page.waitForTimeout(500);
     }
 
-    return { status: "pending" };
+    return { status: "pending", message: `Login did not resolve within ${timeoutMs}ms` };
   }
 
   private getPostLoginPath(userRole: string | undefined, configuredRole: PortalCredentials["role"]): string {

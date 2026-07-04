@@ -66,157 +66,166 @@ async function withTimeout<T>(task: Promise<T>, timeoutMs: number, label: string
 
 export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
   const runId = randomUUID();
+  const startedAt = new Date().toISOString();
   const session = new PortalSession();
   const store = agentConfig.ollama.enabled ? new ChromaKnowledgeStore() : null;
   const stateStore = new FileStateStore();
   const changeDetector = new ChangeDetector(stateStore);
-  const page = await session.start();
 
-  const artifactRoot = path.resolve(agentConfig.crawl.outputDir, "runs", runId);
-  const screenshotDir = path.join(artifactRoot, "screenshots");
-  const pageDir = path.join(artifactRoot, "pages");
-  await ensureDir(screenshotDir);
-  await ensureDir(pageDir);
+  return withTimeout((async () => {
+    const page = await session.start();
+    const artifactRoot = path.resolve(agentConfig.crawl.outputDir, "runs", runId);
+    const screenshotDir = path.join(artifactRoot, "screenshots");
+    const pageDir = path.join(artifactRoot, "pages");
+    await ensureDir(screenshotDir);
+    await ensureDir(pageDir);
 
-  await session.login(agentConfig.portal.credentials);
+    logger.info({ runId, maxPages: agentConfig.crawl.maxPages }, "Starting learning workflow");
+    await withTimeout(session.login(agentConfig.portal.credentials), 45_000, "Portal login");
 
-  const graph = new StateGraph(CrawlState)
-    .addNode("pickTarget", async (state) => {
-      const next = state.queue.find((target) => !state.visited.has(normalizePath(target.path)));
-      return {
-        ...state,
-        currentTarget: next ?? null
-      };
-    })
-    .addNode("visitPage", async (state) => {
-      if (!state.currentTarget) return state;
+    const graph = new StateGraph(CrawlState)
+      .addNode("pickTarget", async (state) => {
+        const next = state.queue.find((target) => !state.visited.has(normalizePath(target.path)));
+        return {
+          ...state,
+          currentTarget: next ?? null
+        };
+      })
+      .addNode("visitPage", async (state) => {
+        if (!state.currentTarget) return state;
 
-      const targetPath = normalizePath(state.currentTarget.path);
-      const url = new URL(targetPath, agentConfig.portal.baseUrl).toString();
-      logger.info({ targetPath }, "Visiting page");
+        const targetPath = normalizePath(state.currentTarget.path);
+        const url = new URL(targetPath, agentConfig.portal.baseUrl).toString();
+        logger.info({ runId, targetPath }, "Visiting page");
 
-      try {
-        await withRetry(() => withTimeout(session.gotoAndSettle(url), 45_000, `Navigation for ${targetPath}`), 1);
-        const safeActions = agentConfig.crawl.enableSafeInteractions
-          ? await withTimeout(performSafeInteractions(page), 10_000, `Safe interactions for ${targetPath}`).catch(() => [])
-          : [];
-        const formActions = agentConfig.crawl.enableFormFill
-          ? await withTimeout(fillFormsWithSampleData(page), 10_000, `Form fill for ${targetPath}`).catch(() => [])
-          : [];
-        const screenshotPath = path.join(screenshotDir, `${targetPath.replace(/[^\w-]+/g, "_") || "home"}.png`);
-        await withTimeout(page.screenshot({ path: screenshotPath, fullPage: true }), 15_000, `Screenshot for ${targetPath}`);
+        try {
+          await withRetry(() => withTimeout(session.gotoAndSettle(url), 45_000, `Navigation for ${targetPath}`), 1);
+          const safeActions = agentConfig.crawl.enableSafeInteractions
+            ? await withTimeout(performSafeInteractions(page), 10_000, `Safe interactions for ${targetPath}`).catch(() => [])
+            : [];
+          const formActions = agentConfig.crawl.enableFormFill
+            ? await withTimeout(fillFormsWithSampleData(page), 10_000, `Form fill for ${targetPath}`).catch(() => [])
+            : [];
+          const screenshotPath = path.join(screenshotDir, `${targetPath.replace(/[^\w-]+/g, "_") || "home"}.png`);
+          await withTimeout(page.screenshot({ path: screenshotPath, fullPage: true }), 15_000, `Screenshot for ${targetPath}`);
 
-        const observation = await withTimeout(
-          extractObservation(
-            page,
-            targetPath,
-            state.currentTarget.navigationPath,
-            [...safeActions, ...formActions],
-            screenshotPath
-          ),
-          20_000,
-          `Observation extraction for ${targetPath}`
-        );
-        observation.consoleEvents = session.drainConsoleEvents();
-        observation.networkRequests = session.drainNetworkRequests();
+          const observation = await withTimeout(
+            extractObservation(
+              page,
+              targetPath,
+              state.currentTarget.navigationPath,
+              [...safeActions, ...formActions],
+              screenshotPath
+            ),
+            20_000,
+            `Observation extraction for ${targetPath}`
+          );
+          observation.consoleEvents = session.drainConsoleEvents();
+          observation.networkRequests = session.drainNetworkRequests();
 
-        const nextQueue = [...state.queue];
-        if (agentConfig.crawl.followDiscoveredLinks) {
-          for (const discovered of observation.discoveredLinks) {
-            const normalized = normalizePath(discovered.path);
-            const sameOrigin = normalized.startsWith("/") && state.currentTarget.depth + 1 <= agentConfig.crawl.maxDepth;
-            const unseen = !state.visited.has(normalized) && !nextQueue.some((item) => normalizePath(item.path) === normalized);
-            if (sameOrigin && unseen) {
-              nextQueue.push({
-                ...discovered,
-                depth: state.currentTarget.depth + 1,
-                navigationPath: [...state.currentTarget.navigationPath, discovered.label || discovered.path]
-              });
+          const nextQueue = [...state.queue];
+          if (agentConfig.crawl.followDiscoveredLinks) {
+            for (const discovered of observation.discoveredLinks) {
+              const normalized = normalizePath(discovered.path);
+              const sameOrigin = normalized.startsWith("/") && state.currentTarget.depth + 1 <= agentConfig.crawl.maxDepth;
+              const unseen = !state.visited.has(normalized) && !nextQueue.some((item) => normalizePath(item.path) === normalized);
+              if (sameOrigin && unseen) {
+                nextQueue.push({
+                  ...discovered,
+                  depth: state.currentTarget.depth + 1,
+                  navigationPath: [...state.currentTarget.navigationPath, discovered.label || discovered.path]
+                });
+              }
             }
           }
+
+          logger.info({ runId, targetPath }, "Page observation captured");
+          return {
+            ...state,
+            queue: nextQueue,
+            visited: new Set([...state.visited, targetPath]),
+            observations: [...state.observations, observation],
+            pageCount: state.pageCount + 1
+          };
+        } catch (error) {
+          logger.warn({ runId, targetPath, error }, "Failed to visit page");
+          return {
+            ...state,
+            visited: new Set([...state.visited, targetPath]),
+            failures: [
+              ...state.failures,
+              {
+                path: targetPath,
+                error: error instanceof Error ? error.message : String(error)
+              }
+            ],
+            pageCount: state.pageCount + 1
+          };
         }
+      })
+      .addNode("learnPage", async (state) => {
+        const latest = state.observations[state.observations.length - 1];
+        if (!latest) return state;
+
+        const learned = await generateLearnedDocument(latest);
+        const { shouldRelearn, previousHash } = await changeDetector.detect(learned);
+
+        if (shouldRelearn) {
+          if (store) {
+            await store.upsert(learned);
+          }
+          await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
+          await stateStore.updatePageIndex(learned);
+          await pushSinglePageToBackend(learned).catch((error) => {
+            logger.warn({ runId, path: learned.path, error }, "Incremental backend ingest failed");
+          });
+        }
+
+        await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
+        logger.info({ runId, path: learned.path }, "Learned page document written");
 
         return {
           ...state,
-          queue: nextQueue,
-          visited: new Set([...state.visited, targetPath]),
-          observations: [...state.observations, observation],
-          pageCount: state.pageCount + 1
+          learned: [...state.learned, learned]
         };
-      } catch (error) {
-        logger.warn({ targetPath, error }, "Failed to visit page");
-        return {
-          ...state,
-          visited: new Set([...state.visited, targetPath]),
-          failures: [
-            ...state.failures,
-            {
-              path: targetPath,
-              error: error instanceof Error ? error.message : String(error)
-            }
-          ],
-          pageCount: state.pageCount + 1
-        };
-      }
-    })
-    .addNode("learnPage", async (state) => {
-      const latest = state.observations[state.observations.length - 1];
-      if (!latest) return state;
+      })
+      .addConditionalEdges("pickTarget", (state) => {
+        if (!state.currentTarget || state.pageCount >= agentConfig.crawl.maxPages) return END;
+        return "visitPage";
+      })
+      .addEdge("visitPage", "learnPage")
+      .addEdge("learnPage", "pickTarget")
+      .addEdge(START, "pickTarget");
 
-      const learned = await generateLearnedDocument(latest);
-      const { shouldRelearn, previousHash } = await changeDetector.detect(learned);
+    const app = graph.compile();
+    const result = await app.invoke({
+      runId,
+      queue: buildSeedQueue(),
+      visited: new Set<string>(),
+      observations: [],
+      learned: [],
+      currentTarget: null,
+      pageCount: 0,
+      failures: []
+    });
 
-      if (shouldRelearn) {
-        if (store) {
-          await store.upsert(learned);
-        }
-        await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
-        await stateStore.updatePageIndex(learned);
-        await pushSinglePageToBackend(learned).catch((error) => {
-          logger.warn({ path: learned.path, error }, "Incremental backend ingest failed");
-        });
-      }
+    await stateStore.writeRunState({
+      runId,
+      startedAt,
+      visitedPaths: [...result.visited],
+      queuedPaths: result.queue.map((item) => item.path),
+      failedPaths: result.failures
+    });
 
-      await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
+    await pushKnowledgeToBackend(result.learned).catch((error) => {
+      logger.warn({ runId, error }, "Final backend ingest failed");
+    });
 
-      return {
-        ...state,
-        learned: [...state.learned, learned]
-      };
-    })
-    .addConditionalEdges("pickTarget", (state) => {
-      if (!state.currentTarget || state.pageCount >= agentConfig.crawl.maxPages) return END;
-      return "visitPage";
-    })
-    .addEdge("visitPage", "learnPage")
-    .addEdge("learnPage", "pickTarget")
-    .addEdge(START, "pickTarget");
-
-  const app = graph.compile();
-  const result = await app.invoke({
-    runId,
-    queue: buildSeedQueue(),
-    visited: new Set<string>(),
-    observations: [],
-    learned: [],
-    currentTarget: null,
-    pageCount: 0,
-    failures: []
+    logger.info({ runId, learned: result.learned.length, failures: result.failures.length }, "Learning run completed");
+    return result.learned;
+  })(), 8 * 60_000, "Learning workflow").finally(async () => {
+    await session.stop().catch((error) => {
+      logger.warn({ runId, error }, "Failed to stop browser session cleanly");
+    });
   });
-
-  await stateStore.writeRunState({
-    runId,
-    startedAt: new Date().toISOString(),
-    visitedPaths: [...result.visited],
-    queuedPaths: result.queue.map((item) => item.path),
-    failedPaths: result.failures
-  });
-
-  await pushKnowledgeToBackend(result.learned).catch((error) => {
-    logger.warn({ runId, error }, "Final backend ingest failed");
-  });
-
-  await session.stop();
-  logger.info({ runId, learned: result.learned.length }, "Learning run completed");
-  return result.learned;
 }

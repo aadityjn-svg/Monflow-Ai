@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "30 20 * * *"
 
+concurrency:
+  group: portal-learning-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   crawl-and-learn:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           cache-dependency-path: portal-agent/package-lock.json
 
@@ -52,6 +56,7 @@ jobs:
           AGENT_PUSH_TO_BACKEND=true
           AGENT_INGEST_ENDPOINT=${{ secrets.AGENT_INGEST_ENDPOINT }}
           AGENT_INGEST_TOKEN=${{ secrets.AGENT_INGEST_TOKEN }}
+          LOG_LEVEL=info
           EOF
 
       - name: Run portal learning
