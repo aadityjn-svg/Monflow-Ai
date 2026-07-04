@@ -7,7 +7,7 @@ import { adminRouteSeeds, userRouteSeeds } from "../browser/seed-routes.js";
 import { extractObservation, fillFormsWithSampleData, performSafeInteractions } from "../browser/extractor.js";
 import { generateLearnedDocument } from "../learning/documenter.js";
 import { ChromaKnowledgeStore } from "../knowledge/chroma-store.js";
-import { pushKnowledgeToBackend } from "../knowledge/pusher.js";
+import { pushKnowledgeToBackend, pushSinglePageToBackend } from "../knowledge/pusher.js";
 import { FileStateStore } from "../persistence/file-state.js";
 import { ChangeDetector } from "../crawler/change-detector.js";
 import { agentConfig } from "../config/env.js";
@@ -51,6 +51,19 @@ async function withRetry<T>(task: () => Promise<T>, retries = 2): Promise<T> {
   throw lastError;
 }
 
+async function withTimeout<T>(task: Promise<T>, timeoutMs: number, label: string): Promise<T> {
+  let timeoutId: NodeJS.Timeout | undefined;
+  const timeoutPromise = new Promise<never>((_, reject) => {
+    timeoutId = setTimeout(() => reject(new Error(`${label} timed out after ${timeoutMs}ms`)), timeoutMs);
+  });
+
+  try {
+    return await Promise.race([task, timeoutPromise]);
+  } finally {
+    if (timeoutId) clearTimeout(timeoutId);
+  }
+}
+
 export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
   const runId = randomUUID();
   const session = new PortalSession();
@@ -83,18 +96,22 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
       logger.info({ targetPath }, "Visiting page");
 
       try {
-        await withRetry(() => session.gotoAndSettle(url), 2);
-        const safeActions = await performSafeInteractions(page);
-        const formActions = await fillFormsWithSampleData(page);
+        await withRetry(() => withTimeout(session.gotoAndSettle(url), 45_000, `Navigation for ${targetPath}`), 1);
+        const safeActions = await withTimeout(performSafeInteractions(page), 10_000, `Safe interactions for ${targetPath}`).catch(() => []);
+        const formActions = await withTimeout(fillFormsWithSampleData(page), 10_000, `Form fill for ${targetPath}`).catch(() => []);
         const screenshotPath = path.join(screenshotDir, `${targetPath.replace(/[^\w-]+/g, "_") || "home"}.png`);
-        await page.screenshot({ path: screenshotPath, fullPage: true });
+        await withTimeout(page.screenshot({ path: screenshotPath, fullPage: true }), 15_000, `Screenshot for ${targetPath}`);
 
-        const observation = await extractObservation(
-          page,
-          targetPath,
-          state.currentTarget.navigationPath,
-          [...safeActions, ...formActions],
-          screenshotPath
+        const observation = await withTimeout(
+          extractObservation(
+            page,
+            targetPath,
+            state.currentTarget.navigationPath,
+            [...safeActions, ...formActions],
+            screenshotPath
+          ),
+          20_000,
+          `Observation extraction for ${targetPath}`
         );
         observation.consoleEvents = session.drainConsoleEvents();
         observation.networkRequests = session.drainNetworkRequests();
@@ -149,6 +166,9 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
         }
         await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
         await stateStore.updatePageIndex(learned);
+        await pushSinglePageToBackend(learned).catch((error) => {
+          logger.warn({ path: learned.path, error }, "Incremental backend ingest failed");
+        });
       }
 
       await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
@@ -186,7 +206,9 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
     failedPaths: result.failures
   });
 
-  await pushKnowledgeToBackend(result.learned);
+  await pushKnowledgeToBackend(result.learned).catch((error) => {
+    logger.warn({ runId, error }, "Final backend ingest failed");
+  });
 
   await session.stop();
   logger.info({ runId, learned: result.learned.length }, "Learning run completed");

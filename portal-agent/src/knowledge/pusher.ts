@@ -23,3 +23,7 @@ export async function pushKnowledgeToBackend(pages: LearnedPageDocument[]): Prom
     throw new Error(`Backend ingest failed with ${response.status}: ${body}`);
   }
 }
+
+export async function pushSinglePageToBackend(page: LearnedPageDocument): Promise<void> {
+  await pushKnowledgeToBackend([page]);
+}
