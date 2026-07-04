@@ -2,6 +2,23 @@ import { chromium, type Browser, type BrowserContext, type ConsoleMessage, type 
 import { agentConfig } from "../config/env.js";
 import type { ConsoleEventInfo, NetworkRequestInfo, PortalCredentials } from "../types/index.js";
 
+const ACCESS_TOKEN_STORAGE_KEY = "monflow_access_token";
+const REFRESH_TOKEN_STORAGE_KEY = "monflow_refresh_token";
+
+interface LoginApiResponse {
+  success?: boolean;
+  message?: string;
+  requiresMfa?: boolean;
+  mfaSetupRequired?: boolean;
+  session?: {
+    accessToken?: string;
+    refreshToken?: string;
+  };
+  user?: {
+    role?: string;
+  };
+}
+
 export class PortalSession {
   private browser?: Browser;
   private context?: BrowserContext;
@@ -45,24 +62,14 @@ export class PortalSession {
   }
 
   async login(credentials: PortalCredentials): Promise<void> {
-    const page = this.getPage();
-    await this.gotoAndSettle(agentConfig.portal.loginUrl);
-
-    const emailSelector = 'input[type="email"], input[name="email"], input[name="username"]';
-    const passwordSelector = 'input[type="password"], input[name="password"]';
-
-    await page.locator(emailSelector).first().fill(credentials.username);
-    await page.locator(passwordSelector).first().fill(credentials.password);
-
-    const submit = page.getByRole("button", { name: /login|sign in|continue/i }).first();
-    await submit.click();
-    await page.waitForLoadState("domcontentloaded");
-    await page.waitForTimeout(1500);
-
-    const currentUrl = page.url();
-    if (/login/i.test(currentUrl)) {
-      throw new Error("Login appears to have failed because the browser remained on the login page");
+    const apiSession = await this.loginViaApi(credentials).catch(() => null);
+    if (apiSession) {
+      await this.applySession(apiSession.accessToken, apiSession.refreshToken);
+      const verified = await this.verifyAuthenticatedRoute(apiSession.postLoginPath);
+      if (verified) return;
     }
+
+    await this.loginViaUi(credentials);
   }
 
   async stop(): Promise<void> {
@@ -100,5 +107,158 @@ export class PortalSession {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60_000 });
     await page.waitForLoadState("load", { timeout: 15_000 }).catch(() => {});
     await page.waitForTimeout(1200);
+  }
+
+  private async loginViaApi(credentials: PortalCredentials): Promise<{ accessToken: string; refreshToken?: string; postLoginPath: string; }> {
+    if (!agentConfig.portal.apiBaseUrl) {
+      throw new Error("Portal API base URL is not configured");
+    }
+
+    const endpoint = new URL("auth/login", `${agentConfig.portal.apiBaseUrl.replace(/\/+$/, "")}/`).toString();
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        email: credentials.username,
+        password: credentials.password
+      })
+    });
+
+    const body = await response.json() as LoginApiResponse;
+    if (!response.ok) {
+      throw new Error(body.message || `Portal login API failed with status ${response.status}`);
+    }
+
+    if (body.requiresMfa) {
+      throw new Error("Portal crawler account requires MFA. Use a dedicated non-MFA automation user for GitHub Actions.");
+    }
+
+    if (!body.session?.accessToken) {
+      throw new Error(body.message || "Portal login API did not return an access token");
+    }
+
+    return {
+      accessToken: body.session.accessToken,
+      refreshToken: body.session.refreshToken,
+      postLoginPath: this.getPostLoginPath(body.user?.role, credentials.role)
+    };
+  }
+
+  private async applySession(accessToken: string, refreshToken?: string): Promise<void> {
+    const page = this.getPage();
+    await this.gotoAndSettle(agentConfig.portal.baseUrl);
+    await page.evaluate(
+      ({ accessToken: nextAccessToken, refreshToken: nextRefreshToken, accessKey, refreshKey }) => {
+        localStorage.setItem(accessKey, nextAccessToken);
+        if (nextRefreshToken) {
+          localStorage.setItem(refreshKey, nextRefreshToken);
+        }
+      },
+      {
+        accessToken,
+        refreshToken,
+        accessKey: ACCESS_TOKEN_STORAGE_KEY,
+        refreshKey: REFRESH_TOKEN_STORAGE_KEY
+      }
+    );
+  }
+
+  private async verifyAuthenticatedRoute(postLoginPath: string): Promise<boolean> {
+    await this.gotoAndSettle(new URL(postLoginPath, agentConfig.portal.baseUrl).toString());
+    const resolution = await this.waitForLoginResolution(15_000);
+    if (resolution.status === "authenticated") {
+      return true;
+    }
+    return false;
+  }
+
+  private async loginViaUi(credentials: PortalCredentials): Promise<void> {
+    const page = this.getPage();
+    await this.gotoAndSettle(agentConfig.portal.loginUrl);
+
+    const emailSelector = 'input[type="email"], input[name="email"], input[name="username"]';
+    const passwordSelector = 'input[type="password"], input[name="password"]';
+
+    await page.locator(emailSelector).first().fill(credentials.username);
+    await page.locator(passwordSelector).first().fill(credentials.password);
+
+    const submit = page.locator('button[type="submit"]');
+    if (await submit.count()) {
+      await submit.first().click();
+    } else {
+      await page.locator(passwordSelector).first().press("Enter");
+    }
+
+    const resolution = await this.waitForLoginResolution(20_000);
+    if (resolution.status === "authenticated") {
+      return;
+    }
+
+    if (resolution.status === "mfa") {
+      throw new Error("Portal crawler account requires MFA. Use a dedicated non-MFA automation user for GitHub Actions.");
+    }
+
+    throw new Error(resolution.message || "Login appears to have failed because the browser remained on the login page");
+  }
+
+  private async waitForLoginResolution(timeoutMs: number): Promise<{ status: "authenticated" | "mfa" | "pending" | "error"; message?: string; }> {
+    const page = this.getPage();
+    const startedAt = Date.now();
+
+    while (Date.now() - startedAt < timeoutMs) {
+      const currentUrl = page.url();
+      const state = await page.evaluate(
+        ({ accessKey }) => {
+          const bodyText = document.body?.innerText?.replace(/\s+/g, " ").trim() || "";
+          const hasAccessToken = Boolean(localStorage.getItem(accessKey));
+          const normalizedText = bodyText.toLowerCase();
+
+          return {
+            hasAccessToken,
+            isMfa:
+              normalizedText.includes("complete secure verification")
+              || normalizedText.includes("password verified for")
+              || normalizedText.includes("verification method"),
+            errorMessage:
+              bodyText.match(/invalid email or password|account temporarily locked|login failed|mfa verification required/i)?.[0]
+              || ""
+          };
+        },
+        { accessKey: ACCESS_TOKEN_STORAGE_KEY }
+      );
+
+      if (!/\/login\b/i.test(currentUrl)) {
+        return { status: "authenticated" };
+      }
+
+      if (state.isMfa) {
+        return { status: "mfa" };
+      }
+
+      if (state.hasAccessToken) {
+        const fallbackPath = this.getPostLoginPath(undefined, agentConfig.portal.credentials.role);
+        await this.gotoAndSettle(new URL(fallbackPath, agentConfig.portal.baseUrl).toString());
+        if (!/\/login\b/i.test(page.url())) {
+          return { status: "authenticated" };
+        }
+      }
+
+      if (state.errorMessage) {
+        return { status: "error", message: state.errorMessage };
+      }
+
+      await page.waitForTimeout(500);
+    }
+
+    return { status: "pending" };
+  }
+
+  private getPostLoginPath(userRole: string | undefined, configuredRole: PortalCredentials["role"]): string {
+    if (userRole === "admin" || userRole === "superadmin" || configuredRole === "admin") {
+      return "/admin";
+    }
+    return "/dashboard";
   }
 }

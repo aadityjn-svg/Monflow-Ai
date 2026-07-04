@@ -97,8 +97,12 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
 
       try {
         await withRetry(() => withTimeout(session.gotoAndSettle(url), 45_000, `Navigation for ${targetPath}`), 1);
-        const safeActions = await withTimeout(performSafeInteractions(page), 10_000, `Safe interactions for ${targetPath}`).catch(() => []);
-        const formActions = await withTimeout(fillFormsWithSampleData(page), 10_000, `Form fill for ${targetPath}`).catch(() => []);
+        const safeActions = agentConfig.crawl.enableSafeInteractions
+          ? await withTimeout(performSafeInteractions(page), 10_000, `Safe interactions for ${targetPath}`).catch(() => [])
+          : [];
+        const formActions = agentConfig.crawl.enableFormFill
+          ? await withTimeout(fillFormsWithSampleData(page), 10_000, `Form fill for ${targetPath}`).catch(() => [])
+          : [];
         const screenshotPath = path.join(screenshotDir, `${targetPath.replace(/[^\w-]+/g, "_") || "home"}.png`);
         await withTimeout(page.screenshot({ path: screenshotPath, fullPage: true }), 15_000, `Screenshot for ${targetPath}`);
 
