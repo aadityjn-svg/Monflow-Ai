@@ -3,6 +3,16 @@ import { z } from "zod";
 
 loadEnv();
 
+const booleanEnv = z.preprocess((value) => {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (["true", "1", "yes", "on"].includes(normalized)) return true;
+    if (["false", "0", "no", "off", ""].includes(normalized)) return false;
+  }
+  return value;
+}, z.boolean());
+
 const envSchema = z.object({
   PORTAL_BASE_URL: z.string().url(),
   PORTAL_API_BASE_URL: z.string().url().optional(),
@@ -14,23 +24,23 @@ const envSchema = z.object({
   OLLAMA_BASE_URL: z.string().url().default("http://127.0.0.1:11434"),
   OLLAMA_CHAT_MODEL: z.string().min(1).default("qwen3:latest"),
   OLLAMA_EMBEDDING_MODEL: z.string().min(1).default("nomic-embed-text:latest"),
-  AGENT_ENABLE_LLM: z.coerce.boolean().default(false),
+  AGENT_ENABLE_LLM: booleanEnv.default(false),
   CHROMA_HOST: z.string().min(1).default("127.0.0.1"),
   CHROMA_PORT: z.coerce.number().int().positive().default(8000),
   CHROMA_COLLECTION: z.string().min(1).default("monflow_portal_knowledge"),
   AGENT_OUTPUT_DIR: z.string().min(1).default("./artifacts"),
-  AGENT_HEADLESS: z.coerce.boolean().default(true),
+  AGENT_HEADLESS: booleanEnv.default(true),
   AGENT_MAX_PAGES: z.coerce.number().int().positive().default(250),
   AGENT_MAX_DEPTH: z.coerce.number().int().positive().default(6),
   AGENT_CONCURRENCY: z.coerce.number().int().positive().default(2),
   AGENT_SLOW_MO: z.coerce.number().int().nonnegative().default(0),
   AGENT_ALLOWED_ORIGINS: z.string().default("http://localhost:3000,http://localhost:5000"),
-  AGENT_SAFE_MODE: z.coerce.boolean().default(true),
-  AGENT_ENABLE_SAFE_INTERACTIONS: z.coerce.boolean().default(true),
-  AGENT_ENABLE_FORM_FILL: z.coerce.boolean().default(true),
-  AGENT_USE_ROUTE_SEED: z.coerce.boolean().default(true),
-  AGENT_FOLLOW_DISCOVERED_LINKS: z.coerce.boolean().default(false),
-  AGENT_PUSH_TO_BACKEND: z.coerce.boolean().default(false),
+  AGENT_SAFE_MODE: booleanEnv.default(true),
+  AGENT_ENABLE_SAFE_INTERACTIONS: booleanEnv.default(true),
+  AGENT_ENABLE_FORM_FILL: booleanEnv.default(true),
+  AGENT_USE_ROUTE_SEED: booleanEnv.default(true),
+  AGENT_FOLLOW_DISCOVERED_LINKS: booleanEnv.default(false),
+  AGENT_PUSH_TO_BACKEND: booleanEnv.default(false),
   AGENT_INGEST_ENDPOINT: z.string().url().optional(),
   AGENT_INGEST_TOKEN: z.string().optional()
 });
