@@ -1,0 +1,227 @@
+{
+  "/dashboard": {
+    "path": "/dashboard",
+    "contentHash": "cf1cf301d785b54fcfe2a822cde2effb9a750b1cae9761d283f3d24056123b56",
+    "learnedAt": "2026-07-05T08:29:56.174Z"
+  },
+  "/setup-dashboard": {
+    "path": "/setup-dashboard",
+    "contentHash": "2a93bd33d08a4a07ce4ee2fa64b95ace792305081e78b63d8a842564fe17a47d",
+    "learnedAt": "2026-07-05T08:29:57.700Z"
+  },
+  "/subscription/plans": {
+    "path": "/subscription/plans",
+    "contentHash": "0c66620b836f46b2679f578a36740d5d0129b935d472c7e1ed22879ded5f49db",
+    "learnedAt": "2026-07-05T08:29:59.135Z"
+  },
+  "/sales/clients-prospects": {
+    "path": "/sales/clients-prospects",
+    "contentHash": "daa4c10f0eecb315e0a220be2c991fba74b344c9cc5fcbb1b983e2469f83dbaa",
+    "learnedAt": "2026-07-05T08:30:00.677Z"
+  },
+  "/sales/quotations-estimates": {
+    "path": "/sales/quotations-estimates",
+    "contentHash": "87245aa1a154132bd3453f2af066e89aadc49c4a387808f8a5b5388d9e85d3aa",
+    "learnedAt": "2026-07-05T08:30:02.694Z"
+  },
+  "/sales/quotations-estimates/new": {
+    "path": "/sales/quotations-estimates/new",
+    "contentHash": "feb78470eabb253d8369096120449033fa72702c79a889312cd1e645d52212eb",
+    "learnedAt": "2026-07-05T08:30:04.229Z"
+  },
+  "/sales/proforma-invoices": {
+    "path": "/sales/proforma-invoices",
+    "contentHash": "99a4982b5e726029324a2ef59d678ba31adcb51d54a08407fe3e9b5a682d3d2f",
+    "learnedAt": "2026-07-05T08:30:06.675Z"
+  },
+  "/sales/proforma-invoices/new": {
+    "path": "/sales/proforma-invoices/new",
+    "contentHash": "dab704553e4474328510620dc59b151a84bcbf1d7e07321539b6973844830dab",
+    "learnedAt": "2026-07-05T08:30:08.218Z"
+  },
+  "/invoices": {
+    "path": "/invoices",
+    "contentHash": "78e277ec8b91cf8c89ad56410d8f4a6469ffca0fac6308983b382a85b234418b",
+    "learnedAt": "2026-07-05T08:30:10.173Z"
+  },
+  "/invoices/new": {
+    "path": "/invoices/new",
+    "contentHash": "4c5e6b0ad5eccc3f1da1baf533c82ae781ea1102882242f0121b7537cc6e6aab",
+    "learnedAt": "2026-07-05T08:30:11.744Z"
+  },
+  "/sales/payment-receipts": {
+    "path": "/sales/payment-receipts",
+    "contentHash": "dd293c908423133d0fe16b756ce9f87b865d52a3e60bc5c8172e1a6b9ba44ab1",
+    "learnedAt": "2026-07-05T08:30:13.282Z"
+  },
+  "/sales/payment-receipts/new": {
+    "path": "/sales/payment-receipts/new",
+    "contentHash": "caf02c2846add717021de33089977cdb3f5370cf99395050258fbf794e517753",
+    "learnedAt": "2026-07-05T08:30:14.895Z"
+  },
+  "/sales/sales-orders": {
+    "path": "/sales/sales-orders",
+    "contentHash": "18b9d2d14954765edd9b71e773940264d90c8aa6805e1022203335df6c43d406",
+    "learnedAt": "2026-07-05T08:30:16.886Z"
+  },
+  "/sales/sales-orders/new": {
+    "path": "/sales/sales-orders/new",
+    "contentHash": "481536f5b3693f82d2cd7087325dda003d979b1251f6e6781982cbe87f76a93a",
+    "learnedAt": "2026-07-05T08:30:18.424Z"
+  },
+  "/sales/delivery-challans": {
+    "path": "/sales/delivery-challans",
+    "contentHash": "c6bbc86489db87411721f4dbfe27581cfffa137d415f99f46dc1a01649a56993",
+    "learnedAt": "2026-07-05T08:30:20.809Z"
+  },
+  "/sales/delivery-challans/new": {
+    "path": "/sales/delivery-challans/new",
+    "contentHash": "85b28e371aeae280476b936e284c634d14967ce2dfd0b0df5912822c45d36627",
+    "learnedAt": "2026-07-05T08:30:22.350Z"
+  },
+  "/sales/credit-notes": {
+    "path": "/sales/credit-notes",
+    "contentHash": "8c9413cdca4379995e3dcab33d522a9c35dc8a42e4d7a8fed561f8e23ab8f785",
+    "learnedAt": "2026-07-05T08:30:24.494Z"
+  },
+  "/sales/credit-notes/new": {
+    "path": "/sales/credit-notes/new",
+    "contentHash": "04590cf052b7976b1fa3663dbd39b050436a8ae3048b68a4a81af83ebd6db97b",
+    "learnedAt": "2026-07-05T08:30:26.038Z"
+  },
+  "/purchases/vendor-leads": {
+    "path": "/purchases/vendor-leads",
+    "contentHash": "cbfe4959316a11489f61fdb26d92aaa4c68b45c9cca59540ddec5bdf48ed848e",
+    "learnedAt": "2026-07-05T08:30:27.585Z"
+  },
+  "/purchases/vendor-leads/new": {
+    "path": "/purchases/vendor-leads/new",
+    "contentHash": "12e7c4205ddadc2256a57ec78e93b9945fba10bdc34d6d1d534761987336a8c7",
+    "learnedAt": "2026-07-05T08:30:29.069Z"
+  },
+  "/purchases/vendors-suppliers": {
+    "path": "/purchases/vendors-suppliers",
+    "contentHash": "cf06792f01078e0e44fc3b9c1533e2ee276db8067c05c52880d519ec65b60bc9",
+    "learnedAt": "2026-07-05T08:30:31.084Z"
+  },
+  "/purchases/payout-receipts": {
+    "path": "/purchases/payout-receipts",
+    "contentHash": "786874cfcaa15b209ec6c034911e8b369f2d8c2d69f0144799f22970542e9c67",
+    "learnedAt": "2026-07-05T08:30:32.622Z"
+  },
+  "/purchases/purchase-orders": {
+    "path": "/purchases/purchase-orders",
+    "contentHash": "a9a487fa2c5e5caedbcf34dfce185895ffc4f42d0e0cbd6965684f69d2237f62",
+    "learnedAt": "2026-07-05T08:30:34.592Z"
+  },
+  "/purchases/purchase-orders/new": {
+    "path": "/purchases/purchase-orders/new",
+    "contentHash": "3fc254343140aa5aa291ac59d26a6c7c90c6d9f123962c6938c8409c50e81bf1",
+    "learnedAt": "2026-07-05T08:30:36.153Z"
+  },
+  "/purchases/debit-notes": {
+    "path": "/purchases/debit-notes",
+    "contentHash": "350e58f374f210fa597a60aba2c01300b3f142181a4fcef0d4eb5cec16b4a88f",
+    "learnedAt": "2026-07-05T08:30:38.130Z"
+  },
+  "/purchases/debit-notes/new": {
+    "path": "/purchases/debit-notes/new",
+    "contentHash": "348430031abd0c524b82dd8f927d7e6d12e260ffb326d1fe71f365e717464764",
+    "learnedAt": "2026-07-05T08:30:39.873Z"
+  },
+  "/purchases/hire-best-vendors": {
+    "path": "/purchases/hire-best-vendors",
+    "contentHash": "f97fb72999c171ca25eae3448763dbfe21c2be631c00a0d20f531f4580ce88c1",
+    "learnedAt": "2026-07-05T08:30:41.440Z"
+  },
+  "/purchases/hire-best-vendors/new": {
+    "path": "/purchases/hire-best-vendors/new",
+    "contentHash": "6c013a766e6012f4df2f3ef3bd76e24859cf05216dd3ae30b9071e922a6e1d37",
+    "learnedAt": "2026-07-05T08:30:42.953Z"
+  },
+  "/expenses": {
+    "path": "/expenses",
+    "contentHash": "9b3c505afabace690a2c662e7d8c845585b8d7be0a52ce44c2660f46b7dde040",
+    "learnedAt": "2026-07-05T08:30:44.491Z"
+  },
+  "/products": {
+    "path": "/products",
+    "contentHash": "64b322c081a754e27d129adb10c374e974f802687ed272c1ca189dca937add25",
+    "learnedAt": "2026-07-05T08:30:46.066Z"
+  },
+  "/inventory/warehouses": {
+    "path": "/inventory/warehouses",
+    "contentHash": "2c4e1f517822819b60c4d306cf1c673d5a169f7383b142a8a9e2160579bcc2bb",
+    "learnedAt": "2026-07-05T08:30:47.534Z"
+  },
+  "/inventory/product-wise-pl": {
+    "path": "/inventory/product-wise-pl",
+    "contentHash": "7fffb93c4fb7ffda12b0dab352e47375f37743e29c139e1cfe25d41068d896d8",
+    "learnedAt": "2026-07-05T08:30:49.001Z"
+  },
+  "/inventory/stock-value-report": {
+    "path": "/inventory/stock-value-report",
+    "contentHash": "b80be136778df0e1470587960d060aa07bccbb9c357a34e5d72e31ec76c261f4",
+    "learnedAt": "2026-07-05T08:30:50.441Z"
+  },
+  "/inventory/batch-expiry-report": {
+    "path": "/inventory/batch-expiry-report",
+    "contentHash": "4b66b3abf6bfb10ac22cb891fed7aec1f788a6aa5d6e41b0c0bc8f41023590c6",
+    "learnedAt": "2026-07-05T08:30:51.930Z"
+  },
+  "/inventory/party-transactions-report": {
+    "path": "/inventory/party-transactions-report",
+    "contentHash": "f0000a8fdd4d1d15905aafe4f9c0d20f0bc408e674f412f05df2bdf8592e3dc4",
+    "learnedAt": "2026-07-05T08:30:53.392Z"
+  },
+  "/inventory/all-transactions-report": {
+    "path": "/inventory/all-transactions-report",
+    "contentHash": "bce418c8a28e8de6960368a607b5525bfaa706828706d241247f74762cf1357b",
+    "learnedAt": "2026-07-05T08:30:54.861Z"
+  },
+  "/inventory/stock-status-report": {
+    "path": "/inventory/stock-status-report",
+    "contentHash": "63bbda3cf15baaea05b97e6b5b3507e1dbc97b2d2f02c991aae6be1d2fc3dd2b",
+    "learnedAt": "2026-07-05T08:30:56.315Z"
+  },
+  "/reports": {
+    "path": "/reports",
+    "contentHash": "b58b3126d7cd77390c69f41d6425fb8af7d5dc445f3762829b8a7be0dd334184",
+    "learnedAt": "2026-07-05T08:30:58.866Z"
+  },
+  "/reports/vendors": {
+    "path": "/reports/vendors",
+    "contentHash": "4049e8ef6270062b37c7c632e65f43b0f28ac3f2cd3c9b65192b28b6539e9566",
+    "learnedAt": "2026-07-05T08:31:00.736Z"
+  },
+  "/reports/vendors/tag-wise": {
+    "path": "/reports/vendors/tag-wise",
+    "contentHash": "3369fab993edbfefce8eeb4def4a5540fd37e9615c99802438492967bf60c357",
+    "learnedAt": "2026-07-05T08:31:02.768Z"
+  },
+  "/reports/vendors/project-wise-pl": {
+    "path": "/reports/vendors/project-wise-pl",
+    "contentHash": "7562287258c569117dcc51eba17d9a7eaa86741df906c29f0f7627f2762879f7",
+    "learnedAt": "2026-07-05T08:31:04.669Z"
+  },
+  "/reports/vendors/payment-report": {
+    "path": "/reports/vendors/payment-report",
+    "contentHash": "86468d90a6e6fc01255f50146fcc345df437b36a97894a37ea91a86312b9b342",
+    "learnedAt": "2026-07-05T08:31:06.723Z"
+  },
+  "/reports/vendors/tds-report": {
+    "path": "/reports/vendors/tds-report",
+    "contentHash": "53c5f674d007be0823424f2dcbc4506a5d5229ac9721e0e556f028dc0ee100ea",
+    "learnedAt": "2026-07-05T08:31:08.638Z"
+  },
+  "/reports/vendors/gst-report": {
+    "path": "/reports/vendors/gst-report",
+    "contentHash": "dd8d9340954bb4f26bb1db5c30613137cb633852037299ac2901436132e976d4",
+    "learnedAt": "2026-07-05T08:31:10.545Z"
+  },
+  "/reports/vendors/line-item-report": {
+    "path": "/reports/vendors/line-item-report",
+    "contentHash": "e9a6846cf2b7bea87350f4fb7853bb809a2865307824c9a3dca2ffc13dd3f960",
+    "learnedAt": "2026-07-05T08:31:12.604Z"
+  }
+}

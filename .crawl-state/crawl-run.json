@@ -1,0 +1,327 @@
+{
+  "runId": "33fdd283-670f-4f86-b464-0a36dd5082c3",
+  "startedAt": "2026-07-05T08:29:49.426Z",
+  "visitedPaths": [
+    "/dashboard",
+    "/setup-dashboard",
+    "/subscription/plans",
+    "/sales/clients-prospects",
+    "/sales/quotations-estimates",
+    "/sales/quotations-estimates/new",
+    "/sales/proforma-invoices",
+    "/sales/proforma-invoices/new",
+    "/invoices",
+    "/invoices/new",
+    "/sales/payment-receipts",
+    "/sales/payment-receipts/new",
+    "/sales/sales-orders",
+    "/sales/sales-orders/new",
+    "/sales/delivery-challans",
+    "/sales/delivery-challans/new",
+    "/sales/credit-notes",
+    "/sales/credit-notes/new",
+    "/purchases/vendor-leads",
+    "/purchases/vendor-leads/new",
+    "/purchases/vendors-suppliers",
+    "/purchases/payout-receipts",
+    "/purchases/purchase-orders",
+    "/purchases/purchase-orders/new",
+    "/purchases/debit-notes",
+    "/purchases/debit-notes/new",
+    "/purchases/hire-best-vendors",
+    "/purchases/hire-best-vendors/new",
+    "/expenses",
+    "/products",
+    "/inventory/warehouses",
+    "/inventory/product-wise-pl",
+    "/inventory/stock-value-report",
+    "/inventory/batch-expiry-report",
+    "/inventory/party-transactions-report",
+    "/inventory/all-transactions-report",
+    "/inventory/stock-status-report",
+    "/reports",
+    "/reports/vendors",
+    "/reports/vendors/tag-wise",
+    "/reports/vendors/project-wise-pl",
+    "/reports/vendors/payment-report",
+    "/reports/vendors/tds-report",
+    "/reports/vendors/gst-report",
+    "/reports/vendors/line-item-report"
+  ],
+  "queuedTargets": [
+    {
+      "path": "/reports/vendors/hsn-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/hsn-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/suggested-purchases",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/suggested-purchases"
+      ]
+    },
+    {
+      "path": "/reports/vendors/scanned-documents",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/scanned-documents"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-1",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-1"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-2b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-2b"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-3b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-3b"
+      ]
+    },
+    {
+      "path": "/automations",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/automations"
+      ]
+    },
+    {
+      "path": "/banking-payments",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/banking-payments"
+      ]
+    },
+    {
+      "path": "/payroll-hrms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/payroll-hrms"
+      ]
+    },
+    {
+      "path": "/leads",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/leads"
+      ]
+    },
+    {
+      "path": "/crm/pipelines",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/pipelines"
+      ]
+    },
+    {
+      "path": "/crm/forms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms"
+      ]
+    },
+    {
+      "path": "/crm/forms/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms/new"
+      ]
+    },
+    {
+      "path": "/crm/lead-summary",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/lead-summary"
+      ]
+    },
+    {
+      "path": "/crm/team-sales-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/team-sales-report"
+      ]
+    },
+    {
+      "path": "/crm/client-performance-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/client-performance-report"
+      ]
+    },
+    {
+      "path": "/crm/lead-source-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/lead-source-report"
+      ]
+    },
+    {
+      "path": "/accounting/account-groups",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/account-groups"
+      ]
+    },
+    {
+      "path": "/accounting/chart-of-accounts",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/chart-of-accounts"
+      ]
+    },
+    {
+      "path": "/accounting/voucher-books",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/voucher-books"
+      ]
+    },
+    {
+      "path": "/accounting/balance-sheet",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/balance-sheet"
+      ]
+    },
+    {
+      "path": "/accounting/trial-balance",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/trial-balance"
+      ]
+    },
+    {
+      "path": "/accounting/profit-loss",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/profit-loss"
+      ]
+    },
+    {
+      "path": "/accounting/income-statement",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/income-statement"
+      ]
+    },
+    {
+      "path": "/accounting/ledgers-master-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/ledgers-master-report"
+      ]
+    },
+    {
+      "path": "/accounting/day-book",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/day-book"
+      ]
+    },
+    {
+      "path": "/accounting/cash-flow-statement",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/cash-flow-statement"
+      ]
+    },
+    {
+      "path": "/manage-team",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/manage-team"
+      ]
+    },
+    {
+      "path": "/business-settings",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/business-settings"
+      ]
+    },
+    {
+      "path": "/integrations",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/integrations"
+      ]
+    },
+    {
+      "path": "/greetings",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/greetings"
+      ]
+    },
+    {
+      "path": "/support",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/support"
+      ]
+    },
+    {
+      "path": "/growth-suite",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/growth-suite"
+      ]
+    },
+    {
+      "path": "/profile",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/profile"
+      ]
+    }
+  ],
+  "failedPaths": [],
+  "completedAt": "2026-07-05T08:31:12.610Z"
+}
