@@ -112,8 +112,9 @@ export interface CrawlRunState {
   runId: string;
   startedAt: string;
   visitedPaths: string[];
-  queuedPaths: string[];
+  queuedTargets: CrawlTarget[];
   failedPaths: Array<{ path: string; error: string }>;
+  completedAt?: string;
 }
 
 export interface RetrievalResult {

@@ -25,7 +25,7 @@ export class FileStateStore {
       runId: "",
       startedAt: "",
       visitedPaths: [],
-      queuedPaths: [],
+      queuedTargets: [],
       failedPaths: []
     });
   }

@@ -39,6 +39,39 @@ function buildSeedQueue(): CrawlTarget[] {
   }));
 }
 
+function dedupeTargets(targets: CrawlTarget[]): CrawlTarget[] {
+  const seen = new Set<string>();
+  const deduped: CrawlTarget[] = [];
+
+  for (const target of targets) {
+    const path = normalizePath(target.path);
+    if (seen.has(path)) continue;
+    seen.add(path);
+    deduped.push({
+      ...target,
+      path
+    });
+  }
+
+  return deduped;
+}
+
+async function buildInitialQueue(stateStore: FileStateStore): Promise<CrawlTarget[]> {
+  const previous = await stateStore.readRunState();
+  const resumedTargets = Array.isArray(previous.queuedTargets) ? previous.queuedTargets : [];
+  const failedTargets = Array.isArray(previous.failedPaths)
+    ? previous.failedPaths.map((item) => ({
+        path: item.path,
+        source: "manual" as const,
+        depth: 0,
+        navigationPath: [item.path]
+      }))
+    : [];
+
+  const seeds = buildSeedQueue();
+  return dedupeTargets([...resumedTargets, ...failedTargets, ...seeds]);
+}
+
 async function withRetry<T>(task: () => Promise<T>, retries = 2): Promise<T> {
   let lastError: unknown;
   for (let attempt = 0; attempt <= retries; attempt += 1) {
@@ -95,6 +128,8 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
 
     logger.info({ runId, maxPages: agentConfig.crawl.maxPages }, "Starting learning workflow");
     await withTimeout(session.login(agentConfig.portal.credentials), 45_000, "Portal login");
+
+    const initialQueue = await buildInitialQueue(stateStore);
 
     const graph = new StateGraph(CrawlState)
       .addNode("pickTarget", async (state) => {
@@ -225,7 +260,7 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
     const app = graph.compile();
     const result = await app.invoke({
       runId,
-      queue: buildSeedQueue(),
+      queue: initialQueue,
       visited: new Set<string>(),
       observations: [],
       learned: [],
@@ -240,8 +275,9 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
       runId,
       startedAt,
       visitedPaths: [...result.visited],
-      queuedPaths: result.queue.map((item) => item.path),
-      failedPaths: result.failures
+      queuedTargets: dedupeTargets(result.queue.filter((item) => !result.visited.has(normalizePath(item.path)))),
+      failedPaths: result.failures,
+      completedAt: new Date().toISOString()
     });
 
     await pushKnowledgeToBackend(result.learned).catch((error) => {
@@ -250,7 +286,7 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
 
     logger.info({ runId, learned: result.learned.length, failures: result.failures.length }, "Learning run completed");
     return result.learned;
-  })(), 8 * 60_000, "Learning workflow").finally(async () => {
+  })(), 14 * 60_000, "Learning workflow").finally(async () => {
     await session.stop().catch((error) => {
       logger.warn({ runId, error }, "Failed to stop browser session cleanly");
     });

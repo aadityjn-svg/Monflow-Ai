@@ -3,7 +3,11 @@ name: Portal Learning
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 20 * * *"
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+  actions: read
 
 concurrency:
   group: portal-learning-${{ github.ref }}
@@ -12,7 +16,7 @@ concurrency:
 jobs:
   crawl-and-learn:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     defaults:
       run:
         working-directory: portal-agent
@@ -34,6 +38,23 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install chromium
 
+      - name: Restore previous crawl state
+        continue-on-error: true
+        uses: dawidd6/action-download-artifact@v11
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: portal-learning.yml
+          name: portal-learning-state
+          path: portal-agent/artifacts/state
+          if_no_artifact_found: warn
+
+      - name: Restore committed crawl state
+        run: |
+          if [ -d ../.crawl-state ]; then
+            mkdir -p artifacts/state
+            cp -R ../.crawl-state/. artifacts/state/
+          fi
+
       - name: Create env file
         run: |
           cat > .env <<'EOF'
@@ -46,7 +67,7 @@ jobs:
           PORTAL_WORKSPACE_OWNER=${{ secrets.PORTAL_WORKSPACE_OWNER }}
           AGENT_ENABLE_LLM=false
           AGENT_HEADLESS=true
-          AGENT_MAX_PAGES=90
+          AGENT_MAX_PAGES=45
           AGENT_MAX_DEPTH=2
           AGENT_SAFE_MODE=true
           AGENT_ENABLE_SAFE_INTERACTIONS=true
@@ -68,3 +89,26 @@ jobs:
         with:
           name: portal-learning-artifacts
           path: portal-agent/artifacts
+
+      - name: Upload crawl state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portal-learning-state
+          path: portal-agent/artifacts/state
+          if-no-files-found: warn
+
+      - name: Commit updated crawl state
+        if: always()
+        run: |
+          if [ ! -d artifacts/state ]; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p ../.crawl-state
+          cp -R artifacts/state/. ../.crawl-state/
+          git add ../.crawl-state
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update crawl state [skip ci]"
+          git push
