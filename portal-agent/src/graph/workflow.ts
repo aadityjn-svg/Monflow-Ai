@@ -64,6 +64,19 @@ async function withTimeout<T>(task: Promise<T>, timeoutMs: number, label: string
   }
 }
 
+function formatErrorDetails(error: unknown): { message: string; stack?: string } {
+  if (error instanceof Error) {
+    return {
+      message: error.message,
+      stack: error.stack
+    };
+  }
+
+  return {
+    message: String(error)
+  };
+}
+
 export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
   const runId = randomUUID();
   const startedAt = new Date().toISOString();
@@ -167,27 +180,42 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
         const latest = state.observations[state.observations.length - 1];
         if (!latest) return state;
 
-        const learned = await generateLearnedDocument(latest);
-        const { shouldRelearn, previousHash } = await changeDetector.detect(learned);
+        try {
+          logger.info({ runId, path: latest.path }, "Generating learned page document");
+          const learned = await generateLearnedDocument(latest);
+          const { shouldRelearn, previousHash } = await changeDetector.detect(learned);
 
-        if (shouldRelearn) {
-          if (store) {
-            await store.upsert(learned);
+          if (shouldRelearn) {
+            if (store) {
+              await store.upsert(learned);
+            }
+            await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
+            await stateStore.updatePageIndex(learned);
+            await pushSinglePageToBackend(learned).catch((error) => {
+              logger.warn({ runId, path: learned.path, error: formatErrorDetails(error) }, "Incremental backend ingest failed");
+            });
           }
-          await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
-          await stateStore.updatePageIndex(learned);
-          await pushSinglePageToBackend(learned).catch((error) => {
-            logger.warn({ runId, path: learned.path, error }, "Incremental backend ingest failed");
-          });
+
+          await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
+          logger.info({ runId, path: learned.path }, "Learned page document written");
+
+          return {
+            ...state,
+            learned: [...state.learned, learned]
+          };
+        } catch (error) {
+          logger.error({ runId, path: latest.path, error: formatErrorDetails(error) }, "Learn page step failed");
+          return {
+            ...state,
+            failures: [
+              ...state.failures,
+              {
+                path: latest.path,
+                error: error instanceof Error ? error.message : String(error)
+              }
+            ]
+          };
         }
-
-        await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
-        logger.info({ runId, path: learned.path }, "Learned page document written");
-
-        return {
-          ...state,
-          learned: [...state.learned, learned]
-        };
       })
       .addConditionalEdges("pickTarget", (state) => {
         if (!state.currentTarget || state.pageCount >= agentConfig.crawl.maxPages) return END;
@@ -218,7 +246,7 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
     });
 
     await pushKnowledgeToBackend(result.learned).catch((error) => {
-      logger.warn({ runId, error }, "Final backend ingest failed");
+      logger.warn({ runId, error: formatErrorDetails(error) }, "Final backend ingest failed");
     });
 
     logger.info({ runId, learned: result.learned.length, failures: result.failures.length }, "Learning run completed");

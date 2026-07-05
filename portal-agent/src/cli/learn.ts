@@ -7,6 +7,10 @@ async function main(): Promise<void> {
 }
 
 main().catch((error) => {
-  logger.error({ error }, "Portal learning failed");
+  logger.error({
+    error: error instanceof Error
+      ? { message: error.message, stack: error.stack }
+      : { message: String(error) }
+  }, "Portal learning failed");
   process.exitCode = 1;
 });
