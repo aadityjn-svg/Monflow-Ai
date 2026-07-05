@@ -235,6 +235,8 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
       currentTarget: null,
       pageCount: 0,
       failures: []
+    }, {
+      recursionLimit: Math.max(50, agentConfig.crawl.maxPages * 4)
     });
 
     await stateStore.writeRunState({
