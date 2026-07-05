@@ -7,7 +7,7 @@ import { adminRouteSeeds, userRouteSeeds } from "../browser/seed-routes.js";
 import { extractObservation, fillFormsWithSampleData, performSafeInteractions } from "../browser/extractor.js";
 import { generateLearnedDocument } from "../learning/documenter.js";
 import { ChromaKnowledgeStore } from "../knowledge/chroma-store.js";
-import { pushKnowledgeToBackend, pushSinglePageToBackend } from "../knowledge/pusher.js";
+import { pushKnowledgeToBackend } from "../knowledge/pusher.js";
 import { FileStateStore } from "../persistence/file-state.js";
 import { ChangeDetector } from "../crawler/change-detector.js";
 import { agentConfig } from "../config/env.js";
@@ -191,9 +191,6 @@ export async function runLearningWorkflow(): Promise<LearnedPageDocument[]> {
             }
             await stateStore.appendChangeRecord(learned.path, previousHash, learned.contentHash);
             await stateStore.updatePageIndex(learned);
-            await pushSinglePageToBackend(learned).catch((error) => {
-              logger.warn({ runId, path: learned.path, error: formatErrorDetails(error) }, "Incremental backend ingest failed");
-            });
           }
 
           await writeJson(path.join(pageDir, `${learned.pageId}.json`), learned);
