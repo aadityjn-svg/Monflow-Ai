@@ -52,6 +52,32 @@ In this mode:
 - Structured knowledge is generated from rules and observations
 - Learned pages are pushed to the backend assistant memory store
 - Ollama and Chroma are not required for scheduled crawls
+- The GitHub workflow uses a wider route seed plus discovered internal links for deeper safe coverage
+- Safe expanders, tabs, and non-destructive buttons can be opened automatically
+
+## Recommended crawl modes
+
+Production-safe mode:
+
+```bash
+AGENT_SAFE_MODE=true
+AGENT_ENABLE_SAFE_INTERACTIONS=true
+AGENT_ENABLE_FORM_FILL=false
+AGENT_USE_ROUTE_SEED=true
+AGENT_FOLLOW_DISCOVERED_LINKS=true
+```
+
+Sandbox deep-learning mode:
+
+```bash
+AGENT_SAFE_MODE=true
+AGENT_ENABLE_SAFE_INTERACTIONS=true
+AGENT_ENABLE_FORM_FILL=true
+AGENT_USE_ROUTE_SEED=true
+AGENT_FOLLOW_DISCOVERED_LINKS=true
+```
+
+Use sandbox deep-learning mode only on a test workspace because form fields will be populated with sample values, even though destructive submits are still blocked.
 
 ## Run learning
 

@@ -18,22 +18,39 @@ function getLlm(): ChatOllama {
 }
 
 function buildRuleBasedDocument(observation: PageObservation): LearnedPageDocument {
+  const primaryButtons = observation.buttons
+    .filter((label) => /new|create|add|save|search|filter|view|open|download|export|send|record|convert|duplicate/i.test(label))
+    .slice(0, 8);
+  const formFields = observation.forms.flatMap((form) =>
+    form.fields.map((field) => field.label || field.name).filter(Boolean)
+  );
+  const apiSummary = observation.networkRequests
+    .filter((request) => /\/api\//i.test(request.url))
+    .slice(0, 12)
+    .map((request) => `${request.method} ${request.url}${request.status ? ` (${request.status})` : ""}`);
+  const visibleSections = [
+    ...observation.headings.slice(0, 8),
+    ...observation.tabs.slice(0, 6),
+  ];
   const workflow = [
     `Open ${observation.path} from ${observation.navigationPath.join(" > ") || "the portal navigation"}.`,
-    ...observation.tabs.slice(0, 2).map((tab) => `Review the ${tab} section or tab.`),
-    ...observation.forms.slice(0, 1).flatMap((form) => form.fields.slice(0, 3).map((field) => `Fill ${field.label || field.name}.`)),
-    ...observation.buttons
-      .filter((label) => /new|create|add|save|search|filter|view/i.test(label))
-      .slice(0, 3)
-      .map((label) => `Use ${label} to continue the workflow.`),
+    ...observation.tabs.slice(0, 4).map((tab) => `Review the ${tab} section or tab.`),
+    ...observation.searches.slice(0, 2).map((item) => `Use the ${item} search field to find records quickly.`),
+    ...observation.filters.slice(0, 4).map((item) => `Use ${item} to narrow the visible data.`),
+    ...observation.forms.slice(0, 2).flatMap((form) => form.fields.slice(0, 5).map((field) => `Fill ${field.label || field.name}${field.required ? " (required)" : ""}.`)),
+    ...primaryButtons.slice(0, 5).map((label) => `Use ${label} when you want to continue this workflow.`),
   ].filter(Boolean);
 
   const purpose = observation.textSummary.slice(0, 280) || `Manage ${observation.featureName} in the portal.`;
   const summary = [
     `${observation.featureName} is available at ${observation.path}.`,
-    observation.headings.length ? `Key sections include ${observation.headings.slice(0, 4).join(", ")}.` : "",
-    observation.forms.length ? `The page contains ${observation.forms.length} form(s).` : "",
-    observation.tables.length ? `The page shows table/report content.` : "",
+    visibleSections.length ? `Key visible sections include ${visibleSections.join(", ")}.` : "",
+    primaryButtons.length ? `Important actions include ${primaryButtons.join(", ")}.` : "",
+    formFields.length ? `Important fields include ${formFields.slice(0, 10).join(", ")}.` : "",
+    observation.tables.length ? `The page shows table or report content for reviewing records.` : "",
+    observation.cards.length ? `The page includes dashboard cards or summary panels.` : "",
+    observation.charts.length ? `The page includes chart or visual reporting content.` : "",
+    apiSummary.length ? `Observed API activity includes ${apiSummary.slice(0, 4).join("; ")}.` : "",
   ].filter(Boolean).join(" ");
 
   return {
@@ -47,21 +64,24 @@ function buildRuleBasedDocument(observation: PageObservation): LearnedPageDocume
     workflow,
     faq: [
       `How do I open ${observation.featureName}? Go to ${observation.path}.`,
-      observation.forms.length ? `What can I fill on this page? ${observation.forms[0].fields.slice(0, 5).map((field) => field.label || field.name).join(", ")}.` : "",
+      primaryButtons.length ? `What actions are available here? ${primaryButtons.join(", ")}.` : "",
+      formFields.length ? `What can I fill on this page? ${formFields.slice(0, 8).join(", ")}.` : "",
+      observation.searches.length ? `How do I search here? Use ${observation.searches.slice(0, 2).join(", ")}.` : "",
+      observation.filters.length ? `How do I filter records? Use ${observation.filters.slice(0, 3).join(", ")}.` : "",
     ].filter(Boolean),
     troubleshooting: [
       ...observation.errorMessages.slice(0, 3),
       ...observation.validationMessages.slice(0, 3),
+      ...observation.consoleEvents.filter((event) => event.type === "error").slice(0, 3).map((event) => event.text),
+      observation.permissions.length ? `If access is blocked, check permissions: ${observation.permissions.slice(0, 4).join(", ")}.` : "",
     ],
     tips: [
       ...observation.filters.slice(0, 2).map((item) => `Use ${item} to narrow results.`),
       ...observation.searches.slice(0, 2).map((item) => `Use ${item} to quickly find records.`),
+      ...primaryButtons.slice(0, 3).map((item) => `Look for ${item} when starting the main action on this page.`),
     ],
     userGuide: workflow,
-    apiSummary: observation.networkRequests
-      .filter((request) => /\/api\//i.test(request.url))
-      .slice(0, 8)
-      .map((request) => `${request.method} ${request.url}`),
+    apiSummary,
     permissions: observation.permissions,
     relatedFeatures: observation.relatedFeatures,
     sourceObservation: observation,

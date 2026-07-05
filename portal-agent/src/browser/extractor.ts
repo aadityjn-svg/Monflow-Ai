@@ -6,6 +6,35 @@ function compactText(values: Array<string | null | undefined>): string[] {
   return [...new Set(values.map((value) => value?.trim()).filter((value): value is string => Boolean(value)))];
 }
 
+function normalizeDiscoveredPath(value: string): string | null {
+  if (!value) return null;
+
+  try {
+    const url = new URL(value, "https://monflow.local");
+    const path = (url.pathname || "").replace(/\/+$/, "") || "/";
+
+    if (!path.startsWith("/")) return null;
+    if (path === "/login" || path === "/register" || path === "/forgot-password") return null;
+    if (path.startsWith("/reset-password/")) return null;
+    if (path.startsWith("/forms/")) return null;
+
+    const segments = path.split("/").filter(Boolean);
+    const hasDynamicId = segments.some((segment) =>
+      /^[a-f0-9]{24}$/i.test(segment)
+      || /^[0-9]{5,}$/.test(segment)
+      || /^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(segment)
+    );
+
+    if (hasDynamicId && !path.endsWith("/edit")) {
+      return null;
+    }
+
+    return path;
+  } catch {
+    return null;
+  }
+}
+
 async function collectTexts(page: Page, selector: string): Promise<string[]> {
   return compactText(await page.locator(selector).evaluateAll((nodes) =>
     nodes.map((node) => (node.textContent || "").trim())
@@ -71,22 +100,39 @@ async function collectFormInfo(page: Page): Promise<FormInfo[]> {
 }
 
 async function discoverLinks(page: Page, depth: number, navigationPath: string[]): Promise<CrawlTarget[]> {
-  const hrefs = await page.locator("a[href]").evaluateAll((nodes) =>
-    nodes.map((node) => ({
-      href: (node as HTMLAnchorElement).getAttribute("href") || "",
-      label: (node.textContent || "").trim()
-    }))
+  const routeCandidates = await page.locator("a[href], [data-to], [data-href], [data-path], button, [role='tab']").evaluateAll((nodes) =>
+    nodes.map((node) => {
+      const element = node as HTMLElement;
+      return {
+        href: element.getAttribute("href")
+          || element.getAttribute("data-to")
+          || element.getAttribute("data-href")
+          || element.getAttribute("data-path")
+          || "",
+        label: (element.textContent || element.getAttribute("aria-label") || "").trim(),
+        source: element.tagName.toLowerCase() === "a" ? "link" : "button"
+      };
+    })
   );
 
-  return hrefs
-    .filter((item) => item.href.startsWith("/"))
-    .map((item) => ({
-      path: item.href,
-      label: item.label,
-      source: "link" as const,
-      depth,
-      navigationPath
-    }));
+  const discovered = routeCandidates
+    .map((item) => {
+      const path = normalizeDiscoveredPath(item.href);
+      if (!path) return null;
+
+      const target: CrawlTarget = {
+        path,
+        label: item.label || undefined,
+        source: item.source as CrawlTarget["source"],
+        depth,
+        navigationPath
+      };
+
+      return target;
+    })
+    .filter((item): item is CrawlTarget => item !== null);
+
+  return discovered;
 }
 
 export async function extractObservation(
@@ -99,6 +145,7 @@ export async function extractObservation(
   const title = await page.title();
   const headings = await collectTexts(page, "h1, h2, h3");
   const buttons = await collectTexts(page, "button");
+  const links = await collectTexts(page, "nav a, aside a, a[href]");
   const tabs = await collectTexts(page, '[role="tab"], [data-state="active"][role="button"]');
   const accordions = await collectTexts(page, "[aria-expanded='true'], [data-state='open']");
   const modals = await collectTexts(page, '[role="dialog"], [aria-modal="true"]');
@@ -112,9 +159,9 @@ export async function extractObservation(
   const successMessages = await collectTexts(page, ".text-green-600, .bg-green-50, [data-toast]");
   const errorMessages = await collectTexts(page, ".text-red-600, .bg-red-50, .text-rose-600");
   const permissions = compactText(
-    [...buttons, ...headings].filter((value) => /upgrade|premium|permission|access denied|not allowed/i.test(value))
+    [...buttons, ...headings, ...links].filter((value) => /upgrade|premium|permission|access denied|not allowed|admin only|restricted/i.test(value))
   );
-  const relatedFeatures = compactText([...headings, ...buttons].filter((value) => /report|invoice|client|payment|lead|settings/i.test(value)));
+  const relatedFeatures = compactText([...headings, ...buttons, ...links].filter((value) => /report|invoice|client|customer|payment|lead|settings|vendor|purchase|account|inventory|team/i.test(value)));
   const textSummary = compactText(await page.locator("main, body").evaluateAll((nodes) =>
     nodes.map((node) => (node.textContent || "").replace(/\s+/g, " ").trim().slice(0, 4000))
   ))[0] || "";
