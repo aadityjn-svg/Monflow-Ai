@@ -1,43 +1,43 @@
 {
-  "runId": "d3521e69-a799-430e-9a7b-76cb09faaabb",
-  "startedAt": "2026-07-19T20:32:23.727Z",
+  "runId": "fb273808-5112-4f2f-a29e-14ed76a9aa38",
+  "startedAt": "2026-07-20T10:33:44.339Z",
   "visitedPaths": [
-    "/sales/payment-receipts/new",
-    "/sales/sales-orders",
-    "/sales/sales-orders/new",
-    "/sales/delivery-challans",
-    "/sales/delivery-challans/new",
-    "/sales/credit-notes",
-    "/sales/credit-notes/new",
-    "/purchases/vendor-leads",
-    "/purchases/vendor-leads/new",
-    "/purchases/vendors-suppliers",
-    "/purchases/payout-receipts",
-    "/purchases/purchase-orders",
-    "/purchases/purchase-orders/new",
-    "/purchases/debit-notes",
-    "/purchases/debit-notes/new",
-    "/purchases/hire-best-vendors",
-    "/purchases/hire-best-vendors/new",
-    "/expenses",
-    "/products",
-    "/inventory/warehouses",
-    "/inventory/product-wise-pl",
-    "/inventory/stock-value-report",
-    "/inventory/batch-expiry-report",
-    "/inventory/party-transactions-report",
-    "/inventory/all-transactions-report",
-    "/inventory/stock-status-report",
-    "/reports",
-    "/reports/vendors",
-    "/reports/vendors/tag-wise",
-    "/reports/vendors/project-wise-pl",
-    "/reports/vendors/payment-report",
-    "/reports/vendors/tds-report",
-    "/reports/vendors/gst-report",
-    "/reports/vendors/line-item-report",
-    "/accounting/tds",
-    "/gst-reports",
+    "/invoices/new",
+    "/sales/payment-receipts",
+    "/reports/vendors/hsn-report",
+    "/reports/vendors/suggested-purchases",
+    "/reports/vendors/scanned-documents",
+    "/gst-reports/gstr-1",
+    "/gst-reports/gstr-2b",
+    "/gst-reports/gstr-3b",
+    "/automations",
+    "/banking-payments",
+    "/payroll-hrms",
+    "/leads",
+    "/crm/pipelines",
+    "/crm/forms",
+    "/crm/forms/new",
+    "/crm/lead-summary",
+    "/crm/team-sales-report",
+    "/crm/client-performance-report",
+    "/crm/lead-source-report",
+    "/accounting/account-groups",
+    "/accounting/chart-of-accounts",
+    "/accounting/voucher-books",
+    "/accounting/balance-sheet",
+    "/accounting/trial-balance",
+    "/accounting/profit-loss",
+    "/accounting/income-statement",
+    "/accounting/ledgers-master-report",
+    "/accounting/day-book",
+    "/accounting/cash-flow-statement",
+    "/manage-team",
+    "/business-settings",
+    "/integrations",
+    "/greetings",
+    "/support",
+    "/growth-suite",
+    "/profile",
     "/dashboard",
     "/setup-dashboard",
     "/subscription/plans",
@@ -50,294 +50,298 @@
   ],
   "queuedTargets": [
     {
-      "path": "/invoices/new",
+      "path": "/sales/payment-receipts/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/invoices/new"
+        "/sales/payment-receipts/new"
       ]
     },
     {
-      "path": "/sales/payment-receipts",
+      "path": "/sales/sales-orders",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/sales/payment-receipts"
+        "/sales/sales-orders"
       ]
     },
     {
-      "path": "/reports/vendors/hsn-report",
+      "path": "/sales/sales-orders/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/reports/vendors/hsn-report"
+        "/sales/sales-orders/new"
       ]
     },
     {
-      "path": "/reports/vendors/suggested-purchases",
+      "path": "/sales/delivery-challans",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/reports/vendors/suggested-purchases"
+        "/sales/delivery-challans"
       ]
     },
     {
-      "path": "/reports/vendors/scanned-documents",
+      "path": "/sales/delivery-challans/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/reports/vendors/scanned-documents"
+        "/sales/delivery-challans/new"
       ]
     },
     {
-      "path": "/gst-reports/gstr-1",
+      "path": "/sales/credit-notes",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/gst-reports/gstr-1"
+        "/sales/credit-notes"
       ]
     },
     {
-      "path": "/gst-reports/gstr-2b",
+      "path": "/sales/credit-notes/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/gst-reports/gstr-2b"
+        "/sales/credit-notes/new"
       ]
     },
     {
-      "path": "/gst-reports/gstr-3b",
+      "path": "/purchases/vendor-leads",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/gst-reports/gstr-3b"
+        "/purchases/vendor-leads"
       ]
     },
     {
-      "path": "/automations",
+      "path": "/purchases/vendor-leads/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/automations"
+        "/purchases/vendor-leads/new"
       ]
     },
     {
-      "path": "/banking-payments",
+      "path": "/purchases/vendors-suppliers",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/banking-payments"
+        "/purchases/vendors-suppliers"
       ]
     },
     {
-      "path": "/payroll-hrms",
+      "path": "/purchases/payout-receipts",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/payroll-hrms"
+        "/purchases/payout-receipts"
       ]
     },
     {
-      "path": "/leads",
+      "path": "/purchases/purchase-orders",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/leads"
+        "/purchases/purchase-orders"
       ]
     },
     {
-      "path": "/crm/pipelines",
+      "path": "/purchases/purchase-orders/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/pipelines"
+        "/purchases/purchase-orders/new"
       ]
     },
     {
-      "path": "/crm/forms",
+      "path": "/purchases/debit-notes",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/forms"
+        "/purchases/debit-notes"
       ]
     },
     {
-      "path": "/crm/forms/new",
+      "path": "/purchases/debit-notes/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/forms/new"
+        "/purchases/debit-notes/new"
       ]
     },
     {
-      "path": "/crm/lead-summary",
+      "path": "/purchases/hire-best-vendors",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/lead-summary"
+        "/purchases/hire-best-vendors"
       ]
     },
     {
-      "path": "/crm/team-sales-report",
+      "path": "/purchases/hire-best-vendors/new",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/team-sales-report"
+        "/purchases/hire-best-vendors/new"
       ]
     },
     {
-      "path": "/crm/client-performance-report",
+      "path": "/expenses",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/client-performance-report"
+        "/expenses"
       ]
     },
     {
-      "path": "/crm/lead-source-report",
+      "path": "/products",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/crm/lead-source-report"
+        "/products"
       ]
     },
     {
-      "path": "/accounting/account-groups",
+      "path": "/inventory/warehouses",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/account-groups"
+        "/inventory/warehouses"
       ]
     },
     {
-      "path": "/accounting/chart-of-accounts",
+      "path": "/inventory/product-wise-pl",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/chart-of-accounts"
+        "/inventory/product-wise-pl"
       ]
     },
     {
-      "path": "/accounting/voucher-books",
+      "path": "/inventory/stock-value-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/voucher-books"
+        "/inventory/stock-value-report"
       ]
     },
     {
-      "path": "/accounting/balance-sheet",
+      "path": "/inventory/batch-expiry-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/balance-sheet"
+        "/inventory/batch-expiry-report"
       ]
     },
     {
-      "path": "/accounting/trial-balance",
+      "path": "/inventory/party-transactions-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/trial-balance"
+        "/inventory/party-transactions-report"
       ]
     },
     {
-      "path": "/accounting/profit-loss",
+      "path": "/inventory/all-transactions-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/profit-loss"
+        "/inventory/all-transactions-report"
       ]
     },
     {
-      "path": "/accounting/income-statement",
+      "path": "/inventory/stock-status-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/income-statement"
+        "/inventory/stock-status-report"
       ]
     },
     {
-      "path": "/accounting/ledgers-master-report",
+      "path": "/reports",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/ledgers-master-report"
+        "/reports"
       ]
     },
     {
-      "path": "/accounting/day-book",
+      "path": "/reports/vendors",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/day-book"
+        "/reports/vendors"
       ]
     },
     {
-      "path": "/accounting/cash-flow-statement",
+      "path": "/reports/vendors/tag-wise",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/accounting/cash-flow-statement"
+        "/reports/vendors/tag-wise"
       ]
     },
     {
-      "path": "/manage-team",
+      "path": "/reports/vendors/project-wise-pl",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/manage-team"
+        "/reports/vendors/project-wise-pl"
       ]
     },
     {
-      "path": "/business-settings",
+      "path": "/reports/vendors/payment-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/business-settings"
+        "/reports/vendors/payment-report"
       ]
     },
     {
-      "path": "/integrations",
+      "path": "/reports/vendors/tds-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/integrations"
+        "/reports/vendors/tds-report"
       ]
     },
     {
-      "path": "/greetings",
+      "path": "/reports/vendors/gst-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/greetings"
+        "/reports/vendors/gst-report"
       ]
     },
     {
-      "path": "/support",
+      "path": "/reports/vendors/line-item-report",
       "source": "seed",
       "depth": 0,
       "navigationPath": [
-        "/support"
+        "/reports/vendors/line-item-report"
       ]
     },
     {
-      "path": "/growth-suite",
-      "source": "seed",
-      "depth": 0,
+      "path": "/accounting/tds",
+      "label": "TDS Register",
+      "source": "link",
+      "depth": 1,
       "navigationPath": [
-        "/growth-suite"
+        "/invoices/new",
+        "TDS Register"
       ]
     },
     {
-      "path": "/profile",
-      "source": "seed",
-      "depth": 0,
+      "path": "/gst-reports",
+      "label": "GST Dashboard",
+      "source": "link",
+      "depth": 1,
       "navigationPath": [
-        "/profile"
+        "/invoices/new",
+        "GST Dashboard"
       ]
     }
   ],
   "failedPaths": [],
-  "completedAt": "2026-07-19T20:34:47.598Z"
+  "completedAt": "2026-07-20T10:35:50.691Z"
 }
