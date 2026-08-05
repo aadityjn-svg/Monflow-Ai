@@ -1,516 +1,54 @@
 {
-  "runId": "661b0d3c-04d4-434d-aeac-78873b14195d",
-  "startedAt": "2026-08-03T09:35:51.195Z",
+  "runId": "a1f2dc36-b33d-403c-9c75-13c22bd55dc9",
+  "startedAt": "2026-08-05T19:24:02.991Z",
   "visitedPaths": [
-    "/inventory/stock-status-report",
-    "/reports",
-    "/reports/vendors",
-    "/reports/vendors/tag-wise",
-    "/accounting/income-statement",
-    "/accounting/ledgers-master-report",
-    "/accounting/day-book",
-    "/accounting/cash-flow-statement",
-    "/manage-team",
-    "/premium-free-3-months",
-    "/",
-    "/about-us",
-    "/contact-us",
-    "/accounting/tds",
-    "/gst-reports",
-    "/blog/gst-invoice-workflow-guide",
-    "/sales/quotations-estimates/new",
-    "/sales/proforma-invoices",
-    "/sales/proforma-invoices/new",
-    "/invoices",
-    "/invoices/new",
-    "/sales/payment-receipts",
-    "/reports/vendors/project-wise-pl",
-    "/reports/vendors/payment-report",
-    "/reports/vendors/tds-report",
-    "/reports/vendors/gst-report",
-    "/reports/vendors/line-item-report",
-    "/reports/vendors/hsn-report",
-    "/reports/vendors/suggested-purchases",
-    "/reports/vendors/scanned-documents",
-    "/gst-reports/gstr-1",
-    "/gst-reports/gstr-2b",
-    "/gst-reports/gstr-3b",
-    "/automations",
-    "/banking-payments",
-    "/payroll-hrms",
-    "/leads",
-    "/crm/pipelines",
-    "/crm/forms",
-    "/crm/forms/new",
-    "/crm/lead-summary",
-    "/crm/team-sales-report",
-    "/crm/client-performance-report",
-    "/crm/lead-source-report",
-    "/accounting/account-groups"
+    "/accounting/chart-of-accounts",
+    "/accounting/voucher-books",
+    "/accounting/balance-sheet",
+    "/accounting/trial-balance",
+    "/accounting/profit-loss",
+    "/business-settings",
+    "/integrations",
+    "/greetings",
+    "/support",
+    "/growth-suite",
+    "/profile",
+    "/features",
+    "/pricing",
+    "/free-invoice-maker",
+    "/docs",
+    "/monflow-facts",
+    "/blog/free-invoice-maker-without-signup",
+    "/blog/free-gst-invoice-maker-india",
+    "/blog/invoice-generator-for-freelancers",
+    "/blog/invoice-maker-with-logo",
+    "/blog/create-invoice-and-download-pdf",
+    "/blog/invoice-template-for-small-business",
+    "/blog/professional-service-invoice-template",
+    "/blog/consultant-invoice-template-india",
+    "/blog/graphic-designer-invoice-template",
+    "/blog/web-developer-invoice-template",
+    "/blog/digital-marketing-agency-invoice-template",
+    "/blog/accounting-firm-invoice-template",
+    "/blog/photographer-invoice-template",
+    "/blog/content-writer-invoice-template",
+    "/blog/architect-interior-designer-invoice-template",
+    "/blog/construction-contractor-invoice-template",
+    "/blog/retail-shop-gst-invoice-template",
+    "/blog/wholesale-invoice-template",
+    "/blog/ecommerce-seller-invoice-template-india",
+    "/blog/manufacturing-invoice-template",
+    "/blog/transport-logistics-invoice-template",
+    "/blog/repair-service-invoice-template",
+    "/blog/tutor-coaching-invoice-template",
+    "/blog/refrens-alternative-free-invoice-maker",
+    "/blog/catering-invoice-template",
+    "/blog/real-estate-broker-invoice-template",
+    "/blog/event-planner-invoice-template",
+    "/blog/lawyer-legal-services-invoice-template",
+    "/blog/export-invoice-format-india"
   ],
   "queuedTargets": [
-    {
-      "path": "/accounting/chart-of-accounts",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/accounting/chart-of-accounts"
-      ]
-    },
-    {
-      "path": "/accounting/voucher-books",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/accounting/voucher-books"
-      ]
-    },
-    {
-      "path": "/accounting/balance-sheet",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/accounting/balance-sheet"
-      ]
-    },
-    {
-      "path": "/accounting/trial-balance",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/accounting/trial-balance"
-      ]
-    },
-    {
-      "path": "/accounting/profit-loss",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/accounting/profit-loss"
-      ]
-    },
-    {
-      "path": "/business-settings",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/business-settings"
-      ]
-    },
-    {
-      "path": "/integrations",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/integrations"
-      ]
-    },
-    {
-      "path": "/greetings",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/greetings"
-      ]
-    },
-    {
-      "path": "/support",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/support"
-      ]
-    },
-    {
-      "path": "/growth-suite",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/growth-suite"
-      ]
-    },
-    {
-      "path": "/profile",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/profile"
-      ]
-    },
-    {
-      "path": "/features",
-      "label": "Features",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Features"
-      ]
-    },
-    {
-      "path": "/pricing",
-      "label": "Pricing",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Pricing"
-      ]
-    },
-    {
-      "path": "/free-invoice-maker",
-      "label": "Free Invoice Maker",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Free Invoice Maker"
-      ]
-    },
-    {
-      "path": "/docs",
-      "label": "Documentation",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Documentation"
-      ]
-    },
-    {
-      "path": "/monflow-facts",
-      "label": "Official Monflow Facts",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Official Monflow Facts"
-      ]
-    },
-    {
-      "path": "/blog/free-invoice-maker-without-signup",
-      "label": "Free Invoice Maker Without Signup: Create and Download a PDFFree Invoice Maker Without Signup. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Free Invoice Maker Without Signup: Create and Download a PDFFree Invoice Maker Without Signup. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/free-gst-invoice-maker-india",
-      "label": "Free GST Invoice Maker India: Step-by-Step Tax Invoice GuideFree GST Invoice Maker India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Free GST Invoice Maker India: Step-by-Step Tax Invoice GuideFree GST Invoice Maker India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-generator-for-freelancers",
-      "label": "Invoice Generator for Freelancers: A Practical Billing GuideInvoice Generator for Freelancers. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Invoice Generator for Freelancers: A Practical Billing GuideInvoice Generator for Freelancers. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-maker-with-logo",
-      "label": "Invoice Maker With Logo: Build a Branded Invoice PDFInvoice Maker With Logo. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Invoice Maker With Logo: Build a Branded Invoice PDFInvoice Maker With Logo. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/create-invoice-and-download-pdf",
-      "label": "How to Create an Invoice and Download the PDF OnlineHow to Create an Invoice and Download the PDF Online. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "How to Create an Invoice and Download the PDF OnlineHow to Create an Invoice and Download the PDF Online. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-template-for-small-business",
-      "label": "Invoice Template for Small Business: What to IncludeInvoice Template for Small Business. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Invoice Template for Small Business: What to IncludeInvoice Template for Small Business. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/professional-service-invoice-template",
-      "label": "Professional Service Invoice Template and ExampleProfessional Service Invoice Template and Example. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Professional Service Invoice Template and ExampleProfessional Service Invoice Template and Example. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/consultant-invoice-template-india",
-      "label": "Consultant Invoice Template India: GST, Fees and TermsConsultant Invoice Template India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Consultant Invoice Template India: GST, Fees and TermsConsultant Invoice Template India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/graphic-designer-invoice-template",
-      "label": "Graphic Designer Invoice Template: Projects, Revisions and GSTGraphic Designer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Graphic Designer Invoice Template: Projects, Revisions and GSTGraphic Designer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/web-developer-invoice-template",
-      "label": "Web Developer Invoice Template for Projects and MaintenanceWeb Developer Invoice Template for Projects and Maintenance. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Web Developer Invoice Template for Projects and MaintenanceWeb Developer Invoice Template for Projects and Maintenance. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/digital-marketing-agency-invoice-template",
-      "label": "Digital Marketing Agency Invoice Template: Retainers and Ad SpendDigital Marketing Agency Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Digital Marketing Agency Invoice Template: Retainers and Ad SpendDigital Marketing Agency Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/accounting-firm-invoice-template",
-      "label": "Accounting Firm Invoice Template for Monthly and Annual ServicesAccounting Firm Invoice Template for Monthly and Annual Services. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Accounting Firm Invoice Template for Monthly and Annual ServicesAccounting Firm Invoice Template for Monthly and Annual Services. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/photographer-invoice-template",
-      "label": "Photographer Invoice Template: Shoot, Editing and Usage FeesPhotographer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Photographer Invoice Template: Shoot, Editing and Usage FeesPhotographer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/content-writer-invoice-template",
-      "label": "Content Writer Invoice Template for Articles and RetainersContent Writer Invoice Template for Articles and Retainers. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Content Writer Invoice Template for Articles and RetainersContent Writer Invoice Template for Articles and Retainers. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/architect-interior-designer-invoice-template",
-      "label": "Architect and Interior Designer Invoice TemplateArchitect and Interior Designer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Architect and Interior Designer Invoice TemplateArchitect and Interior Designer Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/construction-contractor-invoice-template",
-      "label": "Construction Contractor Invoice Template: Labour, Material and GSTConstruction Contractor Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Construction Contractor Invoice Template: Labour, Material and GSTConstruction Contractor Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/retail-shop-gst-invoice-template",
-      "label": "Retail Shop GST Invoice Template and Billing ChecklistRetail Shop GST Invoice Template and Billing Checklist. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Retail Shop GST Invoice Template and Billing ChecklistRetail Shop GST Invoice Template and Billing Checklist. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/wholesale-invoice-template",
-      "label": "Wholesale Invoice Template: Bulk Quantity, HSN and TaxWholesale Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Wholesale Invoice Template: Bulk Quantity, HSN and TaxWholesale Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/ecommerce-seller-invoice-template-india",
-      "label": "E-commerce Seller Invoice Template IndiaE-commerce Seller Invoice Template India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "E-commerce Seller Invoice Template IndiaE-commerce Seller Invoice Template India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/manufacturing-invoice-template",
-      "label": "Manufacturing Invoice Template: Products, HSN and DispatchManufacturing Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Manufacturing Invoice Template: Products, HSN and DispatchManufacturing Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/transport-logistics-invoice-template",
-      "label": "Transport and Logistics Invoice Template: Freight and GSTTransport and Logistics Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Transport and Logistics Invoice Template: Freight and GSTTransport and Logistics Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/repair-service-invoice-template",
-      "label": "Repair Service Invoice Template: Labour, Parts and WarrantyRepair Service Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Repair Service Invoice Template: Labour, Parts and WarrantyRepair Service Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/tutor-coaching-invoice-template",
-      "label": "Tutor and Coaching Invoice Template for Classes and CoursesTutor and Coaching Invoice Template for Classes and Courses. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Tutor and Coaching Invoice Template for Classes and CoursesTutor and Coaching Invoice Template for Classes and Courses. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/refrens-alternative-free-invoice-maker",
-      "label": "Refrens Alternative: Free Invoice Maker Without SignupRefrens Alternative. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Refrens Alternative: Free Invoice Maker Without SignupRefrens Alternative. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/catering-invoice-template",
-      "label": "Catering Invoice Template: Events, Quantity and GSTCatering Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Catering Invoice Template: Events, Quantity and GSTCatering Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/real-estate-broker-invoice-template",
-      "label": "Real Estate Broker Invoice Template for CommissionReal Estate Broker Invoice Template for Commission. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Real Estate Broker Invoice Template for CommissionReal Estate Broker Invoice Template for Commission. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/event-planner-invoice-template",
-      "label": "Event Planner Invoice Template: Fees, Vendors and AdvancesEvent Planner Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Event Planner Invoice Template: Fees, Vendors and AdvancesEvent Planner Invoice Template. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/lawyer-legal-services-invoice-template",
-      "label": "Legal Services Invoice Template for Lawyers and FirmsLegal Services Invoice Template for Lawyers and Firms. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Legal Services Invoice Template for Lawyers and FirmsLegal Services Invoice Template for Lawyers and Firms. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/export-invoice-format-india",
-      "label": "Export Invoice Format India: Currency, GST and Shipping DetailsExport Invoice Format India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/income-statement",
-        "All Pages",
-        "Export Invoice Format India: Currency, GST and Shipping DetailsExport Invoice Format India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
     {
       "path": "/blog/invoice-international-client",
       "label": "How to Invoice an International Client From IndiaHow to Invoice an International Client From India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
@@ -1145,8 +683,371 @@
         "View offer",
         "Disclaimer"
       ]
+    },
+    {
+      "path": "/sales/quotations-estimates/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/quotations-estimates/new"
+      ]
+    },
+    {
+      "path": "/sales/proforma-invoices",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/proforma-invoices"
+      ]
+    },
+    {
+      "path": "/sales/proforma-invoices/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/proforma-invoices/new"
+      ]
+    },
+    {
+      "path": "/invoices",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/invoices"
+      ]
+    },
+    {
+      "path": "/invoices/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/invoices/new"
+      ]
+    },
+    {
+      "path": "/sales/payment-receipts",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/payment-receipts"
+      ]
+    },
+    {
+      "path": "/inventory/stock-status-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/inventory/stock-status-report"
+      ]
+    },
+    {
+      "path": "/reports",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports"
+      ]
+    },
+    {
+      "path": "/reports/vendors",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors"
+      ]
+    },
+    {
+      "path": "/reports/vendors/tag-wise",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/tag-wise"
+      ]
+    },
+    {
+      "path": "/reports/vendors/project-wise-pl",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/project-wise-pl"
+      ]
+    },
+    {
+      "path": "/reports/vendors/payment-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/payment-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/tds-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/tds-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/gst-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/gst-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/line-item-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/line-item-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/hsn-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/hsn-report"
+      ]
+    },
+    {
+      "path": "/reports/vendors/suggested-purchases",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/suggested-purchases"
+      ]
+    },
+    {
+      "path": "/reports/vendors/scanned-documents",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/scanned-documents"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-1",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-1"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-2b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-2b"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-3b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-3b"
+      ]
+    },
+    {
+      "path": "/automations",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/automations"
+      ]
+    },
+    {
+      "path": "/banking-payments",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/banking-payments"
+      ]
+    },
+    {
+      "path": "/payroll-hrms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/payroll-hrms"
+      ]
+    },
+    {
+      "path": "/leads",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/leads"
+      ]
+    },
+    {
+      "path": "/crm/pipelines",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/pipelines"
+      ]
+    },
+    {
+      "path": "/crm/forms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms"
+      ]
+    },
+    {
+      "path": "/crm/forms/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms/new"
+      ]
+    },
+    {
+      "path": "/crm/lead-summary",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/lead-summary"
+      ]
+    },
+    {
+      "path": "/crm/team-sales-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/team-sales-report"
+      ]
+    },
+    {
+      "path": "/crm/client-performance-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/client-performance-report"
+      ]
+    },
+    {
+      "path": "/crm/lead-source-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/lead-source-report"
+      ]
+    },
+    {
+      "path": "/accounting/account-groups",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/account-groups"
+      ]
+    },
+    {
+      "path": "/accounting/income-statement",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/income-statement"
+      ]
+    },
+    {
+      "path": "/accounting/ledgers-master-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/ledgers-master-report"
+      ]
+    },
+    {
+      "path": "/accounting/day-book",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/day-book"
+      ]
+    },
+    {
+      "path": "/accounting/cash-flow-statement",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/accounting/cash-flow-statement"
+      ]
+    },
+    {
+      "path": "/manage-team",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/manage-team"
+      ]
+    },
+    {
+      "path": "/premium-free-3-months",
+      "label": "View offer",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/chart-of-accounts",
+        "View offer"
+      ]
+    },
+    {
+      "path": "/",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/chart-of-accounts",
+        "/"
+      ]
+    },
+    {
+      "path": "/about-us",
+      "label": "About Us",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/chart-of-accounts",
+        "About Us"
+      ]
+    },
+    {
+      "path": "/contact-us",
+      "label": "Contact",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/chart-of-accounts",
+        "Contact"
+      ]
+    },
+    {
+      "path": "/accounting/tds",
+      "label": "TDS Register",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/voucher-books",
+        "TDS Register"
+      ]
+    },
+    {
+      "path": "/gst-reports",
+      "label": "GST Dashboard",
+      "source": "link",
+      "depth": 1,
+      "navigationPath": [
+        "/accounting/voucher-books",
+        "GST Dashboard"
+      ]
     }
   ],
   "failedPaths": [],
-  "completedAt": "2026-08-03T09:38:19.327Z"
+  "completedAt": "2026-08-05T19:26:54.310Z"
 }

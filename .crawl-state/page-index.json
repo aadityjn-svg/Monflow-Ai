@@ -316,28 +316,28 @@
   },
   "/accounting/chart-of-accounts": {
     "path": "/accounting/chart-of-accounts",
-    "contentHash": "a913fe7e723b056d3dbffe0710303c953a1104f937a2fcc5ed47df21a2de8749",
-    "learnedAt": "2026-08-02T13:13:51.823Z"
+    "contentHash": "0824bfb110a2af8ba7aea155134d05ac4f236a2648fdff76d90465bc6569e39f",
+    "learnedAt": "2026-08-05T19:24:41.792Z"
   },
   "/accounting/voucher-books": {
     "path": "/accounting/voucher-books",
-    "contentHash": "3e64b8aec22955eb83e4b2eefbfc112f64b739b0a03999a42ca8d25e0a40b041",
-    "learnedAt": "2026-08-02T13:13:53.517Z"
+    "contentHash": "8b4dded7157dc9526c07bd313468b60a222b00e8f9d18c09ac5c072dae950928",
+    "learnedAt": "2026-08-05T19:24:43.330Z"
   },
   "/accounting/balance-sheet": {
     "path": "/accounting/balance-sheet",
-    "contentHash": "4738ed35115e6164dc147c14dce43ee76ac1750ba6c91f05d6dbf2e1d73c36ab",
-    "learnedAt": "2026-08-02T13:13:55.209Z"
+    "contentHash": "d3d1ea08c1eaaebdfe22e99849d97db40f731584abe7702d2f4b75624eb9e951",
+    "learnedAt": "2026-08-05T19:24:44.959Z"
   },
   "/accounting/trial-balance": {
     "path": "/accounting/trial-balance",
-    "contentHash": "b288da7027724d4904ea47b2e565dab5135c48f4924d0bbf988e42b043a0dd85",
-    "learnedAt": "2026-08-02T13:13:57.029Z"
+    "contentHash": "cb9ebf6719c11678d9aeee5230b50101911eb5dbcb628bb01aec534376e54682",
+    "learnedAt": "2026-08-05T19:24:46.613Z"
   },
   "/accounting/profit-loss": {
     "path": "/accounting/profit-loss",
-    "contentHash": "9e69085e48afc32084328e8ab34aea0be9eabbbbed6229ad6f687a90d530693c",
-    "learnedAt": "2026-08-02T13:13:58.749Z"
+    "contentHash": "4ac5540a571fe4fdb686f87568dedb1564b81ce8dc24e0fb45e337e9ddb37547",
+    "learnedAt": "2026-08-05T19:24:48.031Z"
   },
   "/accounting/income-statement": {
     "path": "/accounting/income-statement",
@@ -366,33 +366,33 @@
   },
   "/business-settings": {
     "path": "/business-settings",
-    "contentHash": "51adb2d3a8e826d7a48415d59b00522149cf4456e18c9d4e3094c12cb641ee10",
-    "learnedAt": "2026-08-02T13:12:47.047Z"
+    "contentHash": "8cff28c88d58cfcb77a540b8a9ec39c8ab9de3c5e83ff2430da3f74f3f869b1e",
+    "learnedAt": "2026-08-05T19:24:49.434Z"
   },
   "/integrations": {
     "path": "/integrations",
-    "contentHash": "971de2958cc869e43b6daddf2bcbac4189207d9b79e2ae57435c807c8db71319",
-    "learnedAt": "2026-08-02T13:12:48.914Z"
+    "contentHash": "faedacef196e449ed22885bd928297a7d8830ef3d808498a23cdf4e31928fdf7",
+    "learnedAt": "2026-08-05T19:24:51.165Z"
   },
   "/greetings": {
     "path": "/greetings",
-    "contentHash": "b5d53364e38720c1740157138058731a85702a12f78c0133018d1feaf464946f",
-    "learnedAt": "2026-08-02T13:12:50.562Z"
+    "contentHash": "c2fe61f1e0aac30a7d05b1701220656d8643305b35ee70eb7c9145330f920d87",
+    "learnedAt": "2026-08-05T19:24:52.580Z"
   },
   "/support": {
     "path": "/support",
-    "contentHash": "0c67b4dfaab4f82c1226a559d09c4f50e431f008721ca1f8717cd3d39b8a9151",
-    "learnedAt": "2026-08-02T13:12:52.030Z"
+    "contentHash": "60b0ba1a50f5189a5693cf118bdfb2152c998d128a58d1953da1879e574cf60d",
+    "learnedAt": "2026-08-05T19:24:53.981Z"
   },
   "/growth-suite": {
     "path": "/growth-suite",
-    "contentHash": "b03910b6c6c8940fb8c7e144af4ed128f01ea5a223b95eefe8b744c951389e79",
-    "learnedAt": "2026-08-02T13:12:53.571Z"
+    "contentHash": "e3c5abb0fa0c6345e25439e3804463390ff2a899b56877213117bec1a9d04fed",
+    "learnedAt": "2026-08-05T19:24:55.383Z"
   },
   "/profile": {
     "path": "/profile",
-    "contentHash": "b5c5154b501cbb5e529e67ced2ee055e9d5a670758124acb72bd69bb1f4fdba6",
-    "learnedAt": "2026-08-02T13:12:55.160Z"
+    "contentHash": "96418190aef951728c13dd7de29ff1393aa94c5135f7b75f7ee8f3b8a8ea6167",
+    "learnedAt": "2026-08-05T19:24:57.014Z"
   },
   "/": {
     "path": "/",
@@ -426,18 +426,18 @@
   },
   "/features": {
     "path": "/features",
-    "contentHash": "23780fe25b9850baa5e5eef10bddf1fb3cb9498db3e311b27fc35967e17fb104",
-    "learnedAt": "2026-08-02T13:14:02.103Z"
+    "contentHash": "a3098b36d8287fe36a622c2dc58525d60a2102aa4803e23834bf5dbb726a1359",
+    "learnedAt": "2026-08-05T19:25:00.201Z"
   },
   "/pricing": {
     "path": "/pricing",
-    "contentHash": "898a926c02d5b8b1ec0db5daca7899b995931c48fdc8093523629be3d88f3c66",
-    "learnedAt": "2026-08-02T13:14:05.462Z"
+    "contentHash": "efc08737533fbb1f3dec4c0b94020e3cbea555d13914f2912584c77702d1eb0d",
+    "learnedAt": "2026-08-05T19:25:03.431Z"
   },
   "/free-invoice-maker": {
     "path": "/free-invoice-maker",
-    "contentHash": "748ef0870a5dfcdd0af681ea5e9d96ed0bdd1817ba32302e3647e30f324bf346",
-    "learnedAt": "2026-08-02T13:14:12.666Z"
+    "contentHash": "4389f64ccb3565effe9b0dabd1b20fa165dec97aa65017869168e33d7a5227e5",
+    "learnedAt": "2026-08-05T19:25:10.341Z"
   },
   "/free-quotation-maker": {
     "path": "/free-quotation-maker",
@@ -456,8 +456,8 @@
   },
   "/docs": {
     "path": "/docs",
-    "contentHash": "54f8353a498c585d3a901f78e817d19d126ab6e634fbc9bdd2ad3f893390f3e9",
-    "learnedAt": "2026-08-02T13:14:19.390Z"
+    "contentHash": "283d8af0b3c46d531eb0adbd5b06be0d5bb76f60aa86902cb3808b99c5e59f6f",
+    "learnedAt": "2026-08-05T19:25:13.544Z"
   },
   "/blog": {
     "path": "/blog",
@@ -506,8 +506,8 @@
   },
   "/monflow-facts": {
     "path": "/monflow-facts",
-    "contentHash": "9152ac4da8f87678a96680fb6966bb0d875920dc6ca3453b6ece9d1cedd1b770",
-    "learnedAt": "2026-08-02T13:14:16.079Z"
+    "contentHash": "23457c6809c6ab0d62000356780c2b4691aac3a0f5de09b6c76e0e4e9fe7c7c7",
+    "learnedAt": "2026-08-05T19:25:16.840Z"
   },
   "/sitemap": {
     "path": "/sitemap",
@@ -528,5 +528,150 @@
     "path": "/blog/gst-invoice-workflow-guide",
     "contentHash": "8a5c308d7382f04f347cfd477e2d4bcd7f27a4df1aa4f6364d9e8c1a57769acf",
     "learnedAt": "2026-08-03T09:37:18.535Z"
+  },
+  "/blog/free-invoice-maker-without-signup": {
+    "path": "/blog/free-invoice-maker-without-signup",
+    "contentHash": "51e08a73714787f5ba5ed304f5359d61abadd5aba480b56c847985ae50f9e879",
+    "learnedAt": "2026-08-05T19:25:20.227Z"
+  },
+  "/blog/free-gst-invoice-maker-india": {
+    "path": "/blog/free-gst-invoice-maker-india",
+    "contentHash": "04c14f9df0cca528f0074daa8b6ffb15f8b0c4db6bd185df3cf85c8e83824998",
+    "learnedAt": "2026-08-05T19:25:23.530Z"
+  },
+  "/blog/invoice-generator-for-freelancers": {
+    "path": "/blog/invoice-generator-for-freelancers",
+    "contentHash": "dc1d8ccf75e2604b3af94bfb4bfadbfa607a241b6d8d5762a796f461e479546f",
+    "learnedAt": "2026-08-05T19:25:26.876Z"
+  },
+  "/blog/invoice-maker-with-logo": {
+    "path": "/blog/invoice-maker-with-logo",
+    "contentHash": "f0e08ab4cf28a746916f0ff0274afe89148e530f268ef06ea5a751652111df16",
+    "learnedAt": "2026-08-05T19:25:30.174Z"
+  },
+  "/blog/create-invoice-and-download-pdf": {
+    "path": "/blog/create-invoice-and-download-pdf",
+    "contentHash": "bf1ff7376c9bb85d6026a2f2c44462010f15d477bec049cf1156db174b49d26f",
+    "learnedAt": "2026-08-05T19:25:33.543Z"
+  },
+  "/blog/invoice-template-for-small-business": {
+    "path": "/blog/invoice-template-for-small-business",
+    "contentHash": "bd622bd149a60216c949dec05b4e154eb7941cc362278f6006297eaf384dbe0d",
+    "learnedAt": "2026-08-05T19:25:36.890Z"
+  },
+  "/blog/professional-service-invoice-template": {
+    "path": "/blog/professional-service-invoice-template",
+    "contentHash": "e052eb6da05fd8f060843ee0e9df64016635d3e6eb9300add85668b44285475e",
+    "learnedAt": "2026-08-05T19:25:40.226Z"
+  },
+  "/blog/consultant-invoice-template-india": {
+    "path": "/blog/consultant-invoice-template-india",
+    "contentHash": "b17001e61f368fbdc3ba2a2377e8c101788a3a1110ee18c6cb7f6e32e5357515",
+    "learnedAt": "2026-08-05T19:25:43.612Z"
+  },
+  "/blog/graphic-designer-invoice-template": {
+    "path": "/blog/graphic-designer-invoice-template",
+    "contentHash": "d569cf044a38943aa22d368a4066d8ff36680295a9cb7c0d874501fa858e1aea",
+    "learnedAt": "2026-08-05T19:25:46.988Z"
+  },
+  "/blog/web-developer-invoice-template": {
+    "path": "/blog/web-developer-invoice-template",
+    "contentHash": "0f637dca02a645413a845ca15b504c78384a3456f94fd846bcae068412befa49",
+    "learnedAt": "2026-08-05T19:25:50.307Z"
+  },
+  "/blog/digital-marketing-agency-invoice-template": {
+    "path": "/blog/digital-marketing-agency-invoice-template",
+    "contentHash": "7b61b9d51e264d3842deff3a197960ce8ff4d9a851012ec90384f4daf832762e",
+    "learnedAt": "2026-08-05T19:25:53.730Z"
+  },
+  "/blog/accounting-firm-invoice-template": {
+    "path": "/blog/accounting-firm-invoice-template",
+    "contentHash": "117687c3371df06535ba1f0c56f8e1122d79ccb0fd3b36a069774b2ab9e54faa",
+    "learnedAt": "2026-08-05T19:25:57.090Z"
+  },
+  "/blog/photographer-invoice-template": {
+    "path": "/blog/photographer-invoice-template",
+    "contentHash": "d17be570dc100fc5c8f70aad8a2dffb63b0a0fabeace801a3ce87d6cc3988e1b",
+    "learnedAt": "2026-08-05T19:26:00.508Z"
+  },
+  "/blog/content-writer-invoice-template": {
+    "path": "/blog/content-writer-invoice-template",
+    "contentHash": "4a1e5d65845010c890738a240b5697bba9e991483e86730259e55d186721d7ac",
+    "learnedAt": "2026-08-05T19:26:03.887Z"
+  },
+  "/blog/architect-interior-designer-invoice-template": {
+    "path": "/blog/architect-interior-designer-invoice-template",
+    "contentHash": "c1bc058b5f5e0da7086818b19bffc3f426eb861dea1bdd9f3e01f15e8681efd2",
+    "learnedAt": "2026-08-05T19:26:07.209Z"
+  },
+  "/blog/construction-contractor-invoice-template": {
+    "path": "/blog/construction-contractor-invoice-template",
+    "contentHash": "05cbe6b546c172c30b651d740053ee228a75ceb08b33b1b86b6d3ca155bc1090",
+    "learnedAt": "2026-08-05T19:26:10.579Z"
+  },
+  "/blog/retail-shop-gst-invoice-template": {
+    "path": "/blog/retail-shop-gst-invoice-template",
+    "contentHash": "67b3899c6ba6b38e486a52c1a7c0275733fb369a7f4809faaf088fc5fc6d8043",
+    "learnedAt": "2026-08-05T19:26:13.825Z"
+  },
+  "/blog/wholesale-invoice-template": {
+    "path": "/blog/wholesale-invoice-template",
+    "contentHash": "def357644323b3f52d094b05fddef823624231b342cc693e870d128a211579ad",
+    "learnedAt": "2026-08-05T19:26:17.158Z"
+  },
+  "/blog/ecommerce-seller-invoice-template-india": {
+    "path": "/blog/ecommerce-seller-invoice-template-india",
+    "contentHash": "4be6663313b1f395ece3cb18a1371e3ebca91206b4b915883b0c047de74587e6",
+    "learnedAt": "2026-08-05T19:26:20.506Z"
+  },
+  "/blog/manufacturing-invoice-template": {
+    "path": "/blog/manufacturing-invoice-template",
+    "contentHash": "f503568729c015d6a2307e820c47dc7ff59f68498464c55198d9ea11aadaed55",
+    "learnedAt": "2026-08-05T19:26:23.874Z"
+  },
+  "/blog/transport-logistics-invoice-template": {
+    "path": "/blog/transport-logistics-invoice-template",
+    "contentHash": "516d45afdc4cee585ec71a3e9757a35d68b99ff08718eb32c52484401f674c3a",
+    "learnedAt": "2026-08-05T19:26:27.254Z"
+  },
+  "/blog/repair-service-invoice-template": {
+    "path": "/blog/repair-service-invoice-template",
+    "contentHash": "9cc8cfa59a81f88980ddee6d28160503d3617f82c5cf0676ebd50625c5cbe28a",
+    "learnedAt": "2026-08-05T19:26:30.685Z"
+  },
+  "/blog/tutor-coaching-invoice-template": {
+    "path": "/blog/tutor-coaching-invoice-template",
+    "contentHash": "6d8a2e0e8418b3ae458a723292baa58ab5e32ec59988b0e75acf071e54cd7d1b",
+    "learnedAt": "2026-08-05T19:26:34.037Z"
+  },
+  "/blog/refrens-alternative-free-invoice-maker": {
+    "path": "/blog/refrens-alternative-free-invoice-maker",
+    "contentHash": "31b4d3ca92a7b6ffbfa4eab55d399ab9f84cec2735dd8125a7ca3242a7d47193",
+    "learnedAt": "2026-08-05T19:26:37.445Z"
+  },
+  "/blog/catering-invoice-template": {
+    "path": "/blog/catering-invoice-template",
+    "contentHash": "6431699e48b559842605d05f28581b2be7d96bb48ba4f258751387af18d7d9ef",
+    "learnedAt": "2026-08-05T19:26:40.805Z"
+  },
+  "/blog/real-estate-broker-invoice-template": {
+    "path": "/blog/real-estate-broker-invoice-template",
+    "contentHash": "1aaa97931a7f034e3cc801e71e5a7809243ded3ea6f7be3c7dd78e71cb0a2f2d",
+    "learnedAt": "2026-08-05T19:26:44.187Z"
+  },
+  "/blog/event-planner-invoice-template": {
+    "path": "/blog/event-planner-invoice-template",
+    "contentHash": "ac00dcdc1a84bf0f651b32790a4b5ad11c6f4403e28b2b7c810785947616391e",
+    "learnedAt": "2026-08-05T19:26:47.591Z"
+  },
+  "/blog/lawyer-legal-services-invoice-template": {
+    "path": "/blog/lawyer-legal-services-invoice-template",
+    "contentHash": "f28b7cac0194d29cfcb37750b10713238c7dfb4c9899f039c88aedd697336c16",
+    "learnedAt": "2026-08-05T19:26:50.955Z"
+  },
+  "/blog/export-invoice-format-india": {
+    "path": "/blog/export-invoice-format-india",
+    "contentHash": "bf883654cf705dae2f2b14941ea820aaadf77756feb7b8962d6d2be191959753",
+    "learnedAt": "2026-08-05T19:26:54.306Z"
   }
 }
