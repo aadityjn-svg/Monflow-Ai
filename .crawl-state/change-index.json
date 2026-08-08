@@ -1,33 +1,33 @@
 {
   "/dashboard": {
     "path": "/dashboard",
-    "previousHash": "d034eaa41d4952f38a916c308bce0ddce74dc224362284f5ea4454654e2e8f06",
-    "currentHash": "ac9a1c9ff7bdb14552b48918bfd21cfd6aa291cb3e7d29eca45b3e0ca25dc656",
-    "changedAt": "2026-08-06T13:58:32.828Z"
+    "previousHash": "ac9a1c9ff7bdb14552b48918bfd21cfd6aa291cb3e7d29eca45b3e0ca25dc656",
+    "currentHash": "2bacb0dc44bebc2b6135b5c4e8f4e327ec239967e969dad2ee5c5c349e1e2997",
+    "changedAt": "2026-08-08T01:17:44.225Z"
   },
   "/setup-dashboard": {
     "path": "/setup-dashboard",
-    "previousHash": "234a99ec0ea306821a78d673f6d02480ccc8d8e80d7c5d76ed04486a4e39967b",
-    "currentHash": "a176fb7cbf0b97a3b18d21a80b2e7a22f8b4ee53cae4fda25f28e8d8d71657b6",
-    "changedAt": "2026-08-06T13:58:34.260Z"
+    "previousHash": "a176fb7cbf0b97a3b18d21a80b2e7a22f8b4ee53cae4fda25f28e8d8d71657b6",
+    "currentHash": "2c4937e5280ea6ebaf517f4e9610e0b541925d8b3a5ab709f86c5b009f832590",
+    "changedAt": "2026-08-08T01:17:45.990Z"
   },
   "/subscription/plans": {
     "path": "/subscription/plans",
-    "previousHash": "1bcfa3991431d9cbb5cee256624f9b70baacece96bd3188d19daeeef9a511491",
-    "currentHash": "c2237b0988d6b38076e48a87533e4f1cfe15b8046022d93bdc1a5ce9529665f2",
-    "changedAt": "2026-08-06T13:58:35.694Z"
+    "previousHash": "c2237b0988d6b38076e48a87533e4f1cfe15b8046022d93bdc1a5ce9529665f2",
+    "currentHash": "6bcbd627b8b464b3a2725f585fda206a65680c876880e77fc76f1b09848ccca0",
+    "changedAt": "2026-08-08T01:17:47.549Z"
   },
   "/sales/clients-prospects": {
     "path": "/sales/clients-prospects",
-    "previousHash": "332e37afd8d4c47d14fdcc4bb8ce76416cc3e4fa31defcade6c80f4327f2d49b",
-    "currentHash": "5396d61a4ba6969c146f7fcfd35cb7d3b2d96d5ada1b6afb089768c1eb8ae08d",
-    "changedAt": "2026-08-06T13:58:37.108Z"
+    "previousHash": "5396d61a4ba6969c146f7fcfd35cb7d3b2d96d5ada1b6afb089768c1eb8ae08d",
+    "currentHash": "a8f5e066b48e190868249669763cc17e7018d81b1b7d21da5f43f27ff0820d33",
+    "changedAt": "2026-08-08T01:17:49.332Z"
   },
   "/sales/quotations-estimates": {
     "path": "/sales/quotations-estimates",
-    "previousHash": "23cabadb559582f3f9e2e4e0456ada97a699f2f30a8696f8ec8bf50c293ac49b",
-    "currentHash": "104430fdbcd12626b80a2c3c960e3d22e5f2111e6d916804553d1053b5d2b29b",
-    "changedAt": "2026-08-06T13:58:38.541Z"
+    "previousHash": "104430fdbcd12626b80a2c3c960e3d22e5f2111e6d916804553d1053b5d2b29b",
+    "currentHash": "67c84aa4686f596eb54a28b87cc41c3c2c63445eacd7372f9e25c574cb666c68",
+    "changedAt": "2026-08-08T01:17:50.931Z"
   },
   "/sales/quotations-estimates/new": {
     "path": "/sales/quotations-estimates/new",
@@ -67,21 +67,21 @@
   },
   "/sales/payment-receipts/new": {
     "path": "/sales/payment-receipts/new",
-    "previousHash": "03abe6677be54292e114090c84b0aa0305251bfa5f2147f29990002f10791ca0",
-    "currentHash": "907f0026009c19119a3b8c0bb2884b3f89345f65af71dc13452d8179030a6eb8",
-    "changedAt": "2026-08-06T13:58:39.954Z"
+    "previousHash": "907f0026009c19119a3b8c0bb2884b3f89345f65af71dc13452d8179030a6eb8",
+    "currentHash": "0a351f743c60820d184dd715e6951a3887f50ddd14b3352184a98e69332e198e",
+    "changedAt": "2026-08-08T01:17:52.376Z"
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
-    "previousHash": "827232173cb2cb76c7c93c3e58aab609b52d662ed928a1b22c52532a88039e50",
-    "currentHash": "92bcd280c397e4d31742dd529401b50f27683a0163b8ce18fe32919ef060661d",
-    "changedAt": "2026-08-06T13:58:41.462Z"
+    "previousHash": "92bcd280c397e4d31742dd529401b50f27683a0163b8ce18fe32919ef060661d",
+    "currentHash": "84249d899237b31dab683814dd70196a09ded7832ec50df335ef50dc361d33c3",
+    "changedAt": "2026-08-08T01:17:55.168Z"
   },
   "/sales/sales-orders/new": {
     "path": "/sales/sales-orders/new",
-    "previousHash": "56f516b4bc03828c3bc17da03e2dd0c9e5d78e13af486ac9755b006bb9c711af",
-    "currentHash": "11c99c2db877f6ae1e10a0497ff0d48847e9617839beefa36381d3d29a06d7af",
-    "changedAt": "2026-08-06T13:58:42.893Z"
+    "previousHash": "11c99c2db877f6ae1e10a0497ff0d48847e9617839beefa36381d3d29a06d7af",
+    "currentHash": "1c89e2ce65c7753617b13085e998e8988034385123b2bc47cd2ba23e8f1626cc",
+    "changedAt": "2026-08-08T01:17:56.626Z"
   },
   "/sales/delivery-challans": {
     "path": "/sales/delivery-challans",
@@ -325,75 +325,75 @@
   },
   "/leads": {
     "path": "/leads",
-    "previousHash": "1af17088eff3a916864e96c3c1af7a7dece295bab7b3389ac554fb329f900b52",
-    "currentHash": "bd26bd72a5e671e9c9f8570ade98ff76ed3ac2f8cf87dc3634fc87ab8fc351ff",
-    "changedAt": "2026-08-03T09:38:04.309Z"
+    "previousHash": "bd26bd72a5e671e9c9f8570ade98ff76ed3ac2f8cf87dc3634fc87ab8fc351ff",
+    "currentHash": "c19aafc78bfbf2099daeca60fc0bfed848569224449a97f3bb5b6bb6dfbed79f",
+    "changedAt": "2026-08-08T01:16:23.870Z"
   },
   "/crm/pipelines": {
     "path": "/crm/pipelines",
-    "previousHash": "6b57ebf3c39e6e4af078e8e6333d4ce4bb8644fbadc4667180b19fa45c102c51",
-    "currentHash": "b1611d98a44a803441dcae3105e2b0bd0a040d830bc7b64631896e44b2797ca9",
-    "changedAt": "2026-08-03T09:38:07.262Z"
+    "previousHash": "b1611d98a44a803441dcae3105e2b0bd0a040d830bc7b64631896e44b2797ca9",
+    "currentHash": "4be6702fb7360c3eaf9988dc26aee74c162a0abbd47c114e6a2420b328b29de1",
+    "changedAt": "2026-08-08T01:16:26.892Z"
   },
   "/crm/forms": {
     "path": "/crm/forms",
-    "previousHash": "201a8dd936495dfbcb2029727ce5cae67781e35c43591d021106adff5dce997c",
-    "currentHash": "d787eef2d678884be05b3844c9b77a0c7757173add1b0c82d8fa7226fc7292af",
-    "changedAt": "2026-08-03T09:38:08.994Z"
+    "previousHash": "d787eef2d678884be05b3844c9b77a0c7757173add1b0c82d8fa7226fc7292af",
+    "currentHash": "99f90bbc45eda3ab2fbd0ec216cd611c88aaa8364d1db66803506933d95a1d1b",
+    "changedAt": "2026-08-08T01:16:28.456Z"
   },
   "/crm/forms/new": {
     "path": "/crm/forms/new",
-    "previousHash": "f2c70627825b6fb858bde53a7c84049cfcbc5f2badd6093733cfc2805995eb87",
-    "currentHash": "4d851436d78ac698e3d481f07771b952277b46c1d53f86639622153257241466",
-    "changedAt": "2026-08-03T09:38:10.688Z"
+    "previousHash": "4d851436d78ac698e3d481f07771b952277b46c1d53f86639622153257241466",
+    "currentHash": "ebaa5041fbc469f7bc4a28313fcd53336b760f6e07696329bf30f15689c4703c",
+    "changedAt": "2026-08-08T01:16:29.902Z"
   },
   "/crm/lead-summary": {
     "path": "/crm/lead-summary",
-    "previousHash": "a50e7f3095920059b33b6497529999c966c3fe18e465bab31c42b9d117b00087",
-    "currentHash": "998a5403c2d3a37dd157e852e0115524c0751fb8a75a84ce7c55b06b32d81276",
-    "changedAt": "2026-08-03T09:38:12.437Z"
+    "previousHash": "998a5403c2d3a37dd157e852e0115524c0751fb8a75a84ce7c55b06b32d81276",
+    "currentHash": "63e951d4745b1141fa1d7f1c6447c658a031586ee1eb40fb9e078f8237340310",
+    "changedAt": "2026-08-08T01:16:31.421Z"
   },
   "/crm/team-sales-report": {
     "path": "/crm/team-sales-report",
-    "previousHash": "2f8b76831a4b0433d99be2921311007050594d90a186f7ae33e73ea3bfde9241",
-    "currentHash": "2b9c6f3b9f523cbb9f0547453ca28c44c3662c6100e745facdfe12c8f47636f9",
-    "changedAt": "2026-08-03T09:38:14.162Z"
+    "previousHash": "2b9c6f3b9f523cbb9f0547453ca28c44c3662c6100e745facdfe12c8f47636f9",
+    "currentHash": "61db739f638bd8fa69a9e83aff77cf523ae52a5b82e749c007e0d86b0f2057a4",
+    "changedAt": "2026-08-08T01:16:33.123Z"
   },
   "/crm/client-performance-report": {
     "path": "/crm/client-performance-report",
-    "previousHash": "d61835aa98153f0fab651a773537f89a4304011dac4725eab009dfde0df6990f",
-    "currentHash": "8328b10efd6fba0ea25e7d46e803d394b18be3eb3ae41a61d92e264e91f10896",
-    "changedAt": "2026-08-03T09:38:15.883Z"
+    "previousHash": "8328b10efd6fba0ea25e7d46e803d394b18be3eb3ae41a61d92e264e91f10896",
+    "currentHash": "833c7ceac8eeadc99ce1b7bc380107d815f58b865acbe769d9ba9ae595d552b3",
+    "changedAt": "2026-08-08T01:16:34.851Z"
   },
   "/crm/lead-source-report": {
     "path": "/crm/lead-source-report",
-    "previousHash": "88d7dab731d6b9b26549c312bebaa3d829e58438550c4dc99dc958d6b11a7e9f",
-    "currentHash": "a386eea273a5200755047eacaa26b40df66a764f3f10dc0f69efd0249b808e11",
-    "changedAt": "2026-08-03T09:38:17.604Z"
+    "previousHash": "a386eea273a5200755047eacaa26b40df66a764f3f10dc0f69efd0249b808e11",
+    "currentHash": "691455e47496a854541c01e2c24cff0a108f2c3d6147b5e480239353c5b308f3",
+    "changedAt": "2026-08-08T01:16:36.314Z"
   },
   "/accounting/account-groups": {
     "path": "/accounting/account-groups",
-    "previousHash": "c55f41dab2a45b77c171887a6c84ecfae7daa76a159a3496c3683ea98c6dbd26",
-    "currentHash": "9cfbf847ac5d9e22c0ede01835655a1769ff8b28ff2071182b3086acb7eb2a14",
-    "changedAt": "2026-08-03T09:38:19.322Z"
+    "previousHash": "9cfbf847ac5d9e22c0ede01835655a1769ff8b28ff2071182b3086acb7eb2a14",
+    "currentHash": "8a4489436ac977f1eacd1faacb711048e09c92bc0da3ce39a6f82fb920e9fc46",
+    "changedAt": "2026-08-08T01:16:37.997Z"
   },
   "/accounting/chart-of-accounts": {
     "path": "/accounting/chart-of-accounts",
-    "previousHash": "a913fe7e723b056d3dbffe0710303c953a1104f937a2fcc5ed47df21a2de8749",
-    "currentHash": "0824bfb110a2af8ba7aea155134d05ac4f236a2648fdff76d90465bc6569e39f",
-    "changedAt": "2026-08-05T19:24:41.793Z"
+    "previousHash": "0824bfb110a2af8ba7aea155134d05ac4f236a2648fdff76d90465bc6569e39f",
+    "currentHash": "3d103e3827dbcd465fc60b99ac0feffe5e2501632a3e498f8aa21ced92b2349d",
+    "changedAt": "2026-08-08T01:17:06.126Z"
   },
   "/accounting/voucher-books": {
     "path": "/accounting/voucher-books",
-    "previousHash": "3e64b8aec22955eb83e4b2eefbfc112f64b739b0a03999a42ca8d25e0a40b041",
-    "currentHash": "8b4dded7157dc9526c07bd313468b60a222b00e8f9d18c09ac5c072dae950928",
-    "changedAt": "2026-08-05T19:24:43.331Z"
+    "previousHash": "8b4dded7157dc9526c07bd313468b60a222b00e8f9d18c09ac5c072dae950928",
+    "currentHash": "3732bb60b454519b713b6cd6269d71a15c1ab81675969fbed0ce2f57e2854e00",
+    "changedAt": "2026-08-08T01:17:07.924Z"
   },
   "/accounting/balance-sheet": {
     "path": "/accounting/balance-sheet",
-    "previousHash": "4738ed35115e6164dc147c14dce43ee76ac1750ba6c91f05d6dbf2e1d73c36ab",
-    "currentHash": "d3d1ea08c1eaaebdfe22e99849d97db40f731584abe7702d2f4b75624eb9e951",
-    "changedAt": "2026-08-05T19:24:44.961Z"
+    "previousHash": "d3d1ea08c1eaaebdfe22e99849d97db40f731584abe7702d2f4b75624eb9e951",
+    "currentHash": "d5ec19e5c2e0f2cba9ade058796a6eea21d229c9138439da5b794b6fbe6525c8",
+    "changedAt": "2026-08-08T01:17:09.653Z"
   },
   "/accounting/trial-balance": {
     "path": "/accounting/trial-balance",
@@ -403,117 +403,117 @@
   },
   "/accounting/profit-loss": {
     "path": "/accounting/profit-loss",
-    "previousHash": "9e69085e48afc32084328e8ab34aea0be9eabbbbed6229ad6f687a90d530693c",
-    "currentHash": "4ac5540a571fe4fdb686f87568dedb1564b81ce8dc24e0fb45e337e9ddb37547",
-    "changedAt": "2026-08-05T19:24:48.032Z"
+    "previousHash": "4ac5540a571fe4fdb686f87568dedb1564b81ce8dc24e0fb45e337e9ddb37547",
+    "currentHash": "582666d65013709518910583dbea5f7c5a1f5d8c424bcfe93104ede3b8fdb0f2",
+    "changedAt": "2026-08-08T01:17:13.193Z"
   },
   "/accounting/income-statement": {
     "path": "/accounting/income-statement",
-    "previousHash": "4f0a427ee4da96cf998acb9bc9f10044770e9ef4e02c48fdbc701801911bdd33",
-    "currentHash": "d14be21704e732424f5eea96d62583642480b3abcf8800f51b06ffd77a7bd2ed",
-    "changedAt": "2026-08-03T09:36:49.950Z"
+    "previousHash": "d14be21704e732424f5eea96d62583642480b3abcf8800f51b06ffd77a7bd2ed",
+    "currentHash": "b7beb07ba33e6c5df1f2b97992a14010366c30352ac4d3f15fc25d1c94addb73",
+    "changedAt": "2026-08-08T01:16:39.769Z"
   },
   "/accounting/ledgers-master-report": {
     "path": "/accounting/ledgers-master-report",
-    "previousHash": "fed2738e2ef59c7900a8d607cbb08a86802ed324d67653d50ecce905e8b944d3",
-    "currentHash": "e35ba890d50fb58c7db73be8821fb64e35fa127e184508dd431091576220bb5e",
-    "changedAt": "2026-08-03T09:36:51.662Z"
+    "previousHash": "e35ba890d50fb58c7db73be8821fb64e35fa127e184508dd431091576220bb5e",
+    "currentHash": "7b0765b19c58479cf38c4400b93196f026479ea8e50d651ba718d8f3559a5307",
+    "changedAt": "2026-08-08T01:16:41.477Z"
   },
   "/accounting/day-book": {
     "path": "/accounting/day-book",
-    "previousHash": "34c5dfe9a402752a3d2dcc428ddece648e76086278dec37f48e11935460bc411",
-    "currentHash": "6191df33b0eff1801eecd598963a03d790c0404633c6711565573f81d6e35d76",
-    "changedAt": "2026-08-03T09:36:53.388Z"
+    "previousHash": "6191df33b0eff1801eecd598963a03d790c0404633c6711565573f81d6e35d76",
+    "currentHash": "d0c00244ff376f442dde7d02bcb84c7220582d040fbd5a3abc904e711b0651cf",
+    "changedAt": "2026-08-08T01:16:43.192Z"
   },
   "/accounting/cash-flow-statement": {
     "path": "/accounting/cash-flow-statement",
-    "previousHash": "0c6b2709606970773b2d9351649f78ffdf2f3387ab354bc01843a5b428a0fb2c",
-    "currentHash": "7afc235f19a4ec0b3381bee7edb23596bbdb599a5f1d718a9fb7511c7e43761b",
-    "changedAt": "2026-08-03T09:36:54.852Z"
+    "previousHash": "7afc235f19a4ec0b3381bee7edb23596bbdb599a5f1d718a9fb7511c7e43761b",
+    "currentHash": "34cf1770014021d7eb97ff46e3ed063d54505eed63c21f8c6044cb994dfaec8d",
+    "changedAt": "2026-08-08T01:16:44.642Z"
   },
   "/manage-team": {
     "path": "/manage-team",
-    "previousHash": "5b8f03aeb8cf01d5e3e7eaa1cf0479d40251e0efdfcc767a93803b098102a550",
-    "currentHash": "82c587469432aa2d744298fda6972e433b703e994f8991ffbc0cd5580660f9cc",
-    "changedAt": "2026-08-03T09:36:56.705Z"
+    "previousHash": "82c587469432aa2d744298fda6972e433b703e994f8991ffbc0cd5580660f9cc",
+    "currentHash": "103c481b1a2c048f0828fcd094a07a5fc8b1339ec3963d457d76ef262988d49a",
+    "changedAt": "2026-08-08T01:16:46.425Z"
   },
   "/business-settings": {
     "path": "/business-settings",
-    "previousHash": "51adb2d3a8e826d7a48415d59b00522149cf4456e18c9d4e3094c12cb641ee10",
-    "currentHash": "8cff28c88d58cfcb77a540b8a9ec39c8ab9de3c5e83ff2430da3f74f3f869b1e",
-    "changedAt": "2026-08-05T19:24:49.434Z"
+    "previousHash": "8cff28c88d58cfcb77a540b8a9ec39c8ab9de3c5e83ff2430da3f74f3f869b1e",
+    "currentHash": "66ba6689cd93c32f11908c417f16454b19043ec96db6cd1e524b0045a6816d1b",
+    "changedAt": "2026-08-08T01:17:14.787Z"
   },
   "/integrations": {
     "path": "/integrations",
-    "previousHash": "971de2958cc869e43b6daddf2bcbac4189207d9b79e2ae57435c807c8db71319",
-    "currentHash": "faedacef196e449ed22885bd928297a7d8830ef3d808498a23cdf4e31928fdf7",
-    "changedAt": "2026-08-05T19:24:51.165Z"
+    "previousHash": "faedacef196e449ed22885bd928297a7d8830ef3d808498a23cdf4e31928fdf7",
+    "currentHash": "ac05f140bd9c914d1ccf3c0b77f831b3b58dfc96e8620da0a95e565c013fe51a",
+    "changedAt": "2026-08-08T01:17:16.278Z"
   },
   "/greetings": {
     "path": "/greetings",
-    "previousHash": "b5d53364e38720c1740157138058731a85702a12f78c0133018d1feaf464946f",
-    "currentHash": "c2fe61f1e0aac30a7d05b1701220656d8643305b35ee70eb7c9145330f920d87",
-    "changedAt": "2026-08-05T19:24:52.581Z"
+    "previousHash": "c2fe61f1e0aac30a7d05b1701220656d8643305b35ee70eb7c9145330f920d87",
+    "currentHash": "bebc79362a27ccdd0c9cd0055482441b12d285583e7032c314d78e272a811d29",
+    "changedAt": "2026-08-08T01:17:17.710Z"
   },
   "/support": {
     "path": "/support",
-    "previousHash": "0c67b4dfaab4f82c1226a559d09c4f50e431f008721ca1f8717cd3d39b8a9151",
-    "currentHash": "60b0ba1a50f5189a5693cf118bdfb2152c998d128a58d1953da1879e574cf60d",
-    "changedAt": "2026-08-05T19:24:53.981Z"
+    "previousHash": "60b0ba1a50f5189a5693cf118bdfb2152c998d128a58d1953da1879e574cf60d",
+    "currentHash": "c5cff6df502452504693248b9c55eba0921342cd0edaa22ef48305a20e51d135",
+    "changedAt": "2026-08-08T01:17:19.148Z"
   },
   "/growth-suite": {
     "path": "/growth-suite",
-    "previousHash": "b03910b6c6c8940fb8c7e144af4ed128f01ea5a223b95eefe8b744c951389e79",
-    "currentHash": "e3c5abb0fa0c6345e25439e3804463390ff2a899b56877213117bec1a9d04fed",
-    "changedAt": "2026-08-05T19:24:55.384Z"
+    "previousHash": "e3c5abb0fa0c6345e25439e3804463390ff2a899b56877213117bec1a9d04fed",
+    "currentHash": "682e4c82c0ec3dc6a5514a2b253260885bcec310e161086c57f446a8ac1f78c8",
+    "changedAt": "2026-08-08T01:17:20.653Z"
   },
   "/profile": {
     "path": "/profile",
-    "previousHash": "b5c5154b501cbb5e529e67ced2ee055e9d5a670758124acb72bd69bb1f4fdba6",
-    "currentHash": "96418190aef951728c13dd7de29ff1393aa94c5135f7b75f7ee8f3b8a8ea6167",
-    "changedAt": "2026-08-05T19:24:57.015Z"
+    "previousHash": "96418190aef951728c13dd7de29ff1393aa94c5135f7b75f7ee8f3b8a8ea6167",
+    "currentHash": "ef1389c9879a55a0b67f21a68cf11c7feeb5896927b7bc97993d6a49a3251679",
+    "changedAt": "2026-08-08T01:17:22.132Z"
   },
   "/": {
     "path": "/",
-    "previousHash": "1036f4fca5a8268b4d20c10bac0b71b8796a51354ed447b8b8ccf811dc4b6e68",
-    "currentHash": "f16b885fc0b1b319dbb59bd887a8bd357900c8ffa91e9a1a97f5b3d3ad54e271",
-    "changedAt": "2026-08-03T09:37:04.592Z"
+    "previousHash": "f16b885fc0b1b319dbb59bd887a8bd357900c8ffa91e9a1a97f5b3d3ad54e271",
+    "currentHash": "eaadafdde1083893a1909f68792ece6daaaa5bb5ecf762888642bbaf0e8662f0",
+    "changedAt": "2026-08-08T01:16:54.222Z"
   },
   "/accounting/tds": {
     "path": "/accounting/tds",
-    "previousHash": "c893f3559f521bb287040f8c84eb2c4e970f299325fd9c6720f553ff8d0a9ec1",
-    "currentHash": "34a46c0382f25f880553943f2bb4bb34e5b14fc7dcf676c3528eccb285bd1c13",
-    "changedAt": "2026-08-03T09:37:13.196Z"
+    "previousHash": "34a46c0382f25f880553943f2bb4bb34e5b14fc7dcf676c3528eccb285bd1c13",
+    "currentHash": "f56047bee1eba9fb3a8617acc9e96513917be9460e9baf076445bc1465d12f35",
+    "changedAt": "2026-08-08T01:17:02.500Z"
   },
   "/gst-reports": {
     "path": "/gst-reports",
-    "previousHash": "2b16893fdcfc5762212233f0bcb4658f535723be1d781bf9b446b2aec58fbc71",
-    "currentHash": "b77577afe07bdfba5771340d30c95b0cb2ea1385d8253f852a88bb48295f94e0",
-    "changedAt": "2026-08-03T09:37:15.268Z"
+    "previousHash": "b77577afe07bdfba5771340d30c95b0cb2ea1385d8253f852a88bb48295f94e0",
+    "currentHash": "c6c2b8abe12563e57b40b6fd8aec338e6cee228685ea68b554126d94ab528513",
+    "changedAt": "2026-08-08T01:17:04.517Z"
   },
   "/premium-free-3-months": {
     "path": "/premium-free-3-months",
-    "previousHash": "9e333481a0c7744ace4b525854df7de25aaf9e417b3cfdf62a1c06c540c6a8a8",
-    "currentHash": "b1d8fce2de8e28ee6e5afe80f645718c9d07947a58dd3b7a7e39237f6ab33ce1",
-    "changedAt": "2026-08-03T09:37:00.208Z"
+    "previousHash": "b1d8fce2de8e28ee6e5afe80f645718c9d07947a58dd3b7a7e39237f6ab33ce1",
+    "currentHash": "10695e093f4644f151513e6426d3eab90720347eaea29d892a322932b3b8508c",
+    "changedAt": "2026-08-08T01:16:49.924Z"
   },
   "/about-us": {
     "path": "/about-us",
-    "previousHash": "a54b9a746417481fe0b4b2e1f3d1b43f4d06d9fa22151bf2a7b488465ec56e79",
-    "currentHash": "207e94ca9ae295933970582fb14086ee71d5e3dea4e4ff81c61738885859c2a6",
-    "changedAt": "2026-08-03T09:37:08.004Z"
+    "previousHash": "207e94ca9ae295933970582fb14086ee71d5e3dea4e4ff81c61738885859c2a6",
+    "currentHash": "28d578afef408d72679e7d96867da80b43e5b8c734f1fa91a4731089b4325205",
+    "changedAt": "2026-08-08T01:16:57.672Z"
   },
   "/contact-us": {
     "path": "/contact-us",
-    "previousHash": "74e58f5883af09d58b4cad76160d531fde10082f029d3cfe6fdbf845c2a7814b",
-    "currentHash": "45533f0d89fa4b4edb8278958e7875fe3cad68e702bd4119dc707dab2294837e",
-    "changedAt": "2026-08-02T08:17:01.881Z"
+    "previousHash": "45533f0d89fa4b4edb8278958e7875fe3cad68e702bd4119dc707dab2294837e",
+    "currentHash": "cba5a07b4f591332d096dc7f5372d6b7311405fd23a255b0b9aef4b04c8b7120",
+    "changedAt": "2026-08-08T01:17:00.988Z"
   },
   "/features": {
     "path": "/features",
-    "previousHash": "23780fe25b9850baa5e5eef10bddf1fb3cb9498db3e311b27fc35967e17fb104",
-    "currentHash": "a3098b36d8287fe36a622c2dc58525d60a2102aa4803e23834bf5dbb726a1359",
-    "changedAt": "2026-08-05T19:25:00.202Z"
+    "previousHash": "a3098b36d8287fe36a622c2dc58525d60a2102aa4803e23834bf5dbb726a1359",
+    "currentHash": "78f56082265f8188254eabcc130204c902ae2e28908f58deb321801218751fa3",
+    "changedAt": "2026-08-08T01:17:25.467Z"
   },
   "/pricing": {
     "path": "/pricing",
