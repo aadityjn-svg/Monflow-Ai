@@ -76,23 +76,23 @@
   },
   "/sales/delivery-challans/new": {
     "path": "/sales/delivery-challans/new",
-    "contentHash": "f5bde1a877774439152b4a6b30962d120fd39b1f323bbe9293fc52a969a01ac7",
-    "learnedAt": "2026-08-06T13:58:46.926Z"
+    "contentHash": "ba5fea87db218444241ba36357303d72a48b6528232955e12fed9db6f1cb653e",
+    "learnedAt": "2026-08-09T12:41:26.783Z"
   },
   "/sales/credit-notes": {
     "path": "/sales/credit-notes",
-    "contentHash": "f89f7a37f0264e20f30fa0e87386242bd2125028b4bdc3ad8cc192fc7d20523c",
-    "learnedAt": "2026-08-06T13:58:49.502Z"
+    "contentHash": "d789c09dbd4fdd79ce67b5614ed3df5cda98acb9b2b1eb4436bc4cac532468f8",
+    "learnedAt": "2026-08-09T12:41:28.402Z"
   },
   "/sales/credit-notes/new": {
     "path": "/sales/credit-notes/new",
-    "contentHash": "736a62d0ec0a6505584a9715d52d8f02f78745acfd584ed7b7fadebd4ce2f31f",
-    "learnedAt": "2026-08-06T13:58:51.197Z"
+    "contentHash": "8b84cc4e978ebd027c56fc8df1dbeeb0bb24da618e793d07e261a24b2e92d288",
+    "learnedAt": "2026-08-09T12:41:29.903Z"
   },
   "/purchases/vendor-leads": {
     "path": "/purchases/vendor-leads",
-    "contentHash": "3368c2ea17e9bce3a6fdfe17c97b8b4cada5e882e13903ddcec1a39408197881",
-    "learnedAt": "2026-08-06T13:58:52.624Z"
+    "contentHash": "6f024c5e28b6276837c13d793c0755d60d1904e4138481fdae70b24085b699c7",
+    "learnedAt": "2026-08-09T12:41:31.450Z"
   },
   "/purchases/vendor-leads/new": {
     "path": "/purchases/vendor-leads/new",
@@ -101,18 +101,18 @@
   },
   "/purchases/vendors-suppliers": {
     "path": "/purchases/vendors-suppliers",
-    "contentHash": "bbf743cc47c8f70e686efe44b4934a2a225a82a04718f34bfdd137949f21837a",
-    "learnedAt": "2026-08-06T13:58:55.689Z"
+    "contentHash": "ff2d25fe93650be3f198f761dd96263309cdf283eed17fd29cfc71d83f969e9b",
+    "learnedAt": "2026-08-09T12:41:34.623Z"
   },
   "/purchases/payout-receipts": {
     "path": "/purchases/payout-receipts",
-    "contentHash": "4d3ef91921df4731683339ed75e8f938cee842d36633cb2ddf7958ef5e72179b",
-    "learnedAt": "2026-08-06T13:58:57.139Z"
+    "contentHash": "0159e82964f1b7c3d3905e751244bde3f896a4d43dc0212e3c7dd1b5aa1efb8f",
+    "learnedAt": "2026-08-09T12:41:36.375Z"
   },
   "/purchases/purchase-orders": {
     "path": "/purchases/purchase-orders",
-    "contentHash": "09ebbe267abefd403acd647d864f1a68cc74472cd6cfc3ba682ac34289bfddcf",
-    "learnedAt": "2026-08-06T13:58:58.643Z"
+    "contentHash": "67a08b1c551e21f56e46f4a91b7e89ae6972ad75c10e730ab44f9828819c81e1",
+    "learnedAt": "2026-08-09T12:41:38.782Z"
   },
   "/purchases/purchase-orders/new": {
     "path": "/purchases/purchase-orders/new",
@@ -121,13 +121,13 @@
   },
   "/purchases/debit-notes": {
     "path": "/purchases/debit-notes",
-    "contentHash": "f96762345c2e80f3dd8cde3dbb17755aebbecb65df8881760f5b8f7aebbcf431",
-    "learnedAt": "2026-08-06T13:59:02.893Z"
+    "contentHash": "a0ada54b4d754385c79d6a0e528fa6e5bf6ae3b5a606926cddcbb9a9bd3265bd",
+    "learnedAt": "2026-08-09T12:41:42.199Z"
   },
   "/purchases/debit-notes/new": {
     "path": "/purchases/debit-notes/new",
-    "contentHash": "a0c837d987c61c1d20828b7e4751a6cfa5e33f5d18cb17a40e5b86a10adfa9e8",
-    "learnedAt": "2026-08-06T13:59:04.317Z"
+    "contentHash": "c4b4418714ddf2cde25681aeb2f59595a4415d99a57f36de585d79b551739e07",
+    "learnedAt": "2026-08-09T12:41:43.974Z"
   },
   "/purchases/hire-best-vendors": {
     "path": "/purchases/hire-best-vendors",
@@ -136,18 +136,18 @@
   },
   "/purchases/hire-best-vendors/new": {
     "path": "/purchases/hire-best-vendors/new",
-    "contentHash": "1a32c4608194010ddd108bca6b0f512de39784c248f7985aac7e9eab479c006d",
-    "learnedAt": "2026-08-06T13:59:07.553Z"
+    "contentHash": "6def17159ffe20d3c3f85de810eac54242e29bbf5a6ec08f46e91fc399f37583",
+    "learnedAt": "2026-08-09T12:41:47.448Z"
   },
   "/expenses": {
     "path": "/expenses",
-    "contentHash": "b483540bbc7d1c411c0081f2fc2ced219ae0f0f20c5bf709ba527575886a82d5",
-    "learnedAt": "2026-08-06T13:59:09.033Z"
+    "contentHash": "5a4ceee2f4d2dc917ff59c37116e9bab23aedbc89247d1b5ab6809e86e106ae3",
+    "learnedAt": "2026-08-09T12:41:49.225Z"
   },
   "/products": {
     "path": "/products",
-    "contentHash": "39a67921856519d96cf807775637b4e78bac163663b7fb4c4e02de8c958bda57",
-    "learnedAt": "2026-08-06T13:59:10.466Z"
+    "contentHash": "c350ea05a117bfdbde7bbcadd2ac72244874c08d894e535d689c8f45fdcdcb92",
+    "learnedAt": "2026-08-09T12:41:50.674Z"
   },
   "/inventory/warehouses": {
     "path": "/inventory/warehouses",
@@ -778,5 +778,15 @@
     "path": "/blog/common-invoice-mistakes-india",
     "contentHash": "9432b68cf41b53efd2ccca4d72fac743158d9a020c8fad8fb432ed162f7c85d8",
     "learnedAt": "2026-08-06T13:58:31.216Z"
+  },
+  "/proforma-invoice-template": {
+    "path": "/proforma-invoice-template",
+    "contentHash": "2192101212be241b8541273572eb119cbf3381c9af3b67da91b7b6a11178fe74",
+    "learnedAt": "2026-08-09T12:41:57.268Z"
+  },
+  "/delivery-challan-format": {
+    "path": "/delivery-challan-format",
+    "contentHash": "bf04e3cd3389ba76e5410b85fbfb6864a7115d18bc572a3c7c8fef995e594489",
+    "learnedAt": "2026-08-09T12:42:03.857Z"
   }
 }
