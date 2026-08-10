@@ -26,33 +26,33 @@
   },
   "/sales/quotations-estimates/new": {
     "path": "/sales/quotations-estimates/new",
-    "contentHash": "79c265fe69c7fdeff2bf064ea9663b0f960d2e777399cdf948b788d6353af7c1",
-    "learnedAt": "2026-08-07T07:10:41.681Z"
+    "contentHash": "e5f6b455c8b8f0a144686489200a5207fa690785bb63e17a6cabc7ad9743e126",
+    "learnedAt": "2026-08-10T13:00:03.915Z"
   },
   "/sales/proforma-invoices": {
     "path": "/sales/proforma-invoices",
-    "contentHash": "b7db009589776295a0b3d3092ed21101209d8a58b375bff68bff713f52991e25",
-    "learnedAt": "2026-08-07T07:10:43.139Z"
+    "contentHash": "dbc976e0aa44e3f4e70f41e438d1f76c9b41aa3ea178b8aef74590f4dc53ddd1",
+    "learnedAt": "2026-08-10T13:00:05.464Z"
   },
   "/sales/proforma-invoices/new": {
     "path": "/sales/proforma-invoices/new",
-    "contentHash": "f8099bfe8bfdbed75062668539f908fd86c46dc84b9105bfffb44be9d091b95b",
-    "learnedAt": "2026-08-07T07:10:44.996Z"
+    "contentHash": "3da20f455c2d549f67e8dbd7f76de861eb96a3c8a6ee871b781075ee66fe6031",
+    "learnedAt": "2026-08-10T13:00:06.893Z"
   },
   "/invoices": {
     "path": "/invoices",
-    "contentHash": "193dfa79a78078ef7ca4b2b2af14dc1a7663055635f9cb7267ce7994fe51ed33",
-    "learnedAt": "2026-08-07T07:10:46.456Z"
+    "contentHash": "1c5fcbe506e50b77eff72a2ee3f55a3668d5608d7cf11fb7fd69d456e389812d",
+    "learnedAt": "2026-08-10T13:00:09.630Z"
   },
   "/invoices/new": {
     "path": "/invoices/new",
-    "contentHash": "fd8023f06af7d1892c94ec4ff032c630b6cf183ede3367612e5b7b2efe11eebe",
-    "learnedAt": "2026-08-07T07:10:48.249Z"
+    "contentHash": "cd76e271d4c3e741a27edd73b2ed71a6aecc6502d158674776cc30183ebb7bb3",
+    "learnedAt": "2026-08-10T13:00:11.284Z"
   },
   "/sales/payment-receipts": {
     "path": "/sales/payment-receipts",
-    "contentHash": "5002b27a283da6db8b4998c7aeb367b18a00696d23aa02006ee82e251a240432",
-    "learnedAt": "2026-08-07T07:10:49.828Z"
+    "contentHash": "8937e9885dea219484f445a45ab874bcfd0dabd714bd1e88fc9f8f5718b0c814",
+    "learnedAt": "2026-08-10T13:00:13.082Z"
   },
   "/sales/payment-receipts/new": {
     "path": "/sales/payment-receipts/new",
@@ -151,18 +151,18 @@
   },
   "/inventory/warehouses": {
     "path": "/inventory/warehouses",
-    "contentHash": "0265b814e69072828b7e577f3c3accbd1f42e546ef1d9f38434bd1d0d0b95fba",
-    "learnedAt": "2026-08-07T07:09:30.876Z"
+    "contentHash": "04acfab75e2dbfbde82f07b9510eb3e416486203e3b8c5dddaabe47d70e86daa",
+    "learnedAt": "2026-08-10T13:00:14.523Z"
   },
   "/inventory/product-wise-pl": {
     "path": "/inventory/product-wise-pl",
-    "contentHash": "4108b61a70007c626549a3350454d776677e9138741953eb0b6997ffaa2aa616",
-    "learnedAt": "2026-08-07T07:09:32.329Z"
+    "contentHash": "215e44defc76f4a1c650f62b90db2e49d02dd74f2f520698a573abd77a7e3513",
+    "learnedAt": "2026-08-10T13:00:15.939Z"
   },
   "/inventory/stock-value-report": {
     "path": "/inventory/stock-value-report",
-    "contentHash": "b43be9a62c0479dabc312ef79086e1f1fbf4e387aba6edf40f9b970168b63932",
-    "learnedAt": "2026-08-07T07:09:33.794Z"
+    "contentHash": "43b443a72400161b8169cb6b8c7cb16f261b210f3e3bee7d8b35176df448d18f",
+    "learnedAt": "2026-08-10T13:00:17.577Z"
   },
   "/inventory/batch-expiry-report": {
     "path": "/inventory/batch-expiry-report",
@@ -171,58 +171,58 @@
   },
   "/inventory/party-transactions-report": {
     "path": "/inventory/party-transactions-report",
-    "contentHash": "09d5856da500b7e0898a9eba11c362db64f975ca86bcdee402c588b04cd09be3",
-    "learnedAt": "2026-08-07T07:09:37.060Z"
+    "contentHash": "f8baf5e9e3408033aa4151273801398b2379430157f823d721099a4ccad76830",
+    "learnedAt": "2026-08-10T13:00:20.690Z"
   },
   "/inventory/all-transactions-report": {
     "path": "/inventory/all-transactions-report",
-    "contentHash": "238aea2d2f0803f3d9a0d908b134f072337852d82d4c80067ad8e7af44795e16",
-    "learnedAt": "2026-08-07T07:09:38.740Z"
+    "contentHash": "4d415ab5c3ce541e9858667c45b9d3a039b82c2fc6b4f341071d869396827aab",
+    "learnedAt": "2026-08-10T13:00:22.319Z"
   },
   "/inventory/stock-status-report": {
     "path": "/inventory/stock-status-report",
-    "contentHash": "1c196ae4023826243370a03eeb929a7ffeea6b97ccfbf219612b25cd71e50a9f",
-    "learnedAt": "2026-08-07T07:10:51.505Z"
+    "contentHash": "837bd02b315b93c9de932f6eaae799b60f16c8ff6d0405718d19104dbd764bba",
+    "learnedAt": "2026-08-10T13:00:23.910Z"
   },
   "/reports": {
     "path": "/reports",
-    "contentHash": "cb269b2972c103400d11f3c58d9a56f3f2f221fe339e4b27914f3d6c3f15fa99",
-    "learnedAt": "2026-08-07T07:10:53.062Z"
+    "contentHash": "43d060dd740e1364bd7ae35170c6267ae1207b51d9e006db7a85c4951ee92b9d",
+    "learnedAt": "2026-08-10T13:00:25.341Z"
   },
   "/reports/vendors": {
     "path": "/reports/vendors",
-    "contentHash": "a2b678171931eedf1ecccdd3411e0d6f8c398bae1934e999daa8172415b5b32b",
-    "learnedAt": "2026-08-07T07:10:54.520Z"
+    "contentHash": "407bb56b435f222d3d2a436ed96b1018f533b26f48acff1e0200b6611aab56bc",
+    "learnedAt": "2026-08-10T13:00:26.761Z"
   },
   "/reports/vendors/tag-wise": {
     "path": "/reports/vendors/tag-wise",
-    "contentHash": "f209042825a7026c7c243394ebf172b1a024c3d9be85eef9435c333060f34972",
-    "learnedAt": "2026-08-07T07:10:55.953Z"
+    "contentHash": "cc5bfc0007b645dad93730d57e2aea53a53357708aee658f6c2f59a93e7919e9",
+    "learnedAt": "2026-08-10T13:00:28.190Z"
   },
   "/reports/vendors/project-wise-pl": {
     "path": "/reports/vendors/project-wise-pl",
-    "contentHash": "c07bdcee458b45ad966a271a024272b60004d3227ceb8c92012381f64c8b5135",
-    "learnedAt": "2026-08-07T07:10:58.362Z"
+    "contentHash": "a8b3f03a4b0e6cdd25e86adf02cc115c1d369eee755fec24d1ad954d0a211d67",
+    "learnedAt": "2026-08-10T13:00:29.691Z"
   },
   "/reports/vendors/payment-report": {
     "path": "/reports/vendors/payment-report",
-    "contentHash": "5dcfec2967db75ff18705846b4d0348f6193e6fd2f5305918b2476711615e68a",
-    "learnedAt": "2026-08-07T07:11:00.767Z"
+    "contentHash": "0bda15cac6901786f30639e74cf7cf597a39871318f2cd646de9c545c5cdc3eb",
+    "learnedAt": "2026-08-10T13:00:31.124Z"
   },
   "/reports/vendors/tds-report": {
     "path": "/reports/vendors/tds-report",
-    "contentHash": "403ee017c73f60dd7fd4e11241181333bd2952ef647c3d42fdd94e93473984af",
-    "learnedAt": "2026-08-07T07:11:03.215Z"
+    "contentHash": "ae859c4359e6668ed3a286e930bffd7ff98114e53eb91491d518bfd4447d9b48",
+    "learnedAt": "2026-08-10T13:00:33.946Z"
   },
   "/reports/vendors/gst-report": {
     "path": "/reports/vendors/gst-report",
-    "contentHash": "fc112d0c1a2d654b54111c7692e7cdfb13ce7780362efbb2f16552a0131bc3a3",
-    "learnedAt": "2026-08-07T07:11:05.636Z"
+    "contentHash": "cd20388771f7425a3cb75424d9d004277a0aff4ad512855f4f8d5b36270d57c6",
+    "learnedAt": "2026-08-10T13:00:35.590Z"
   },
   "/reports/vendors/line-item-report": {
     "path": "/reports/vendors/line-item-report",
-    "contentHash": "3d370b1b7a63df9300573722992a9301dc818f6f05d7e7f5d13341d9331fd3d8",
-    "learnedAt": "2026-08-07T07:11:08.046Z"
+    "contentHash": "6444e32373a88632b6a06c2ca902ac38f36feb730b6d3f64d1d1b4a4659995a7",
+    "learnedAt": "2026-08-10T13:00:38.517Z"
   },
   "/reports/vendors/hsn-report": {
     "path": "/reports/vendors/hsn-report",
@@ -231,8 +231,8 @@
   },
   "/reports/vendors/suggested-purchases": {
     "path": "/reports/vendors/suggested-purchases",
-    "contentHash": "de07015be86110313db5b118909f90db5d4ef64a5d96af7d7516d9bf244895f9",
-    "learnedAt": "2026-08-07T07:11:12.623Z"
+    "contentHash": "60482ee10b91753575922c1f33544a1e7c0cef71bcbeac901a0698022093fe8b",
+    "learnedAt": "2026-08-10T13:00:42.902Z"
   },
   "/reports/vendors/scanned-documents": {
     "path": "/reports/vendors/scanned-documents",
@@ -671,13 +671,13 @@
   },
   "/blog/export-invoice-format-india": {
     "path": "/blog/export-invoice-format-india",
-    "contentHash": "bf883654cf705dae2f2b14941ea820aaadf77756feb7b8962d6d2be191959753",
-    "learnedAt": "2026-08-05T19:26:54.306Z"
+    "contentHash": "225b20c0478a6a18cfb5159173ad2cc3b433a93a289a7c704034c850d6076876",
+    "learnedAt": "2026-08-10T12:58:53.409Z"
   },
   "/blog/invoice-international-client": {
     "path": "/blog/invoice-international-client",
-    "contentHash": "149ffb184ff09d17482aea410b20781d6bc4b16fe977b3f277cfdb1d72f9b903",
-    "learnedAt": "2026-08-06T13:57:24.150Z"
+    "contentHash": "09939a8749721f20930a0be2f2e6cc54ecfb059d3ee4ed82ced15798179ad4a3",
+    "learnedAt": "2026-08-10T12:58:56.689Z"
   },
   "/blog/multi-currency-invoice-maker": {
     "path": "/blog/multi-currency-invoice-maker",
