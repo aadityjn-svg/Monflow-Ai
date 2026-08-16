@@ -1,28 +1,28 @@
 {
   "/dashboard": {
     "path": "/dashboard",
-    "contentHash": "9025f3ba3169b91709cfadc974a98ebba1c3be5108bfb3b24e63fbc86b06296b",
-    "learnedAt": "2026-08-11T01:22:01.136Z"
+    "contentHash": "a5e09667a3588a3548df8e909bfce024729e56b640e60dca2adfd63f38d42cd6",
+    "learnedAt": "2026-08-16T01:04:43.174Z"
   },
   "/setup-dashboard": {
     "path": "/setup-dashboard",
-    "contentHash": "1de4f6bea60fe99d1e6c28a191d1709c0f9fdb196f46be3bd599dacbfc798f0d",
-    "learnedAt": "2026-08-11T01:22:02.594Z"
+    "contentHash": "5dfdb718e9b723f73bb091259a329efa35084c3788e4adcd0a0b657ae106ddb8",
+    "learnedAt": "2026-08-16T01:04:44.668Z"
   },
   "/subscription/plans": {
     "path": "/subscription/plans",
-    "contentHash": "6bcbd627b8b464b3a2725f585fda206a65680c876880e77fc76f1b09848ccca0",
-    "learnedAt": "2026-08-08T01:17:47.548Z"
+    "contentHash": "ba516d9baa71a96e51829c0486e395b7a61b5fc2b8d259837c4b2359c2ab49e3",
+    "learnedAt": "2026-08-16T01:04:46.156Z"
   },
   "/sales/clients-prospects": {
     "path": "/sales/clients-prospects",
-    "contentHash": "871fc2950c072dc663484d7ae0e6fa5c0655888a7fdd3709af2df99d6d21b387",
-    "learnedAt": "2026-08-11T01:22:05.728Z"
+    "contentHash": "7afd572f7d31afe54d7b098329068d958b169bcf80e8f0e55ebc1c31d92dd792",
+    "learnedAt": "2026-08-16T01:04:47.663Z"
   },
   "/sales/quotations-estimates": {
     "path": "/sales/quotations-estimates",
-    "contentHash": "67c84aa4686f596eb54a28b87cc41c3c2c63445eacd7372f9e25c574cb666c68",
-    "learnedAt": "2026-08-08T01:17:50.930Z"
+    "contentHash": "057fecf83aff162b2ba137d843231105e6aec00bc99023199c62e69408570579",
+    "learnedAt": "2026-08-16T01:04:49.295Z"
   },
   "/sales/quotations-estimates/new": {
     "path": "/sales/quotations-estimates/new",
@@ -56,23 +56,23 @@
   },
   "/sales/payment-receipts/new": {
     "path": "/sales/payment-receipts/new",
-    "contentHash": "1a5057a447782194c1f746ca306c984e5d4aedc37ec9246dec2797fc955ee70a",
-    "learnedAt": "2026-08-11T01:22:08.844Z"
+    "contentHash": "9556af2d58c86e228d3227629959544ce7ae76401fcbf7cb0b73e38d89f17c40",
+    "learnedAt": "2026-08-16T01:04:50.773Z"
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
-    "contentHash": "84249d899237b31dab683814dd70196a09ded7832ec50df335ef50dc361d33c3",
-    "learnedAt": "2026-08-08T01:17:55.168Z"
+    "contentHash": "ee3ab90b2a61bed7a8af430516e374dc583a9093610effe57cbb7a2895e9b35a",
+    "learnedAt": "2026-08-16T01:04:53.427Z"
   },
   "/sales/sales-orders/new": {
     "path": "/sales/sales-orders/new",
-    "contentHash": "9482af1ad7093645c4c05eb2642c2071acf00402d6d98d770626cc09d2ea3856",
-    "learnedAt": "2026-08-11T01:22:13.336Z"
+    "contentHash": "771e4d32784af431573987bc0582836ef9c835b8a1bab37a770fe5f91079d724",
+    "learnedAt": "2026-08-16T01:04:54.947Z"
   },
   "/sales/delivery-challans": {
     "path": "/sales/delivery-challans",
-    "contentHash": "66dd34842285e693c169ef8eeb387ce4126b268f96856b52a0fed46a0b8e6449",
-    "learnedAt": "2026-08-11T01:22:16.044Z"
+    "contentHash": "8d4386a85295a7b6fd2da62320332ad13aad5e9e1a2ac68693b1959cf9e24cbb",
+    "learnedAt": "2026-08-16T01:04:57.640Z"
   },
   "/sales/delivery-challans/new": {
     "path": "/sales/delivery-challans/new",
@@ -236,63 +236,63 @@
   },
   "/reports/vendors/scanned-documents": {
     "path": "/reports/vendors/scanned-documents",
-    "contentHash": "dda6ceef3f992a5d6ba627df0fd54c453bb58f505fc4ce841a445b097a839329",
-    "learnedAt": "2026-08-11T01:20:46.559Z"
+    "contentHash": "838cffc1e32cf73c48747b3c639b99cc8a9b0ebec3bfb96463a00b25c12b9910",
+    "learnedAt": "2026-08-16T01:04:59.134Z"
   },
   "/gst-reports/gstr-1": {
     "path": "/gst-reports/gstr-1",
-    "contentHash": "2f2a0b87479f38a7d333e3e9dff6d0d602ea170811d30bb7b552c36a57bb58fa",
-    "learnedAt": "2026-08-11T01:20:48.034Z"
+    "contentHash": "5206005510aa2261d7dadf451ab1466d96e0699c21bebe987b3a6795560a8d6d",
+    "learnedAt": "2026-08-16T01:05:00.639Z"
   },
   "/gst-reports/gstr-2b": {
     "path": "/gst-reports/gstr-2b",
-    "contentHash": "800bcaabd8fd7782e29b1b797af231031942946cb700231c1195f87e3d18f2b4",
-    "learnedAt": "2026-08-11T01:20:49.513Z"
+    "contentHash": "ac568b479d805ae2c9bc0815140f074bb39a7d263a80a85a6a1da40ee37c211d",
+    "learnedAt": "2026-08-16T01:05:02.168Z"
   },
   "/gst-reports/gstr-3b": {
     "path": "/gst-reports/gstr-3b",
-    "contentHash": "c1ad9fc2d3057e6d61510bb5e96a438ab3a56f0c774e14ee20cbbe4a3d92a28c",
-    "learnedAt": "2026-08-11T01:20:51.020Z"
+    "contentHash": "b5401ce84914fd9fb19243eddc50defd56d25bf889cc01c165d84aefd4321089",
+    "learnedAt": "2026-08-16T01:05:03.664Z"
   },
   "/automations": {
     "path": "/automations",
-    "contentHash": "bfe488365404025a01de2f885cee6ef6f6478aaa4d06a16a7787acec8eb8e5c5",
-    "learnedAt": "2026-08-11T01:20:52.521Z"
+    "contentHash": "fc0cc567d54ed33853354e6b534b614031b3fddb5f7e78a1714dbad9c0d06592",
+    "learnedAt": "2026-08-16T01:05:05.284Z"
   },
   "/banking-payments": {
     "path": "/banking-payments",
-    "contentHash": "34d9a023d0c07a8804309eb2b1e8bd056134d74d7bd22aba51488844f6df2516",
-    "learnedAt": "2026-08-11T01:20:54.000Z"
+    "contentHash": "5a7fac56636d96c4bc05f3c76bbc0ad6ff1bfcd2353d5262155c6f997ca448ce",
+    "learnedAt": "2026-08-16T01:05:06.843Z"
   },
   "/payroll-hrms": {
     "path": "/payroll-hrms",
-    "contentHash": "e04f4266237dda34eaa4da60f65b2b00794e9ef64ec193614a8d3815e749b62b",
-    "learnedAt": "2026-08-11T01:20:55.451Z"
+    "contentHash": "1d6dede3230ef8f28409562d5277ad3929c93ff84f6474cc9b738a1df33eef08",
+    "learnedAt": "2026-08-16T01:05:08.316Z"
   },
   "/leads": {
     "path": "/leads",
-    "contentHash": "108b00a6d4b24c923208ceb3a1314dda3fe97c99f140d7f96bfe17f29f3bc9af",
-    "learnedAt": "2026-08-11T01:22:17.544Z"
+    "contentHash": "fa82279d2d4d902af80b91ba463e184e765b8215452c696579582856f1f828db",
+    "learnedAt": "2026-08-16T01:05:09.801Z"
   },
   "/crm/pipelines": {
     "path": "/crm/pipelines",
-    "contentHash": "5f807dc46962faa0eff677fd6c515dbde95c169348904d2e889008aef56565dd",
-    "learnedAt": "2026-08-11T01:22:18.992Z"
+    "contentHash": "52cb2e8a6b60c80cf2b9dcef83b0dcf2b3287b5b38216126e12846d70d17ab59",
+    "learnedAt": "2026-08-16T01:05:12.830Z"
   },
   "/crm/forms": {
     "path": "/crm/forms",
-    "contentHash": "9f72ea431a8c9fd6a620dcb8f107b04bdc78b9e5ff6f712fae6498d777541b1f",
-    "learnedAt": "2026-08-11T01:22:20.529Z"
+    "contentHash": "03bddafe611a48afc5c494841f27b014acc7798fc5afbb85a1f09b97cdc40865",
+    "learnedAt": "2026-08-16T01:05:14.336Z"
   },
   "/crm/forms/new": {
     "path": "/crm/forms/new",
-    "contentHash": "83582447eb691cb5ea23bd382031a7c9bdb5bf7fe8e22df720dd233d0b997d66",
-    "learnedAt": "2026-08-11T01:22:22.265Z"
+    "contentHash": "67ce23df29122181e60285b04802997b0850242982734128254e3175eb1f30f4",
+    "learnedAt": "2026-08-16T01:05:16.115Z"
   },
   "/crm/lead-summary": {
     "path": "/crm/lead-summary",
-    "contentHash": "c14f16891dd7cf840cda8b444ded90e46d8b13457d4187f5f9a804f7897b62be",
-    "learnedAt": "2026-08-11T01:22:24.047Z"
+    "contentHash": "f5cba485baec46a4cb449ba6ebe0f78a6c0abc9ea9287c42734e57a345a0a607",
+    "learnedAt": "2026-08-16T01:05:17.599Z"
   },
   "/crm/team-sales-report": {
     "path": "/crm/team-sales-report",
@@ -666,13 +666,13 @@
   },
   "/blog/lawyer-legal-services-invoice-template": {
     "path": "/blog/lawyer-legal-services-invoice-template",
-    "contentHash": "f28b7cac0194d29cfcb37750b10713238c7dfb4c9899f039c88aedd697336c16",
-    "learnedAt": "2026-08-05T19:26:50.955Z"
+    "contentHash": "be6acac5eade288cfb461776749bf3bbfacbbf65581488ce1244e308fa9143e3",
+    "learnedAt": "2026-08-16T01:03:24.384Z"
   },
   "/blog/export-invoice-format-india": {
     "path": "/blog/export-invoice-format-india",
-    "contentHash": "225b20c0478a6a18cfb5159173ad2cc3b433a93a289a7c704034c850d6076876",
-    "learnedAt": "2026-08-10T12:58:53.409Z"
+    "contentHash": "bf883654cf705dae2f2b14941ea820aaadf77756feb7b8962d6d2be191959753",
+    "learnedAt": "2026-08-16T01:03:27.940Z"
   },
   "/blog/invoice-international-client": {
     "path": "/blog/invoice-international-client",
