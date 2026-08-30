@@ -1,483 +1,54 @@
 {
-  "runId": "d3b0e13b-b7a1-49fc-bbcc-57295a2c3ddd",
-  "startedAt": "2026-08-24T18:33:42.026Z",
+  "runId": "89bbd7aa-1852-46b9-b4ef-e98e3f054c2f",
+  "startedAt": "2026-08-30T03:20:16.053Z",
   "visitedPaths": [
-    "/sales/sales-orders",
-    "/sales/sales-orders/new",
-    "/sales/delivery-challans",
-    "/reports/vendors/scanned-documents",
-    "/gst-reports/gstr-1",
-    "/gst-reports/gstr-2b",
-    "/gst-reports/gstr-3b",
-    "/automations",
-    "/banking-payments",
-    "/payroll-hrms",
-    "/leads",
-    "/crm/pipelines",
-    "/crm/forms",
-    "/crm/forms/new",
-    "/crm/lead-summary",
-    "/crm/team-sales-report",
-    "/proforma-invoice-template",
-    "/delivery-challan-format",
-    "/blog/free-invoice-maker-without-signup",
-    "/blog/free-gst-invoice-maker-india",
-    "/blog/invoice-generator-for-freelancers",
-    "/blog/invoice-maker-with-logo",
-    "/blog/create-invoice-and-download-pdf",
-    "/blog/invoice-template-for-small-business",
-    "/blog/professional-service-invoice-template",
-    "/blog/consultant-invoice-template-india",
-    "/blog/graphic-designer-invoice-template",
-    "/blog/web-developer-invoice-template",
-    "/blog/digital-marketing-agency-invoice-template",
-    "/blog/accounting-firm-invoice-template",
-    "/blog/photographer-invoice-template",
-    "/blog/content-writer-invoice-template",
-    "/blog/architect-interior-designer-invoice-template",
-    "/blog/construction-contractor-invoice-template",
-    "/blog/retail-shop-gst-invoice-template",
-    "/blog/wholesale-invoice-template",
-    "/blog/ecommerce-seller-invoice-template-india",
-    "/blog/manufacturing-invoice-template",
-    "/blog/transport-logistics-invoice-template",
-    "/blog/repair-service-invoice-template",
-    "/blog/tutor-coaching-invoice-template",
-    "/blog/refrens-alternative-free-invoice-maker",
-    "/blog/catering-invoice-template",
-    "/blog/real-estate-broker-invoice-template",
-    "/blog/event-planner-invoice-template"
+    "/blog/lawyer-legal-services-invoice-template",
+    "/blog/export-invoice-format-india",
+    "/blog/invoice-international-client",
+    "/blog/multi-currency-invoice-maker",
+    "/blog/invoice-with-upi-qr-code",
+    "/blog/gstin-on-invoice-guide",
+    "/blog/hsn-sac-code-in-invoice",
+    "/blog/cgst-sgst-vs-igst-invoice",
+    "/blog/discount-on-invoice-before-after-gst",
+    "/blog/invoice-number-format-examples",
+    "/blog/best-payment-terms-for-invoices",
+    "/blog/invoice-due-date-guide",
+    "/blog/invoice-vs-receipt-difference",
+    "/blog/invoice-vs-quotation-difference",
+    "/blog/proforma-invoice-vs-tax-invoice",
+    "/blog/bill-of-supply-vs-tax-invoice",
+    "/blog/credit-note-after-invoice",
+    "/blog/recurring-invoice-guide",
+    "/blog/advance-payment-invoice-guide",
+    "/blog/milestone-invoice-template",
+    "/blog/send-invoice-email-whatsapp",
+    "/blog/is-online-invoice-maker-safe",
+    "/blog/common-invoice-mistakes-india",
+    "/sales/quotations-estimates/new",
+    "/sales/proforma-invoices",
+    "/sales/proforma-invoices/new",
+    "/invoices",
+    "/invoices/new",
+    "/sales/payment-receipts",
+    "/sales/delivery-challans/new",
+    "/sales/credit-notes",
+    "/sales/credit-notes/new",
+    "/purchases/vendor-leads",
+    "/purchases/vendor-leads/new",
+    "/purchases/vendors-suppliers",
+    "/purchases/payout-receipts",
+    "/purchases/purchase-orders",
+    "/purchases/purchase-orders/new",
+    "/purchases/debit-notes",
+    "/purchases/debit-notes/new",
+    "/purchases/hire-best-vendors",
+    "/purchases/hire-best-vendors/new",
+    "/expenses",
+    "/products",
+    "/inventory/warehouses"
   ],
   "queuedTargets": [
-    {
-      "path": "/blog/lawyer-legal-services-invoice-template",
-      "label": "Legal Services Invoice Template for Lawyers and FirmsLegal Services Invoice Template for Lawyers and Firms. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Legal Services Invoice Template for Lawyers and FirmsLegal Services Invoice Template for Lawyers and Firms. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/export-invoice-format-india",
-      "label": "Export Invoice Format India: Currency, GST and Shipping DetailsExport Invoice Format India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Export Invoice Format India: Currency, GST and Shipping DetailsExport Invoice Format India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-international-client",
-      "label": "How to Invoice an International Client From IndiaHow to Invoice an International Client From India. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "How to Invoice an International Client From IndiaHow to Invoice an International Client From India. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/multi-currency-invoice-maker",
-      "label": "Multi-Currency Invoice Maker: Bill Global Clients ClearlyMulti-Currency Invoice Maker. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Multi-Currency Invoice Maker: Bill Global Clients ClearlyMulti-Currency Invoice Maker. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-with-upi-qr-code",
-      "label": "Invoice With UPI QR Code: Make Customer Payment EasierInvoice With UPI QR Code. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Invoice With UPI QR Code: Make Customer Payment EasierInvoice With UPI QR Code. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/gstin-on-invoice-guide",
-      "label": "GSTIN on Invoice: Where to Add It and What to CheckGSTIN on Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "GSTIN on Invoice: Where to Add It and What to CheckGSTIN on Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/hsn-sac-code-in-invoice",
-      "label": "HSN and SAC Code in Invoice: Practical GuideHSN and SAC Code in Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "HSN and SAC Code in Invoice: Practical GuideHSN and SAC Code in Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/cgst-sgst-vs-igst-invoice",
-      "label": "CGST and SGST vs IGST: Which One Goes on an Invoice?CGST and SGST vs IGST. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "CGST and SGST vs IGST: Which One Goes on an Invoice?CGST and SGST vs IGST. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/discount-on-invoice-before-after-gst",
-      "label": "Discount on Invoice: Calculation Before or After GST?Discount on Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Discount on Invoice: Calculation Before or After GST?Discount on Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-number-format-examples",
-      "label": "Invoice Number Format: Rules, Examples and Best PracticesInvoice Number Format. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Invoice Number Format: Rules, Examples and Best PracticesInvoice Number Format. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/best-payment-terms-for-invoices",
-      "label": "Best Payment Terms for Invoices: Clear ExamplesBest Payment Terms for Invoices. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Best Payment Terms for Invoices: Clear ExamplesBest Payment Terms for Invoices. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-due-date-guide",
-      "label": "Invoice Due Date Guide: Net 7, Net 15 and Net 30Invoice Due Date Guide. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Invoice Due Date Guide: Net 7, Net 15 and Net 30Invoice Due Date Guide. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-vs-receipt-difference",
-      "label": "Invoice vs Receipt: Difference, Examples and UseInvoice vs Receipt. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Invoice vs Receipt: Difference, Examples and UseInvoice vs Receipt. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/invoice-vs-quotation-difference",
-      "label": "Invoice vs Quotation: When to Use Each DocumentInvoice vs Quotation. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Invoice vs Quotation: When to Use Each DocumentInvoice vs Quotation. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/proforma-invoice-vs-tax-invoice",
-      "label": "Proforma Invoice vs Tax Invoice: Key DifferencesProforma Invoice vs Tax Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Proforma Invoice vs Tax Invoice: Key DifferencesProforma Invoice vs Tax Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/bill-of-supply-vs-tax-invoice",
-      "label": "Bill of Supply vs Tax Invoice Under GSTBill of Supply vs Tax Invoice Under GST. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Bill of Supply vs Tax Invoice Under GSTBill of Supply vs Tax Invoice Under GST. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/credit-note-after-invoice",
-      "label": "How to Issue a Credit Note After an InvoiceHow to Issue a Credit Note After an Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "How to Issue a Credit Note After an InvoiceHow to Issue a Credit Note After an Invoice. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/recurring-invoice-guide",
-      "label": "Recurring Invoice Guide for Retainers and SubscriptionsRecurring Invoice Guide for Retainers and Subscriptions. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Recurring Invoice Guide for Retainers and SubscriptionsRecurring Invoice Guide for Retainers and Subscriptions. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/advance-payment-invoice-guide",
-      "label": "Advance Payment Invoice Guide: Deposits and Final BillingAdvance Payment Invoice Guide. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Advance Payment Invoice Guide: Deposits and Final BillingAdvance Payment Invoice Guide. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/milestone-invoice-template",
-      "label": "Milestone Invoice Template for ProjectsMilestone Invoice Template for Projects. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Milestone Invoice Template for ProjectsMilestone Invoice Template for Projects. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/send-invoice-email-whatsapp",
-      "label": "How to Send an Invoice by Email or WhatsAppHow to Send an Invoice by Email or WhatsApp. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "How to Send an Invoice by Email or WhatsAppHow to Send an Invoice by Email or WhatsApp. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/is-online-invoice-maker-safe",
-      "label": "Is an Online Invoice Maker Safe? Privacy ChecklistIs an Online Invoice Maker Safe. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "Is an Online Invoice Maker Safe? Privacy ChecklistIs an Online Invoice Maker Safe. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/blog/common-invoice-mistakes-india",
-      "label": "15 Common Invoice Mistakes Indian Businesses Should Avoid15 Common Invoice Mistakes Indian Businesses Should Avoid. Learn the required details, practical steps, example, GST considerations and common mistakes.",
-      "source": "link",
-      "depth": 2,
-      "navigationPath": [
-        "/accounting/profit-loss",
-        "All Pages",
-        "15 Common Invoice Mistakes Indian Businesses Should Avoid15 Common Invoice Mistakes Indian Businesses Should Avoid. Learn the required details, practical steps, example, GST considerations and common mistakes."
-      ]
-    },
-    {
-      "path": "/sales/quotations-estimates/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/quotations-estimates/new"
-      ]
-    },
-    {
-      "path": "/sales/proforma-invoices",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/proforma-invoices"
-      ]
-    },
-    {
-      "path": "/sales/proforma-invoices/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/proforma-invoices/new"
-      ]
-    },
-    {
-      "path": "/invoices",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/invoices"
-      ]
-    },
-    {
-      "path": "/invoices/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/invoices/new"
-      ]
-    },
-    {
-      "path": "/sales/payment-receipts",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/payment-receipts"
-      ]
-    },
-    {
-      "path": "/sales/delivery-challans/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/delivery-challans/new"
-      ]
-    },
-    {
-      "path": "/sales/credit-notes",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/credit-notes"
-      ]
-    },
-    {
-      "path": "/sales/credit-notes/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/sales/credit-notes/new"
-      ]
-    },
-    {
-      "path": "/purchases/vendor-leads",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/vendor-leads"
-      ]
-    },
-    {
-      "path": "/purchases/vendor-leads/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/vendor-leads/new"
-      ]
-    },
-    {
-      "path": "/purchases/vendors-suppliers",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/vendors-suppliers"
-      ]
-    },
-    {
-      "path": "/purchases/payout-receipts",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/payout-receipts"
-      ]
-    },
-    {
-      "path": "/purchases/purchase-orders",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/purchase-orders"
-      ]
-    },
-    {
-      "path": "/purchases/purchase-orders/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/purchase-orders/new"
-      ]
-    },
-    {
-      "path": "/purchases/debit-notes",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/debit-notes"
-      ]
-    },
-    {
-      "path": "/purchases/debit-notes/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/debit-notes/new"
-      ]
-    },
-    {
-      "path": "/purchases/hire-best-vendors",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/hire-best-vendors"
-      ]
-    },
-    {
-      "path": "/purchases/hire-best-vendors/new",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/purchases/hire-best-vendors/new"
-      ]
-    },
-    {
-      "path": "/expenses",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/expenses"
-      ]
-    },
-    {
-      "path": "/products",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/products"
-      ]
-    },
-    {
-      "path": "/inventory/warehouses",
-      "source": "seed",
-      "depth": 0,
-      "navigationPath": [
-        "/inventory/warehouses"
-      ]
-    },
     {
       "path": "/crm/client-performance-report",
       "source": "seed",
@@ -1089,8 +660,136 @@
         "/sales/delivery-challans",
         "GST Dashboard"
       ]
+    },
+    {
+      "path": "/sales/sales-orders",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/sales-orders"
+      ]
+    },
+    {
+      "path": "/sales/sales-orders/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/sales-orders/new"
+      ]
+    },
+    {
+      "path": "/sales/delivery-challans",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/sales/delivery-challans"
+      ]
+    },
+    {
+      "path": "/reports/vendors/scanned-documents",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/reports/vendors/scanned-documents"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-1",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-1"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-2b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-2b"
+      ]
+    },
+    {
+      "path": "/gst-reports/gstr-3b",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/gst-reports/gstr-3b"
+      ]
+    },
+    {
+      "path": "/automations",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/automations"
+      ]
+    },
+    {
+      "path": "/banking-payments",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/banking-payments"
+      ]
+    },
+    {
+      "path": "/payroll-hrms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/payroll-hrms"
+      ]
+    },
+    {
+      "path": "/leads",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/leads"
+      ]
+    },
+    {
+      "path": "/crm/pipelines",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/pipelines"
+      ]
+    },
+    {
+      "path": "/crm/forms",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms"
+      ]
+    },
+    {
+      "path": "/crm/forms/new",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/forms/new"
+      ]
+    },
+    {
+      "path": "/crm/lead-summary",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/lead-summary"
+      ]
+    },
+    {
+      "path": "/crm/team-sales-report",
+      "source": "seed",
+      "depth": 0,
+      "navigationPath": [
+        "/crm/team-sales-report"
+      ]
     }
   ],
   "failedPaths": [],
-  "completedAt": "2026-08-24T18:36:36.745Z"
+  "completedAt": "2026-08-30T03:23:01.709Z"
 }
