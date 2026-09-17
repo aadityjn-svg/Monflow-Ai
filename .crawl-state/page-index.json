@@ -61,18 +61,18 @@
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
-    "contentHash": "01457dc80f9ff560da923e084921c3b33cc294ba94d3d9769632911b6c854735",
-    "learnedAt": "2026-09-16T03:08:18.656Z"
+    "contentHash": "edd8e23b4e71de7750473d1cd9868d07af70e1fe89a152e1cfa98ca081be546a",
+    "learnedAt": "2026-09-17T10:53:33.680Z"
   },
   "/sales/sales-orders/new": {
     "path": "/sales/sales-orders/new",
-    "contentHash": "bf9664bec4babc7dccde0e8ac275b8404ad1443f1099173b72fb9e0e482ba11b",
-    "learnedAt": "2026-09-16T03:08:20.270Z"
+    "contentHash": "27149f175d3bb12e2476f96e7d8f65b81895d333145e4f91d57ae942f34101ef",
+    "learnedAt": "2026-09-17T10:53:35.108Z"
   },
   "/sales/delivery-challans": {
     "path": "/sales/delivery-challans",
-    "contentHash": "7ac86ec392e76fbba8bdfc402f290137d2b9ada5dd35e476b9fce33e7597f8ab",
-    "learnedAt": "2026-09-16T03:08:22.736Z"
+    "contentHash": "5961af8207df76b9ee3d14486d186e8528ef4105bfe89f50ff896cf90fb070f4",
+    "learnedAt": "2026-09-17T10:53:36.884Z"
   },
   "/sales/delivery-challans/new": {
     "path": "/sales/delivery-challans/new",
@@ -241,18 +241,18 @@
   },
   "/gst-reports/gstr-1": {
     "path": "/gst-reports/gstr-1",
-    "contentHash": "adec9f99abb5186f72927c71620c5eaec845eb4d976a9f40fbd464f4b87c5d38",
-    "learnedAt": "2026-09-16T03:08:25.692Z"
+    "contentHash": "d0d01c1e6571500f7bfdb3c7f681e066bb2d299b4a7bf810f418976e0a16f9ed",
+    "learnedAt": "2026-09-17T10:53:39.845Z"
   },
   "/gst-reports/gstr-2b": {
     "path": "/gst-reports/gstr-2b",
-    "contentHash": "7b9a965e47ac5097801e4f0b1004b76ff378d6c66d9ca3d422a485b317e2e679",
-    "learnedAt": "2026-09-16T03:08:27.240Z"
+    "contentHash": "d99cb4c09636abfdaf779053d7c891b0a061b1c6c71ded0aac48ad3f228f1d1b",
+    "learnedAt": "2026-09-17T10:53:41.274Z"
   },
   "/gst-reports/gstr-3b": {
     "path": "/gst-reports/gstr-3b",
-    "contentHash": "e194e57ec2c34301f31bbf5b46ea9db54725ad1be569ad75700fc329495252e5",
-    "learnedAt": "2026-09-16T03:08:28.705Z"
+    "contentHash": "0ace77066786773b53a0d28ef185a1f26ae349f37a71aa543c369ca230fa0e1b",
+    "learnedAt": "2026-09-17T10:53:42.763Z"
   },
   "/automations": {
     "path": "/automations",
@@ -261,43 +261,43 @@
   },
   "/banking-payments": {
     "path": "/banking-payments",
-    "contentHash": "76ac26c3db4faf5101f8c2683876801d5899ebfe5c3028dc773012afbf484e13",
-    "learnedAt": "2026-09-16T03:08:31.709Z"
+    "contentHash": "7bcb309dc3f5e079e6a965b281b9026ff4f1ee6b10f9a050a0ddd9fbccc5aa14",
+    "learnedAt": "2026-09-17T10:53:46.024Z"
   },
   "/payroll-hrms": {
     "path": "/payroll-hrms",
-    "contentHash": "65d9d550308e1f20114dab872f799a2e38b11b74b9f1818981c27e74a6b7f6d9",
-    "learnedAt": "2026-09-16T03:08:33.239Z"
+    "contentHash": "7dcedef49bf09c70ad6c799919d3a19afc38789aed555ee46ebe31272fcdb2b7",
+    "learnedAt": "2026-09-17T10:53:47.508Z"
   },
   "/leads": {
     "path": "/leads",
-    "contentHash": "4be9c93f57b27a2674b354d3976e4ebd7c8cf7fa327a841883d4a93c3fa463a3",
-    "learnedAt": "2026-09-16T03:08:34.688Z"
+    "contentHash": "58e23b6e284345788dde3de68ee68556f02ad471035a016df93cede457bdb332",
+    "learnedAt": "2026-09-17T10:53:48.973Z"
   },
   "/crm/pipelines": {
     "path": "/crm/pipelines",
-    "contentHash": "8bb17593b77169dda847db98da06884872ad4195144ee2f23d0076de9795b53b",
-    "learnedAt": "2026-09-16T03:08:36.138Z"
+    "contentHash": "b033866771d8666a07f94ca8836295ee8967a7f759c4f7adb8ca944e3849e6d4",
+    "learnedAt": "2026-09-17T10:53:50.409Z"
   },
   "/crm/forms": {
     "path": "/crm/forms",
-    "contentHash": "57ac470b1cad28254eada542fa9b01925c3b6108d38c6e662dfdf0b139f8b5c2",
-    "learnedAt": "2026-09-16T03:08:37.620Z"
+    "contentHash": "950051a98c9273c6ce453895a31f4156fe2cb9d021090e2d46bd25b86499797e",
+    "learnedAt": "2026-09-17T10:53:51.887Z"
   },
   "/crm/forms/new": {
     "path": "/crm/forms/new",
-    "contentHash": "36658043cc1df2f5680ddc39b532695e0c989e40d3246e76bdd33aec02baa15a",
-    "learnedAt": "2026-09-16T03:08:39.095Z"
+    "contentHash": "7a16441d347f5557c8f1d43192c3d7ede400901f1d68b704d07a3e141bc0584b",
+    "learnedAt": "2026-09-17T10:53:53.393Z"
   },
   "/crm/lead-summary": {
     "path": "/crm/lead-summary",
-    "contentHash": "d31292e7f56dcc8571738e3583a7c2202b44d55c8aaecd75e0e27a85fea8f5b5",
-    "learnedAt": "2026-09-16T03:08:40.588Z"
+    "contentHash": "7a5eb40a49d1738c6055d6b89099dc4c5ed73f97dc4e5c2dbf41b9cc6a99d0e1",
+    "learnedAt": "2026-09-17T10:53:54.840Z"
   },
   "/crm/team-sales-report": {
     "path": "/crm/team-sales-report",
-    "contentHash": "434a7327f343da2e0115384bb5e6ac6ac26c6fbd86e0b49e32782865bc24aeaf",
-    "learnedAt": "2026-09-16T03:08:42.058Z"
+    "contentHash": "076b3ad844fe4773ea4fd5ee14685badea4244d9e225d4d133236c16231acfb8",
+    "learnedAt": "2026-09-17T10:53:56.273Z"
   },
   "/crm/client-performance-report": {
     "path": "/crm/client-performance-report",
@@ -571,8 +571,8 @@
   },
   "/blog/graphic-designer-invoice-template": {
     "path": "/blog/graphic-designer-invoice-template",
-    "contentHash": "0689ea55b0b81c9219018c4dcfbb8212a31127dfb6030cf8665b664b85079d5b",
-    "learnedAt": "2026-09-15T20:50:23.792Z"
+    "contentHash": "20b2a372c8a61655a0a9a3ea7a6ff2171d5056b4aeebb2ea7abd36a4a81222e9",
+    "learnedAt": "2026-09-17T10:54:39.824Z"
   },
   "/blog/web-developer-invoice-template": {
     "path": "/blog/web-developer-invoice-template",
@@ -626,8 +626,8 @@
   },
   "/blog/manufacturing-invoice-template": {
     "path": "/blog/manufacturing-invoice-template",
-    "contentHash": "7b17e1237e91be8e2dbecc566f450865d90761d8d10c28c6fe6c62df4f0760ff",
-    "learnedAt": "2026-09-15T20:51:01.065Z"
+    "contentHash": "b0e4ac721b951f0349ff00a8f0d2bca74ca1706090c4e30bb9ab5535d005b9c8",
+    "learnedAt": "2026-09-17T10:55:16.907Z"
   },
   "/blog/transport-logistics-invoice-template": {
     "path": "/blog/transport-logistics-invoice-template",
@@ -781,8 +781,8 @@
   },
   "/proforma-invoice-template": {
     "path": "/proforma-invoice-template",
-    "contentHash": "c8e61dcd3fdb38f0c017f7f92b4e27e1db6b4ab3fa53cdeb47485f8b263f1b61",
-    "learnedAt": "2026-09-15T20:49:46.755Z"
+    "contentHash": "87dd9e501e6d9cc3467fe5dff9d85a3ef7da081f6102f7184839fd2d6f0f5ffe",
+    "learnedAt": "2026-09-17T10:54:02.802Z"
   },
   "/delivery-challan-format": {
     "path": "/delivery-challan-format",

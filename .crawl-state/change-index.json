@@ -73,21 +73,21 @@
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
-    "previousHash": "80e8206e3294d67ff7d6b2eeb9e45b5aadd7c6d6500c3bc7ba099e0659174b8b",
-    "currentHash": "01457dc80f9ff560da923e084921c3b33cc294ba94d3d9769632911b6c854735",
-    "changedAt": "2026-09-16T03:08:18.656Z"
+    "previousHash": "01457dc80f9ff560da923e084921c3b33cc294ba94d3d9769632911b6c854735",
+    "currentHash": "edd8e23b4e71de7750473d1cd9868d07af70e1fe89a152e1cfa98ca081be546a",
+    "changedAt": "2026-09-17T10:53:33.681Z"
   },
   "/sales/sales-orders/new": {
     "path": "/sales/sales-orders/new",
-    "previousHash": "27149f175d3bb12e2476f96e7d8f65b81895d333145e4f91d57ae942f34101ef",
-    "currentHash": "bf9664bec4babc7dccde0e8ac275b8404ad1443f1099173b72fb9e0e482ba11b",
-    "changedAt": "2026-09-16T03:08:20.272Z"
+    "previousHash": "bf9664bec4babc7dccde0e8ac275b8404ad1443f1099173b72fb9e0e482ba11b",
+    "currentHash": "27149f175d3bb12e2476f96e7d8f65b81895d333145e4f91d57ae942f34101ef",
+    "changedAt": "2026-09-17T10:53:35.109Z"
   },
   "/sales/delivery-challans": {
     "path": "/sales/delivery-challans",
-    "previousHash": "8698bd68988da43cad671e31278d961964cfd584375f654ffe65a0308071730d",
-    "currentHash": "7ac86ec392e76fbba8bdfc402f290137d2b9ada5dd35e476b9fce33e7597f8ab",
-    "changedAt": "2026-09-16T03:08:22.742Z"
+    "previousHash": "7ac86ec392e76fbba8bdfc402f290137d2b9ada5dd35e476b9fce33e7597f8ab",
+    "currentHash": "5961af8207df76b9ee3d14486d186e8528ef4105bfe89f50ff896cf90fb070f4",
+    "changedAt": "2026-09-17T10:53:36.886Z"
   },
   "/sales/delivery-challans/new": {
     "path": "/sales/delivery-challans/new",
@@ -289,21 +289,21 @@
   },
   "/gst-reports/gstr-1": {
     "path": "/gst-reports/gstr-1",
-    "previousHash": "46758f0fd35927439a41d01ca7c726c6e065f4bed4ff9f8ee07fc9c1f406b343",
-    "currentHash": "adec9f99abb5186f72927c71620c5eaec845eb4d976a9f40fbd464f4b87c5d38",
-    "changedAt": "2026-09-16T03:08:25.693Z"
+    "previousHash": "adec9f99abb5186f72927c71620c5eaec845eb4d976a9f40fbd464f4b87c5d38",
+    "currentHash": "d0d01c1e6571500f7bfdb3c7f681e066bb2d299b4a7bf810f418976e0a16f9ed",
+    "changedAt": "2026-09-17T10:53:39.846Z"
   },
   "/gst-reports/gstr-2b": {
     "path": "/gst-reports/gstr-2b",
-    "previousHash": "d99cb4c09636abfdaf779053d7c891b0a061b1c6c71ded0aac48ad3f228f1d1b",
-    "currentHash": "7b9a965e47ac5097801e4f0b1004b76ff378d6c66d9ca3d422a485b317e2e679",
-    "changedAt": "2026-09-16T03:08:27.241Z"
+    "previousHash": "7b9a965e47ac5097801e4f0b1004b76ff378d6c66d9ca3d422a485b317e2e679",
+    "currentHash": "d99cb4c09636abfdaf779053d7c891b0a061b1c6c71ded0aac48ad3f228f1d1b",
+    "changedAt": "2026-09-17T10:53:41.275Z"
   },
   "/gst-reports/gstr-3b": {
     "path": "/gst-reports/gstr-3b",
-    "previousHash": "f4094f6ff4267cf124d0997e4007e2c701f7c3934ae95b1a169575d242d6a47d",
-    "currentHash": "e194e57ec2c34301f31bbf5b46ea9db54725ad1be569ad75700fc329495252e5",
-    "changedAt": "2026-09-16T03:08:28.706Z"
+    "previousHash": "e194e57ec2c34301f31bbf5b46ea9db54725ad1be569ad75700fc329495252e5",
+    "currentHash": "0ace77066786773b53a0d28ef185a1f26ae349f37a71aa543c369ca230fa0e1b",
+    "changedAt": "2026-09-17T10:53:42.764Z"
   },
   "/automations": {
     "path": "/automations",
@@ -313,51 +313,51 @@
   },
   "/banking-payments": {
     "path": "/banking-payments",
-    "previousHash": "18184c0a0186648ff7650571a883514291ecfe8cc105e96980492b975d25030e",
-    "currentHash": "76ac26c3db4faf5101f8c2683876801d5899ebfe5c3028dc773012afbf484e13",
-    "changedAt": "2026-09-16T03:08:31.709Z"
+    "previousHash": "76ac26c3db4faf5101f8c2683876801d5899ebfe5c3028dc773012afbf484e13",
+    "currentHash": "7bcb309dc3f5e079e6a965b281b9026ff4f1ee6b10f9a050a0ddd9fbccc5aa14",
+    "changedAt": "2026-09-17T10:53:46.026Z"
   },
   "/payroll-hrms": {
     "path": "/payroll-hrms",
-    "previousHash": "0cac6158fdfb08378d1a9d57a6c20b885b4c8a53285492efd5048ad8e7ce66f9",
-    "currentHash": "65d9d550308e1f20114dab872f799a2e38b11b74b9f1818981c27e74a6b7f6d9",
-    "changedAt": "2026-09-16T03:08:33.239Z"
+    "previousHash": "65d9d550308e1f20114dab872f799a2e38b11b74b9f1818981c27e74a6b7f6d9",
+    "currentHash": "7dcedef49bf09c70ad6c799919d3a19afc38789aed555ee46ebe31272fcdb2b7",
+    "changedAt": "2026-09-17T10:53:47.509Z"
   },
   "/leads": {
     "path": "/leads",
-    "previousHash": "fff2a3cb89c64e749e2216774e252c7bb9f28ee3f216341d84966e3a93ccdac9",
-    "currentHash": "4be9c93f57b27a2674b354d3976e4ebd7c8cf7fa327a841883d4a93c3fa463a3",
-    "changedAt": "2026-09-16T03:08:34.689Z"
+    "previousHash": "4be9c93f57b27a2674b354d3976e4ebd7c8cf7fa327a841883d4a93c3fa463a3",
+    "currentHash": "58e23b6e284345788dde3de68ee68556f02ad471035a016df93cede457bdb332",
+    "changedAt": "2026-09-17T10:53:48.974Z"
   },
   "/crm/pipelines": {
     "path": "/crm/pipelines",
-    "previousHash": "88a44653ac5f5ffecca92fef6da5031c701a1de1041031d8343a854da063c9df",
-    "currentHash": "8bb17593b77169dda847db98da06884872ad4195144ee2f23d0076de9795b53b",
-    "changedAt": "2026-09-16T03:08:36.138Z"
+    "previousHash": "8bb17593b77169dda847db98da06884872ad4195144ee2f23d0076de9795b53b",
+    "currentHash": "b033866771d8666a07f94ca8836295ee8967a7f759c4f7adb8ca944e3849e6d4",
+    "changedAt": "2026-09-17T10:53:50.416Z"
   },
   "/crm/forms": {
     "path": "/crm/forms",
-    "previousHash": "4b793d9a7102e79c7a6c8f71d22f1e64f7aec77d71db461735cd04bcc7ac35f7",
-    "currentHash": "57ac470b1cad28254eada542fa9b01925c3b6108d38c6e662dfdf0b139f8b5c2",
-    "changedAt": "2026-09-16T03:08:37.621Z"
+    "previousHash": "57ac470b1cad28254eada542fa9b01925c3b6108d38c6e662dfdf0b139f8b5c2",
+    "currentHash": "950051a98c9273c6ce453895a31f4156fe2cb9d021090e2d46bd25b86499797e",
+    "changedAt": "2026-09-17T10:53:51.888Z"
   },
   "/crm/forms/new": {
     "path": "/crm/forms/new",
-    "previousHash": "dd46bb49baf880593a3ec9fff50fed66b4247d3f9bcd011454f935c1343e0ca0",
-    "currentHash": "36658043cc1df2f5680ddc39b532695e0c989e40d3246e76bdd33aec02baa15a",
-    "changedAt": "2026-09-16T03:08:39.096Z"
+    "previousHash": "36658043cc1df2f5680ddc39b532695e0c989e40d3246e76bdd33aec02baa15a",
+    "currentHash": "7a16441d347f5557c8f1d43192c3d7ede400901f1d68b704d07a3e141bc0584b",
+    "changedAt": "2026-09-17T10:53:53.393Z"
   },
   "/crm/lead-summary": {
     "path": "/crm/lead-summary",
-    "previousHash": "ec24a6ddec0bfbf659194ab4cdd7784cfb6d3ad188c86b2658cc5cecbe9cdfb0",
-    "currentHash": "d31292e7f56dcc8571738e3583a7c2202b44d55c8aaecd75e0e27a85fea8f5b5",
-    "changedAt": "2026-09-16T03:08:40.588Z"
+    "previousHash": "d31292e7f56dcc8571738e3583a7c2202b44d55c8aaecd75e0e27a85fea8f5b5",
+    "currentHash": "7a5eb40a49d1738c6055d6b89099dc4c5ed73f97dc4e5c2dbf41b9cc6a99d0e1",
+    "changedAt": "2026-09-17T10:53:54.841Z"
   },
   "/crm/team-sales-report": {
     "path": "/crm/team-sales-report",
-    "previousHash": "c5c8fd72bb91e9a0eb94e56bcf7278689ff29526bdf841077a5a3d15adcaf810",
-    "currentHash": "434a7327f343da2e0115384bb5e6ac6ac26c6fbd86e0b49e32782865bc24aeaf",
-    "changedAt": "2026-09-16T03:08:42.058Z"
+    "previousHash": "434a7327f343da2e0115384bb5e6ac6ac26c6fbd86e0b49e32782865bc24aeaf",
+    "currentHash": "076b3ad844fe4773ea4fd5ee14685badea4244d9e225d4d133236c16231acfb8",
+    "changedAt": "2026-09-17T10:53:56.274Z"
   },
   "/crm/client-performance-report": {
     "path": "/crm/client-performance-report",
@@ -685,9 +685,9 @@
   },
   "/blog/graphic-designer-invoice-template": {
     "path": "/blog/graphic-designer-invoice-template",
-    "previousHash": "deccb98cc5008c3711b5ea509898218cd09b1bcafb2831b2f05213c87db6016f",
-    "currentHash": "0689ea55b0b81c9219018c4dcfbb8212a31127dfb6030cf8665b664b85079d5b",
-    "changedAt": "2026-09-15T20:50:23.793Z"
+    "previousHash": "0689ea55b0b81c9219018c4dcfbb8212a31127dfb6030cf8665b664b85079d5b",
+    "currentHash": "20b2a372c8a61655a0a9a3ea7a6ff2171d5056b4aeebb2ea7abd36a4a81222e9",
+    "changedAt": "2026-09-17T10:54:39.824Z"
   },
   "/blog/web-developer-invoice-template": {
     "path": "/blog/web-developer-invoice-template",
@@ -751,9 +751,9 @@
   },
   "/blog/manufacturing-invoice-template": {
     "path": "/blog/manufacturing-invoice-template",
-    "previousHash": "7a69d3e5dd3805dc44b884ab7f1eff06f93c6995a038c71dc5bc66943d9e5eaa",
-    "currentHash": "7b17e1237e91be8e2dbecc566f450865d90761d8d10c28c6fe6c62df4f0760ff",
-    "changedAt": "2026-09-15T20:51:01.065Z"
+    "previousHash": "7b17e1237e91be8e2dbecc566f450865d90761d8d10c28c6fe6c62df4f0760ff",
+    "currentHash": "b0e4ac721b951f0349ff00a8f0d2bca74ca1706090c4e30bb9ab5535d005b9c8",
+    "changedAt": "2026-09-17T10:55:16.907Z"
   },
   "/blog/transport-logistics-invoice-template": {
     "path": "/blog/transport-logistics-invoice-template",
@@ -937,9 +937,9 @@
   },
   "/proforma-invoice-template": {
     "path": "/proforma-invoice-template",
-    "previousHash": "87dd9e501e6d9cc3467fe5dff9d85a3ef7da081f6102f7184839fd2d6f0f5ffe",
-    "currentHash": "c8e61dcd3fdb38f0c017f7f92b4e27e1db6b4ab3fa53cdeb47485f8b263f1b61",
-    "changedAt": "2026-09-15T20:49:46.756Z"
+    "previousHash": "c8e61dcd3fdb38f0c017f7f92b4e27e1db6b4ab3fa53cdeb47485f8b263f1b61",
+    "currentHash": "87dd9e501e6d9cc3467fe5dff9d85a3ef7da081f6102f7184839fd2d6f0f5ffe",
+    "changedAt": "2026-09-17T10:54:02.803Z"
   },
   "/delivery-challan-format": {
     "path": "/delivery-challan-format",
