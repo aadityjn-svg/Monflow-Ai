@@ -156,83 +156,83 @@
   },
   "/inventory/product-wise-pl": {
     "path": "/inventory/product-wise-pl",
-    "contentHash": "05f5e067b89594234a8cef38f6aa72aabd02ab501c360deb036b25c6ebf1db26",
-    "learnedAt": "2026-09-26T03:17:56.219Z"
+    "contentHash": "f9fe81d9352613227132ea34dbf079bfe84ab2f2ab3afa4a89756df71217018e",
+    "learnedAt": "2026-09-27T16:18:10.780Z"
   },
   "/inventory/stock-value-report": {
     "path": "/inventory/stock-value-report",
-    "contentHash": "dfc222d243b0832e96577a08586f7f16d45673329c391ca6f24d8d71dbc7c45e",
-    "learnedAt": "2026-09-26T03:17:57.770Z"
+    "contentHash": "35349bd763fa54cb406de57f254e340f47dca48b52b33d91e23eea53f8201f5a",
+    "learnedAt": "2026-09-27T16:18:12.460Z"
   },
   "/inventory/batch-expiry-report": {
     "path": "/inventory/batch-expiry-report",
-    "contentHash": "39b6b3d74d14f3c887e4b85a4c17fbcba8b7c1df1c2347053f2a1deba8696e3a",
-    "learnedAt": "2026-09-26T03:17:59.202Z"
+    "contentHash": "0d7550c2dfe66ed2ad44b9c21368e10030ea09c404b0f46a6d7314a9a495eaee",
+    "learnedAt": "2026-09-27T16:18:14.191Z"
   },
   "/inventory/party-transactions-report": {
     "path": "/inventory/party-transactions-report",
-    "contentHash": "ce84cc6010d0963c5f87b25de282645978795b8991028c4f4cfd24ec21a882da",
-    "learnedAt": "2026-09-26T03:18:00.767Z"
+    "contentHash": "f858f9f60aeb83e89b437d8de88d4751a308586afb040dcfb47475760bbee7b2",
+    "learnedAt": "2026-09-27T16:18:15.859Z"
   },
   "/inventory/all-transactions-report": {
     "path": "/inventory/all-transactions-report",
-    "contentHash": "a06022a32248fe1a38110343a3f299f9e4839705f8c851c3249cc2c74f6c81e4",
-    "learnedAt": "2026-09-26T03:18:02.337Z"
+    "contentHash": "aa631c1e2cb9d5056deb3ea2afd7018e43eb71e27b11cef78949ba6dd15a9357",
+    "learnedAt": "2026-09-27T16:18:17.558Z"
   },
   "/inventory/stock-status-report": {
     "path": "/inventory/stock-status-report",
-    "contentHash": "91cb1194212c1ee610ce6f8f40a9eaaeb5df46155acc487734bbd47f880ba32a",
-    "learnedAt": "2026-09-26T03:18:03.946Z"
+    "contentHash": "9da69e2d3f78ed42be71c598801f7e52cd30bdfc59bfa505e36f37a41ffe09e1",
+    "learnedAt": "2026-09-27T16:18:19.216Z"
   },
   "/reports": {
     "path": "/reports",
-    "contentHash": "0dd8d9ed3ba6d286c7bb8d73c1448a87f79f2136f528c6fb9fc7548c93cc313d",
-    "learnedAt": "2026-09-26T03:18:05.397Z"
+    "contentHash": "11749098c706fa52f000ff1d71aa5434db4cdb5b88cf0be257fa8c4dacb06e2b",
+    "learnedAt": "2026-09-27T16:18:22.414Z"
   },
   "/reports/vendors": {
     "path": "/reports/vendors",
-    "contentHash": "852534cad7e1a9e60d3c8d2ab33678b00c5742b9b58bbd28a731a5cd06811ac8",
-    "learnedAt": "2026-09-26T03:18:06.798Z"
+    "contentHash": "15bb5ec01ddcfc88693cfa57e2d4d7feb5be519618a7e891efbced0fb0881146",
+    "learnedAt": "2026-09-27T16:18:24.003Z"
   },
   "/reports/vendors/tag-wise": {
     "path": "/reports/vendors/tag-wise",
-    "contentHash": "4575451fc9a2640f10261e6eda6ab447a50cae0e1352dad7a11238f1f1c8c44a",
-    "learnedAt": "2026-09-26T03:18:09.034Z"
+    "contentHash": "fe65ae3b4b8546ebcd266529f22a40a50c5d163105c80d853b37be6800dc965a",
+    "learnedAt": "2026-09-27T16:18:25.503Z"
   },
   "/reports/vendors/project-wise-pl": {
     "path": "/reports/vendors/project-wise-pl",
-    "contentHash": "4c6c2947490126ddc507b0e4d39dcd68d093aa9f1d7379bf4cd7ba90069c4b6e",
-    "learnedAt": "2026-09-26T03:18:11.343Z"
+    "contentHash": "8a057daf4d7cbd28083552bf4c6a67f1940d90d132d7a49e45fafa84a51740be",
+    "learnedAt": "2026-09-27T16:18:28.403Z"
   },
   "/reports/vendors/payment-report": {
     "path": "/reports/vendors/payment-report",
-    "contentHash": "5c4035c70b532defd1a0f9fdc06ba2ec3207fe4e843dece2b183b2628ec1baae",
-    "learnedAt": "2026-09-26T03:18:13.502Z"
+    "contentHash": "1aa99c1dc31c7fe7fdd6a2e078062f3e16c61a4c3179f1ab157fb424358476af",
+    "learnedAt": "2026-09-27T16:18:31.408Z"
   },
   "/reports/vendors/tds-report": {
     "path": "/reports/vendors/tds-report",
-    "contentHash": "b7a8f5bbbe2fa607308c0bb7c43517bc2751979635bad4b775eb8b05a0fc5e06",
-    "learnedAt": "2026-09-26T03:18:14.914Z"
+    "contentHash": "c625553ed5de10659198af9a8dc5a41d405ab10faf4c08177538cc22d8c8432f",
+    "learnedAt": "2026-09-27T16:18:34.318Z"
   },
   "/reports/vendors/gst-report": {
     "path": "/reports/vendors/gst-report",
-    "contentHash": "0449d3ab8cac7f696b83f64b5737a7295a7a7bfc7011ca13ce8e6a886f2b595b",
-    "learnedAt": "2026-09-26T03:18:17.053Z"
+    "contentHash": "29d2e3b01b58328c8eca2d50710ec580c4466127c81cc66b55eb8590e4dba1ec",
+    "learnedAt": "2026-09-27T16:18:37.337Z"
   },
   "/reports/vendors/line-item-report": {
     "path": "/reports/vendors/line-item-report",
-    "contentHash": "7518e2b2a75ca25c956b719d43ae396fe50c3f71605d916ad01f4e89045b0d72",
-    "learnedAt": "2026-09-19T20:01:00.473Z"
+    "contentHash": "d8b59d1b4eb3e5971b231dcedcb2c26c16cfecf80e3d62e5a794fafd2b11e0fd",
+    "learnedAt": "2026-09-27T16:18:38.917Z"
   },
   "/reports/vendors/hsn-report": {
     "path": "/reports/vendors/hsn-report",
-    "contentHash": "52265a471fe97ae0d379c5966b3d8dc64cc3c41a0b6efb95885cce34bf025289",
-    "learnedAt": "2026-09-19T20:01:03.500Z"
+    "contentHash": "fc635f8e0387cd447e529d5387a61c97fd00039de615ae6b7c983bd99fd2dcff",
+    "learnedAt": "2026-09-27T16:18:40.423Z"
   },
   "/reports/vendors/suggested-purchases": {
     "path": "/reports/vendors/suggested-purchases",
-    "contentHash": "508ac328bb052ace2ca1828a494c4b5f4db9ed6eeff2de672f9da23fc3127dce",
-    "learnedAt": "2026-09-19T20:01:04.987Z"
+    "contentHash": "e9bdc0e3a3917a49b9a96e58890b74697969024d9eb214b8c1936ffb48679ba7",
+    "learnedAt": "2026-09-27T16:18:43.371Z"
   },
   "/reports/vendors/scanned-documents": {
     "path": "/reports/vendors/scanned-documents",
@@ -531,138 +531,138 @@
   },
   "/blog/free-invoice-maker-without-signup": {
     "path": "/blog/free-invoice-maker-without-signup",
-    "contentHash": "33f68b4ae8319401f973ddf2ebc992bdc02f685c99dedfdfd2fae7025c7bd104",
-    "learnedAt": "2026-09-09T20:21:23.186Z"
+    "contentHash": "70ddbf1cb0bb73d2731776c6eff86f5ba9b19d614268e9997fd74f7a006e607d",
+    "learnedAt": "2026-09-27T16:18:59.997Z"
   },
   "/blog/free-gst-invoice-maker-india": {
     "path": "/blog/free-gst-invoice-maker-india",
-    "contentHash": "3b4b17fa4cf4342f61f25912eee195fce8fb4329facbeb79496b409867e97663",
-    "learnedAt": "2026-09-09T20:21:26.641Z"
+    "contentHash": "d201d8cd87c2c183660c11e89221c859fac1dd22dd0fb59c75d189683fc9e0af",
+    "learnedAt": "2026-09-27T16:19:03.331Z"
   },
   "/blog/invoice-generator-for-freelancers": {
     "path": "/blog/invoice-generator-for-freelancers",
-    "contentHash": "23869936fdd9a9d4001c272e946bc32c31f335c1e63b0b891d64ec0fdd3e7718",
-    "learnedAt": "2026-09-09T20:21:30.213Z"
+    "contentHash": "5ac8533f8521bfec09d9c923ddd09ee1051fe82919d111fd5c96bdd047354437",
+    "learnedAt": "2026-09-27T16:19:06.642Z"
   },
   "/blog/invoice-maker-with-logo": {
     "path": "/blog/invoice-maker-with-logo",
-    "contentHash": "1aee1b47ff151fd4cd663902e9050e9929e56dde8931c0623ad6a5043af6a410",
-    "learnedAt": "2026-09-09T20:21:33.787Z"
+    "contentHash": "5178ef760db6fa0791638df5308dc8a1df8adcf93f6661a9c2a798aff55da418",
+    "learnedAt": "2026-09-27T16:19:10.095Z"
   },
   "/blog/create-invoice-and-download-pdf": {
     "path": "/blog/create-invoice-and-download-pdf",
-    "contentHash": "f6a959d0444b3e27b134fb4b074fa05d82a197623ffe7837046f728a283b5d3d",
-    "learnedAt": "2026-09-15T20:50:10.173Z"
+    "contentHash": "6fe80da2824bc4ea48910f590a1e58d46661f6218480a3827bd37d4533d9f0f7",
+    "learnedAt": "2026-09-27T16:19:13.458Z"
   },
   "/blog/invoice-template-for-small-business": {
     "path": "/blog/invoice-template-for-small-business",
-    "contentHash": "299796cd72749ab18964257f24ecd649a135cc9d5df1195268ac0a5f54355344",
-    "learnedAt": "2026-09-15T20:50:13.653Z"
+    "contentHash": "08f56ad096dbadf40a48b5b7c74ecec69c91ce8b3f6ae09b4220e2ad31297950",
+    "learnedAt": "2026-09-27T16:19:16.860Z"
   },
   "/blog/professional-service-invoice-template": {
     "path": "/blog/professional-service-invoice-template",
-    "contentHash": "9072d84bea5b55440052634e1b381e8f2446876e77c95c56651f7721d2f2c0cc",
-    "learnedAt": "2026-09-15T20:50:16.991Z"
+    "contentHash": "c945545583f29572fd184b807ce7c0efe78c7220232a2edb9b2433338472ebc8",
+    "learnedAt": "2026-09-27T16:19:20.232Z"
   },
   "/blog/consultant-invoice-template-india": {
     "path": "/blog/consultant-invoice-template-india",
-    "contentHash": "dcd93c835e2c59cfeb633e26fd23664cad42cf4a840695b3ccd7fb61811b9d69",
-    "learnedAt": "2026-09-15T20:50:20.310Z"
+    "contentHash": "e0d0722f0e84099f682a62ae86ea10077558a286298cf3fc2d950b5789095002",
+    "learnedAt": "2026-09-27T16:19:23.566Z"
   },
   "/blog/graphic-designer-invoice-template": {
     "path": "/blog/graphic-designer-invoice-template",
-    "contentHash": "20b2a372c8a61655a0a9a3ea7a6ff2171d5056b4aeebb2ea7abd36a4a81222e9",
-    "learnedAt": "2026-09-17T10:54:39.824Z"
+    "contentHash": "cbefe54b6fbdbe599db1d8f19292f51911683f17f3065e8e44465f9436edb152",
+    "learnedAt": "2026-09-27T16:19:27.025Z"
   },
   "/blog/web-developer-invoice-template": {
     "path": "/blog/web-developer-invoice-template",
-    "contentHash": "68401873e50497f6cccb7aa0ac7e3f6e223128ad93499b993d3bdc7dbb03b264",
-    "learnedAt": "2026-09-15T20:50:27.104Z"
+    "contentHash": "91d6b5bd8d7ca64ce48ffbda1bdc7b7a652ab373fb99871f88ffe1bd7b5c9ba0",
+    "learnedAt": "2026-09-27T16:19:30.512Z"
   },
   "/blog/digital-marketing-agency-invoice-template": {
     "path": "/blog/digital-marketing-agency-invoice-template",
-    "contentHash": "5688104d4e5c810647bb0c2cbdade707af875836543661e90220cf10dca7ad22",
-    "learnedAt": "2026-09-15T20:50:30.475Z"
+    "contentHash": "0222c383f7baa39deaf33b97b7d9bfec1dd07f71e6594f1a215ec931c8538768",
+    "learnedAt": "2026-09-27T16:19:33.845Z"
   },
   "/blog/accounting-firm-invoice-template": {
     "path": "/blog/accounting-firm-invoice-template",
-    "contentHash": "9d6c3b10f00b477d54730c85c39c97bc9fde13f979afeb97e78d4b34b90160e9",
-    "learnedAt": "2026-09-15T20:50:33.918Z"
+    "contentHash": "1b7bf253b602967a1a1ea352d68569755e506886dfb2d42d03828a4220105e56",
+    "learnedAt": "2026-09-27T16:19:37.272Z"
   },
   "/blog/photographer-invoice-template": {
     "path": "/blog/photographer-invoice-template",
-    "contentHash": "31ba110dec957561c90da822279b896836ba2989372e26a88445a501fe062071",
-    "learnedAt": "2026-09-15T20:50:37.256Z"
+    "contentHash": "3336248b2a08d10c50eb803bcce747fcd7ca3791e32b4de38df93eaf705c96f3",
+    "learnedAt": "2026-09-27T16:19:40.760Z"
   },
   "/blog/content-writer-invoice-template": {
     "path": "/blog/content-writer-invoice-template",
-    "contentHash": "c12222a8ccb778126cf13111952ed98483aafdc9884f93f427e1ead8c5ad0165",
-    "learnedAt": "2026-09-15T20:50:40.624Z"
+    "contentHash": "d3774c45210e9ca12ade545f8170863817533c30f69ee1b7a99e4d58c679cee9",
+    "learnedAt": "2026-09-27T16:19:44.187Z"
   },
   "/blog/architect-interior-designer-invoice-template": {
     "path": "/blog/architect-interior-designer-invoice-template",
-    "contentHash": "88ef871a2829320386cc5c6fc5bbf7afb42543840ddf8988ee45171dd87fa392",
-    "learnedAt": "2026-09-15T20:50:44.040Z"
+    "contentHash": "ecb45a55f8de28c30b37ad90ff29cf7ddc3b0e97383e50887b8a24a6b5c7885a",
+    "learnedAt": "2026-09-27T16:19:47.599Z"
   },
   "/blog/construction-contractor-invoice-template": {
     "path": "/blog/construction-contractor-invoice-template",
-    "contentHash": "836105472348bd61b63db56d5f160d91f944c0b659b97aad53e6010665fe7ecb",
-    "learnedAt": "2026-09-15T20:50:47.489Z"
+    "contentHash": "16cd2f6fb19d6f43d1d5dd52a4746f35c8e449f6683f69214f2418861929e567",
+    "learnedAt": "2026-09-27T16:19:50.994Z"
   },
   "/blog/retail-shop-gst-invoice-template": {
     "path": "/blog/retail-shop-gst-invoice-template",
-    "contentHash": "7d7011daa9a432065f26b67e112537475ea656982c9b5a069f1f997f9a8ab968",
-    "learnedAt": "2026-09-15T20:50:51.001Z"
+    "contentHash": "4fcc7d26f0321ae8e9a4ab69f262e80a36c8306f0d52b9d0f0e59d99e1194608",
+    "learnedAt": "2026-09-27T16:19:54.376Z"
   },
   "/blog/wholesale-invoice-template": {
     "path": "/blog/wholesale-invoice-template",
-    "contentHash": "8b1daeb6552f4a81d8f62962faa9ec18ef428e1f6336a7068100791465252376",
-    "learnedAt": "2026-09-15T20:50:54.405Z"
+    "contentHash": "fea84039da0d2a8a9d184986f3a1d385f61661a7ced7b3b6384d812705b8aa57",
+    "learnedAt": "2026-09-27T16:19:57.861Z"
   },
   "/blog/ecommerce-seller-invoice-template-india": {
     "path": "/blog/ecommerce-seller-invoice-template-india",
-    "contentHash": "43441c351c2ee3c8f70501293520299ad9d294ccfc95cb6ed6a06e58ae2accc1",
-    "learnedAt": "2026-09-15T20:50:57.719Z"
+    "contentHash": "afb082a639f9233ea41bc935af800f066ea0084a519a62d991db292d4ac3deae",
+    "learnedAt": "2026-09-27T16:20:01.221Z"
   },
   "/blog/manufacturing-invoice-template": {
     "path": "/blog/manufacturing-invoice-template",
-    "contentHash": "b0e4ac721b951f0349ff00a8f0d2bca74ca1706090c4e30bb9ab5535d005b9c8",
-    "learnedAt": "2026-09-17T10:55:16.907Z"
+    "contentHash": "6c6fea526e439be3bd72e93eb016aad8b20c8083a9bda41815e401daa991b9f3",
+    "learnedAt": "2026-09-27T16:20:04.659Z"
   },
   "/blog/transport-logistics-invoice-template": {
     "path": "/blog/transport-logistics-invoice-template",
-    "contentHash": "0a64dd9e071b418e55f87fc37bb3b447bb2d1a466e09723fdd1748e1c3ba1d5d",
-    "learnedAt": "2026-09-15T20:51:04.403Z"
+    "contentHash": "f1ef4c5314236cfff73139d75391dead58c5503a0a4277ac6de0361b84d61a34",
+    "learnedAt": "2026-09-27T16:20:07.976Z"
   },
   "/blog/repair-service-invoice-template": {
     "path": "/blog/repair-service-invoice-template",
-    "contentHash": "cbdfbb2281a7f41c40a2c37529a0e761232e6d6e413702f91db78ece4d86cad6",
-    "learnedAt": "2026-09-15T20:51:07.737Z"
+    "contentHash": "7229cb59a966e5c52ebe5cf025f4edf05a23f7e88ba6ea0a054f700217afe1c1",
+    "learnedAt": "2026-09-27T16:20:11.380Z"
   },
   "/blog/tutor-coaching-invoice-template": {
     "path": "/blog/tutor-coaching-invoice-template",
-    "contentHash": "57679f856f47a40cbedcfcbf085ddbb6d60775f0de9c283666942a3a46d1c5f7",
-    "learnedAt": "2026-09-15T20:51:11.229Z"
+    "contentHash": "deefb02fdf29077e3d1f69ad0e1f79745d1bd48d944e014300175f691703f4d6",
+    "learnedAt": "2026-09-27T16:20:14.686Z"
   },
   "/blog/refrens-alternative-free-invoice-maker": {
     "path": "/blog/refrens-alternative-free-invoice-maker",
-    "contentHash": "e987347a384ae702e47b9a615496f91119991353a63baa35008f4908afe7724c",
-    "learnedAt": "2026-09-15T20:51:14.554Z"
+    "contentHash": "54c718ee362f59393218a9a605ea17e284ecc74aa89a70bbd06e63745cfa5e55",
+    "learnedAt": "2026-09-27T16:20:18.139Z"
   },
   "/blog/catering-invoice-template": {
     "path": "/blog/catering-invoice-template",
-    "contentHash": "05e84b8cc8168936eef17430cbf102912a221ac2d4618eddaf8afe456aa549fb",
-    "learnedAt": "2026-09-15T20:51:17.985Z"
+    "contentHash": "e2b2d22d45e54977b81f3d28c5a0e8579458b1d16e0c223b101a7c3af2ea4e01",
+    "learnedAt": "2026-09-27T16:20:21.453Z"
   },
   "/blog/real-estate-broker-invoice-template": {
     "path": "/blog/real-estate-broker-invoice-template",
-    "contentHash": "3b87ad87a0785f3395ad0d73365b16268df107c4fadee67310cbb93b1d7f2563",
-    "learnedAt": "2026-09-15T20:51:21.520Z"
+    "contentHash": "bd09725ab3957a507f61255d8e650cf37a0925aa21743a0c2634f54a1ac96682",
+    "learnedAt": "2026-09-27T16:20:24.939Z"
   },
   "/blog/event-planner-invoice-template": {
     "path": "/blog/event-planner-invoice-template",
-    "contentHash": "6901d4355d26406a346d3500c0ca43ae89915b331ff81c34bbd4e43081d3c834",
-    "learnedAt": "2026-09-15T20:51:24.816Z"
+    "contentHash": "1a2c3649e4d409c5da1f4ce57729723c5b44e81b282bd6db8f72e967d4d7aa30",
+    "learnedAt": "2026-09-27T16:20:28.399Z"
   },
   "/blog/lawyer-legal-services-invoice-template": {
     "path": "/blog/lawyer-legal-services-invoice-template",
@@ -781,12 +781,12 @@
   },
   "/proforma-invoice-template": {
     "path": "/proforma-invoice-template",
-    "contentHash": "87dd9e501e6d9cc3467fe5dff9d85a3ef7da081f6102f7184839fd2d6f0f5ffe",
-    "learnedAt": "2026-09-17T10:54:02.802Z"
+    "contentHash": "ebaa0888adfb2c1261e3da9833b5a17ef2aacd8a9511abe3e052dc06a4ee5674",
+    "learnedAt": "2026-09-27T16:18:49.869Z"
   },
   "/delivery-challan-format": {
     "path": "/delivery-challan-format",
-    "contentHash": "0c9820318bd62672cb7ddf290906bebef20936a8ffa81bb3916963b4387b05bb",
-    "learnedAt": "2026-09-09T20:21:19.737Z"
+    "contentHash": "bb8a0870c8cd9214e08a8b8460e2c7dbd0967d1bdc9ae69b44f20506f42715ed",
+    "learnedAt": "2026-09-27T16:18:56.509Z"
   }
 }
