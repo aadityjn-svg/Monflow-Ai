@@ -16,8 +16,8 @@
   },
   "/sales/clients-prospects": {
     "path": "/sales/clients-prospects",
-    "contentHash": "03f18ddd2ddc42a644aa4acb99a5fd3dd1f2a36f4cf76b94476768ef979abef6",
-    "learnedAt": "2026-09-27T03:25:25.320Z"
+    "contentHash": "8046d844411354e389ffebfb97696956c1ec66a06bbae5b68f7d668a514c2b5d",
+    "learnedAt": "2026-09-28T03:22:55.179Z"
   },
   "/sales/quotations-estimates": {
     "path": "/sales/quotations-estimates",
@@ -61,18 +61,18 @@
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
-    "contentHash": "06a63993c25d7b48861e9b7c6e099c61f358d51c768d3bbd690df5c6fa0a3b24",
-    "learnedAt": "2026-09-27T03:25:31.829Z"
+    "contentHash": "c226cf35b53263027e27e24f46f75f92b8917f0f8edc226f1592f5281dc9b800",
+    "learnedAt": "2026-09-28T03:23:01.633Z"
   },
   "/sales/sales-orders/new": {
     "path": "/sales/sales-orders/new",
-    "contentHash": "27149f175d3bb12e2476f96e7d8f65b81895d333145e4f91d57ae942f34101ef",
-    "learnedAt": "2026-09-27T03:25:33.233Z"
+    "contentHash": "6f4fa9bd85d3bad17b09ae91e8570c761b120f9ce9f26e4158ab7a94197c9f03",
+    "learnedAt": "2026-09-28T03:23:03.376Z"
   },
   "/sales/delivery-challans": {
     "path": "/sales/delivery-challans",
-    "contentHash": "d70ee34d7082d069edfa7ca36dd408c89a35a6902f1646a498cc55a117e3412b",
-    "learnedAt": "2026-09-27T03:25:35.427Z"
+    "contentHash": "8698bd68988da43cad671e31278d961964cfd584375f654ffe65a0308071730d",
+    "learnedAt": "2026-09-28T03:23:04.784Z"
   },
   "/sales/delivery-challans/new": {
     "path": "/sales/delivery-challans/new",
@@ -236,18 +236,18 @@
   },
   "/reports/vendors/scanned-documents": {
     "path": "/reports/vendors/scanned-documents",
-    "contentHash": "23e8c3236f0912fcc57ced50ca92b523022fab0114813f317b00c5798305e94c",
-    "learnedAt": "2026-09-27T03:25:36.896Z"
+    "contentHash": "a495e638caa7c6af746601d7c4b29c647937869084043726f9baefcb22d9bece",
+    "learnedAt": "2026-09-28T03:23:06.894Z"
   },
   "/gst-reports/gstr-1": {
     "path": "/gst-reports/gstr-1",
-    "contentHash": "4ea17a9a4ea4ef1b939f199a79d87f43c7c9ca7b2f35d45e81abe32870a3f7a7",
-    "learnedAt": "2026-09-20T20:16:02.420Z"
+    "contentHash": "e3b3d4a1370a4367ba0c7bf9c1375f4cb67634f0f66cc5fc534ea2ff0ee75b1d",
+    "learnedAt": "2026-09-28T03:23:08.550Z"
   },
   "/gst-reports/gstr-2b": {
     "path": "/gst-reports/gstr-2b",
-    "contentHash": "b686bf12059a41252aa898dc44c9a27a3fe2c8ff35fa5bdb6981a4bc4288d2f0",
-    "learnedAt": "2026-09-27T03:25:39.724Z"
+    "contentHash": "242dbd7a2635f96183add87e98b6be56f526d01b62380ae5566aea0e6e61eecd",
+    "learnedAt": "2026-09-28T03:23:10.249Z"
   },
   "/gst-reports/gstr-3b": {
     "path": "/gst-reports/gstr-3b",
@@ -266,8 +266,8 @@
   },
   "/payroll-hrms": {
     "path": "/payroll-hrms",
-    "contentHash": "0cac6158fdfb08378d1a9d57a6c20b885b4c8a53285492efd5048ad8e7ce66f9",
-    "learnedAt": "2026-09-27T03:25:45.735Z"
+    "contentHash": "0895ec7f09640abd6934695875cee4412ae4eb9eb0b562f6b02b230f0d615c1d",
+    "learnedAt": "2026-09-28T03:23:16.575Z"
   },
   "/leads": {
     "path": "/leads",
@@ -276,23 +276,23 @@
   },
   "/crm/pipelines": {
     "path": "/crm/pipelines",
-    "contentHash": "88a44653ac5f5ffecca92fef6da5031c701a1de1041031d8343a854da063c9df",
-    "learnedAt": "2026-09-20T20:16:14.466Z"
+    "contentHash": "b033866771d8666a07f94ca8836295ee8967a7f759c4f7adb8ca944e3849e6d4",
+    "learnedAt": "2026-09-28T03:23:19.583Z"
   },
   "/crm/forms": {
     "path": "/crm/forms",
-    "contentHash": "fb5a57e937ad4fcc2aebb365dd9860b94bc40bec6bcbe33b8823e9b1d9271451",
-    "learnedAt": "2026-09-27T03:25:51.399Z"
+    "contentHash": "a21c1ddb26cf2904347aad5610baac0713263d9fb820f7e7baa72ce19a4bda9a",
+    "learnedAt": "2026-09-28T03:23:21.127Z"
   },
   "/crm/forms/new": {
     "path": "/crm/forms/new",
-    "contentHash": "f54d54d8334d6c29cd9a6e7982b68a27a7d49643bfc47810b53c1ffd80d099fe",
-    "learnedAt": "2026-09-27T03:25:52.801Z"
+    "contentHash": "af499d7361a24ea1f7fb756e4caf2110b6a6aa9d78f7014e6aea354f53bbcf0b",
+    "learnedAt": "2026-09-28T03:23:22.715Z"
   },
   "/crm/lead-summary": {
     "path": "/crm/lead-summary",
-    "contentHash": "cd6dcf803772d2ed56e29c768e8c2788eb36434d82ef13ddc1c511cb8fb0153e",
-    "learnedAt": "2026-09-27T03:25:54.427Z"
+    "contentHash": "32ad687f29916a67168c9c215a051f946403daa92701643bae029e4b20948485",
+    "learnedAt": "2026-09-28T03:23:24.295Z"
   },
   "/crm/team-sales-report": {
     "path": "/crm/team-sales-report",
@@ -666,8 +666,8 @@
   },
   "/blog/lawyer-legal-services-invoice-template": {
     "path": "/blog/lawyer-legal-services-invoice-template",
-    "contentHash": "74ed9b94f58d0b16b340e5d184a2e990a3249a5dd80ae1359bcce76852de1415",
-    "learnedAt": "2026-09-26T03:16:32.882Z"
+    "contentHash": "9ab53891b19f14cffb8fd1d0dbcb36e66bfe5c962507d891a3b5333e3581e3d5",
+    "learnedAt": "2026-09-28T03:21:39.332Z"
   },
   "/blog/export-invoice-format-india": {
     "path": "/blog/export-invoice-format-india",
