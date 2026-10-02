@@ -1,28 +1,28 @@
 {
   "/dashboard": {
     "path": "/dashboard",
-    "contentHash": "84c637bca0a72adef8692d47c1cf1a5934e156ad1e1ab5d1eaf1b0b08228b434",
-    "learnedAt": "2026-09-27T03:25:21.040Z"
+    "contentHash": "0c00b22e0a949a3bbb1c0c2b69fe9e9c67085a2296e9af725172929a2e976ee1",
+    "learnedAt": "2026-10-02T21:48:06.364Z"
   },
   "/setup-dashboard": {
     "path": "/setup-dashboard",
-    "contentHash": "e09371bd2dc6a134b6574708b7298478ebac768294573dcd24af43f5592c5796",
-    "learnedAt": "2026-09-20T20:16:24.421Z"
+    "contentHash": "b402e94d7d2bef38fb9b99b8dfb8f50bf93d3ac4e4fef5f1862cddcac9eafae2",
+    "learnedAt": "2026-10-02T21:48:07.848Z"
   },
   "/subscription/plans": {
     "path": "/subscription/plans",
-    "contentHash": "649cded60f1e0b350223275421552a2c19993e10fd284ae01e4ec109ef86cf58",
-    "learnedAt": "2026-09-20T20:16:25.884Z"
+    "contentHash": "348f112629b1c12f3ba8ed5918c84365d86771822faec9d1ded8f924d15bd7ea",
+    "learnedAt": "2026-10-02T21:48:09.311Z"
   },
   "/sales/clients-prospects": {
     "path": "/sales/clients-prospects",
-    "contentHash": "8046d844411354e389ffebfb97696956c1ec66a06bbae5b68f7d668a514c2b5d",
-    "learnedAt": "2026-09-28T03:22:55.179Z"
+    "contentHash": "136865038b2c6a50b2a237eae242cb77707a7c7cf674ff7cc899d46fbb2aa5db",
+    "learnedAt": "2026-10-02T21:48:10.759Z"
   },
   "/sales/quotations-estimates": {
     "path": "/sales/quotations-estimates",
-    "contentHash": "e8dd72c74f412d0cc96e53e02fb352205fb3eabbb114b0df9918b2f14093f7f1",
-    "learnedAt": "2026-09-27T03:25:27.696Z"
+    "contentHash": "71fac7a3c8b0f92127572d81f00152d35b190d2310190f3f59efe08a8dd21379",
+    "learnedAt": "2026-10-02T21:48:13.498Z"
   },
   "/sales/quotations-estimates/new": {
     "path": "/sales/quotations-estimates/new",
@@ -56,8 +56,8 @@
   },
   "/sales/payment-receipts/new": {
     "path": "/sales/payment-receipts/new",
-    "contentHash": "cdb4b0242c9a943788782b5a44a21e99b55ef7d155676e86c92ae9a4c10dece0",
-    "learnedAt": "2026-09-27T03:25:29.187Z"
+    "contentHash": "e3478f58e6f3ea1a809168db8fb167fb8ad7cc66978452ac1500dec645ea3a7a",
+    "learnedAt": "2026-10-02T21:48:14.973Z"
   },
   "/sales/sales-orders": {
     "path": "/sales/sales-orders",
@@ -156,18 +156,18 @@
   },
   "/inventory/product-wise-pl": {
     "path": "/inventory/product-wise-pl",
-    "contentHash": "f9fe81d9352613227132ea34dbf079bfe84ab2f2ab3afa4a89756df71217018e",
-    "learnedAt": "2026-09-27T16:18:10.780Z"
+    "contentHash": "78eab4d2872cbff1c5c78b874d7e6d15b26ae912e0b822ad6a096a5fa5f45124",
+    "learnedAt": "2026-10-02T21:47:30.666Z"
   },
   "/inventory/stock-value-report": {
     "path": "/inventory/stock-value-report",
-    "contentHash": "35349bd763fa54cb406de57f254e340f47dca48b52b33d91e23eea53f8201f5a",
-    "learnedAt": "2026-09-27T16:18:12.460Z"
+    "contentHash": "0318f42d1dba2dd370c722ab4af7d543578149e02e33c9ca228bbf83bac8511f",
+    "learnedAt": "2026-10-02T21:47:32.313Z"
   },
   "/inventory/batch-expiry-report": {
     "path": "/inventory/batch-expiry-report",
-    "contentHash": "0d7550c2dfe66ed2ad44b9c21368e10030ea09c404b0f46a6d7314a9a495eaee",
-    "learnedAt": "2026-09-27T16:18:14.191Z"
+    "contentHash": "77e4855a36769f670c5d88cb1ad017c616a23c8464a1daf719b42c546da1bbbe",
+    "learnedAt": "2026-10-02T21:47:33.995Z"
   },
   "/inventory/party-transactions-report": {
     "path": "/inventory/party-transactions-report",
@@ -181,28 +181,28 @@
   },
   "/inventory/stock-status-report": {
     "path": "/inventory/stock-status-report",
-    "contentHash": "9da69e2d3f78ed42be71c598801f7e52cd30bdfc59bfa505e36f37a41ffe09e1",
-    "learnedAt": "2026-09-27T16:18:19.216Z"
+    "contentHash": "cd6aa0ac2a8087c6602fa6d510b3e80bbc2cc508e84bc79710b592c47f354661",
+    "learnedAt": "2026-10-02T21:47:39.000Z"
   },
   "/reports": {
     "path": "/reports",
-    "contentHash": "11749098c706fa52f000ff1d71aa5434db4cdb5b88cf0be257fa8c4dacb06e2b",
-    "learnedAt": "2026-09-27T16:18:22.414Z"
+    "contentHash": "4642f432a48d3deaaec7f6757c1b255fb94171b4d1659407f1052407d250bfd2",
+    "learnedAt": "2026-10-02T21:47:42.432Z"
   },
   "/reports/vendors": {
     "path": "/reports/vendors",
-    "contentHash": "15bb5ec01ddcfc88693cfa57e2d4d7feb5be519618a7e891efbced0fb0881146",
-    "learnedAt": "2026-09-27T16:18:24.003Z"
+    "contentHash": "09a6f755c79724d44a436ea91136a3141e97d1bdfe6440a6335ca5d8d0c06ba4",
+    "learnedAt": "2026-10-02T21:47:43.963Z"
   },
   "/reports/vendors/tag-wise": {
     "path": "/reports/vendors/tag-wise",
-    "contentHash": "fe65ae3b4b8546ebcd266529f22a40a50c5d163105c80d853b37be6800dc965a",
-    "learnedAt": "2026-09-27T16:18:25.503Z"
+    "contentHash": "623279b69d4ac550c8dab069605df1405021d70ccd6a2350f50a8c8cee2aedf8",
+    "learnedAt": "2026-10-02T21:47:45.505Z"
   },
   "/reports/vendors/project-wise-pl": {
     "path": "/reports/vendors/project-wise-pl",
-    "contentHash": "8a057daf4d7cbd28083552bf4c6a67f1940d90d132d7a49e45fafa84a51740be",
-    "learnedAt": "2026-09-27T16:18:28.403Z"
+    "contentHash": "1663644baeac9e55ea2c75769a2778d266c4d90affb0735b3c59bc36783ab0b9",
+    "learnedAt": "2026-10-02T21:47:48.476Z"
   },
   "/reports/vendors/payment-report": {
     "path": "/reports/vendors/payment-report",
@@ -211,8 +211,8 @@
   },
   "/reports/vendors/tds-report": {
     "path": "/reports/vendors/tds-report",
-    "contentHash": "c625553ed5de10659198af9a8dc5a41d405ab10faf4c08177538cc22d8c8432f",
-    "learnedAt": "2026-09-27T16:18:34.318Z"
+    "contentHash": "26b787e4ef08750e2a499153b94a381d2e9cdeee0c7173d63727f717234456b1",
+    "learnedAt": "2026-10-02T21:47:54.344Z"
   },
   "/reports/vendors/gst-report": {
     "path": "/reports/vendors/gst-report",
@@ -221,18 +221,18 @@
   },
   "/reports/vendors/line-item-report": {
     "path": "/reports/vendors/line-item-report",
-    "contentHash": "d8b59d1b4eb3e5971b231dcedcb2c26c16cfecf80e3d62e5a794fafd2b11e0fd",
-    "learnedAt": "2026-09-27T16:18:38.917Z"
+    "contentHash": "7518e2b2a75ca25c956b719d43ae396fe50c3f71605d916ad01f4e89045b0d72",
+    "learnedAt": "2026-10-02T21:48:00.232Z"
   },
   "/reports/vendors/hsn-report": {
     "path": "/reports/vendors/hsn-report",
-    "contentHash": "fc635f8e0387cd447e529d5387a61c97fd00039de615ae6b7c983bd99fd2dcff",
-    "learnedAt": "2026-09-27T16:18:40.423Z"
+    "contentHash": "52265a471fe97ae0d379c5966b3d8dc64cc3c41a0b6efb95885cce34bf025289",
+    "learnedAt": "2026-10-02T21:48:03.136Z"
   },
   "/reports/vendors/suggested-purchases": {
     "path": "/reports/vendors/suggested-purchases",
-    "contentHash": "e9bdc0e3a3917a49b9a96e58890b74697969024d9eb214b8c1936ffb48679ba7",
-    "learnedAt": "2026-09-27T16:18:43.371Z"
+    "contentHash": "508ac328bb052ace2ca1828a494c4b5f4db9ed6eeff2de672f9da23fc3127dce",
+    "learnedAt": "2026-10-02T21:48:04.611Z"
   },
   "/reports/vendors/scanned-documents": {
     "path": "/reports/vendors/scanned-documents",
@@ -336,18 +336,18 @@
   },
   "/accounting/profit-loss": {
     "path": "/accounting/profit-loss",
-    "contentHash": "8e750c659b06c7ea86b648249edbe5a6c7d59aa9f6e911554bb0ce78df9969a3",
-    "learnedAt": "2026-09-27T11:18:16.408Z"
+    "contentHash": "89b3d564dc48166bc6f45e368d9d72ac071c5467ee9df93a83650d40435e7df0",
+    "learnedAt": "2026-10-02T21:46:33.291Z"
   },
   "/accounting/income-statement": {
     "path": "/accounting/income-statement",
-    "contentHash": "b9dda436250964a2196f7808d431075e465d5b77c5817480429c42f18d9ddeea",
-    "learnedAt": "2026-09-20T20:15:01.179Z"
+    "contentHash": "304f1d7c89e00b4db61c317b5a6e126e04acd05a2310c547f3f08e07856baa28",
+    "learnedAt": "2026-10-02T21:46:35.006Z"
   },
   "/accounting/ledgers-master-report": {
     "path": "/accounting/ledgers-master-report",
-    "contentHash": "5b8f6707c796141aabc1750270d9cc158e6e6e45bbd194e930f9787d2c6a17b9",
-    "learnedAt": "2026-09-27T11:18:19.581Z"
+    "contentHash": "ac2c77a83ed7407283b49083fc82bce48a1ed9bee808ca897cda4d749d968c39",
+    "learnedAt": "2026-10-02T21:46:36.486Z"
   },
   "/accounting/day-book": {
     "path": "/accounting/day-book",
@@ -361,38 +361,38 @@
   },
   "/manage-team": {
     "path": "/manage-team",
-    "contentHash": "1ab29503a156f405c25f97a6a804a7758580ecad79d1175f71339a7044ed7c41",
-    "learnedAt": "2026-09-27T11:18:24.512Z"
+    "contentHash": "c4b69cf7e62867ac592012b8f25edec5650b87afa86f6c061a6cf53561a15ce7",
+    "learnedAt": "2026-10-02T21:46:41.536Z"
   },
   "/business-settings": {
     "path": "/business-settings",
-    "contentHash": "b19294f7e013bc8a8a9d7616bac5f41dd210638689f4227359f4d683822f3cd1",
-    "learnedAt": "2026-09-27T11:18:25.960Z"
+    "contentHash": "10eb28ea4e20e63aa32b9d6fa9d96af389a0acd4bc4624c319d06a342e613fb4",
+    "learnedAt": "2026-10-02T21:46:43.001Z"
   },
   "/integrations": {
     "path": "/integrations",
-    "contentHash": "4ebe517f54c1397c30478b3eb48aed20d9447960474f4fcad51909cc81d8abb8",
-    "learnedAt": "2026-09-27T11:18:27.604Z"
+    "contentHash": "4bb278be81b4170d7d069a35749c0179289ca6c19c80f4cb2f15745ef03f1e76",
+    "learnedAt": "2026-10-02T21:46:44.810Z"
   },
   "/greetings": {
     "path": "/greetings",
-    "contentHash": "f46716736da86860eb3b608a1876af396f0f2c503b6ca298af690626fe2a2e6b",
-    "learnedAt": "2026-09-27T11:18:29.062Z"
+    "contentHash": "945c07b7ac6a4e4d8bb21fd9060987cbbf1eb10972c1d98609cc035b687e5e0f",
+    "learnedAt": "2026-10-02T21:46:46.283Z"
   },
   "/support": {
     "path": "/support",
-    "contentHash": "4364f9f9bcc6b94b80b98ddcd50579852137676882b2f3fc27d5b4b56265d383",
-    "learnedAt": "2026-09-27T11:18:30.510Z"
+    "contentHash": "f3f5abb6c46427cf19d85b96f15a0baede5f62a3f479fc2b1941e6c5d95b5d95",
+    "learnedAt": "2026-10-02T21:46:47.732Z"
   },
   "/growth-suite": {
     "path": "/growth-suite",
-    "contentHash": "b2abb344aa812f4d94d0527c69ee932461c09fdafb7ffc85b4adbfc3d7100690",
-    "learnedAt": "2026-09-20T20:15:15.211Z"
+    "contentHash": "25a9870d53c3beb0875f21ceda497257fe342ac733b58fff6ab8f60eb2562ddc",
+    "learnedAt": "2026-10-02T21:46:49.182Z"
   },
   "/profile": {
     "path": "/profile",
-    "contentHash": "ba7ff0877e9ac433973439b26ede55d5a0b399645a6d1ab9a2db6ccae0888ed0",
-    "learnedAt": "2026-09-27T11:18:33.434Z"
+    "contentHash": "09db9c600234bd8c81377b43e74c40ac6a9c1f886ae476ae5355f136c6192734",
+    "learnedAt": "2026-10-02T21:46:50.728Z"
   },
   "/": {
     "path": "/",
@@ -411,8 +411,8 @@
   },
   "/premium-free-3-months": {
     "path": "/premium-free-3-months",
-    "contentHash": "1e4955ee80ed75149f16c7e140f7d7fed54a52534ba32ac6c1cbed0c5f55ca0a",
-    "learnedAt": "2026-09-27T11:18:36.917Z"
+    "contentHash": "f7390c39aeabd7b6f7795ca0e34c9e55dab022c9b4892564bfd134cb111f3af4",
+    "learnedAt": "2026-10-02T21:46:54.297Z"
   },
   "/about-us": {
     "path": "/about-us",
