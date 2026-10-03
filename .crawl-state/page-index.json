@@ -26,18 +26,18 @@
   },
   "/sales/quotations-estimates/new": {
     "path": "/sales/quotations-estimates/new",
-    "contentHash": "684c7b2f2fab9e18943d8719d2219e8907e9ae2a1ab297eaa140780e58bcf940",
-    "learnedAt": "2026-09-30T21:51:13.127Z"
+    "contentHash": "66811f47ecbd0256688acdb692790f80e47b4b56bd510dafde45c9be2d305d06",
+    "learnedAt": "2026-10-03T20:34:25.706Z"
   },
   "/sales/proforma-invoices": {
     "path": "/sales/proforma-invoices",
-    "contentHash": "cfe0d73f63628f061e0c9f88dbad906d270d3a03d59f2f2a8f7a1a1fe4f70176",
-    "learnedAt": "2026-09-30T21:51:14.626Z"
+    "contentHash": "6066dc060ff53b11217b01b0219769b9c3a343a9f48f316594c9c6d5b3708a9c",
+    "learnedAt": "2026-10-03T20:34:27.324Z"
   },
   "/sales/proforma-invoices/new": {
     "path": "/sales/proforma-invoices/new",
-    "contentHash": "c4deddbc335fde55e52295de844cf572c8f78ece70bd94cc8793361b7cef8ea9",
-    "learnedAt": "2026-09-30T21:51:16.431Z"
+    "contentHash": "c3f3d37ba9de833241f7ae06adcd8d9676f60a04602516176abd891dcb0f9fb5",
+    "learnedAt": "2026-10-03T20:34:29.186Z"
   },
   "/invoices": {
     "path": "/invoices",
@@ -46,8 +46,8 @@
   },
   "/invoices/new": {
     "path": "/invoices/new",
-    "contentHash": "c1f02ce3cf783dd98ab59ab7f143d7297177b3d6ab11deae8777fab8ff060f9d",
-    "learnedAt": "2026-09-30T21:51:19.657Z"
+    "contentHash": "5085f9da5a362160c82537266c6cbf49c693319e56651c8b7ff15b8c89877718",
+    "learnedAt": "2026-10-03T20:34:32.603Z"
   },
   "/sales/payment-receipts": {
     "path": "/sales/payment-receipts",
@@ -91,38 +91,38 @@
   },
   "/purchases/vendor-leads": {
     "path": "/purchases/vendor-leads",
-    "contentHash": "1b38f6dfa64427ed7e18bf4fe35c2a3ce36b0d4e068e9a47d55be9d40823b19d",
-    "learnedAt": "2026-09-30T21:51:27.641Z"
+    "contentHash": "b1f4de9d471b0e05ca84a983893709535a96683ec716e22c405eb362dda0fa15",
+    "learnedAt": "2026-10-03T20:34:40.582Z"
   },
   "/purchases/vendor-leads/new": {
     "path": "/purchases/vendor-leads/new",
-    "contentHash": "4cf9ed61234f6b1e027f2cb3945fd9dfd2ac4c97692398cfa6e56b8b7bccd96b",
-    "learnedAt": "2026-09-30T21:51:29.105Z"
+    "contentHash": "b8b5014146cb693983f9b86cbd0fd254d2ca79ea2cdc925e8157359f25675037",
+    "learnedAt": "2026-10-03T20:34:42.335Z"
   },
   "/purchases/vendors-suppliers": {
     "path": "/purchases/vendors-suppliers",
-    "contentHash": "01ecd6700ca235ffe7f5be42a64b137e3dea30903ad98946a7914fbb097a0bcc",
-    "learnedAt": "2026-09-27T11:19:21.632Z"
+    "contentHash": "b0b11b4e7d8f852f4341c72b884bef3f0ba7de0a5ae44efa7371fc644942c882",
+    "learnedAt": "2026-10-03T20:34:45.305Z"
   },
   "/purchases/payout-receipts": {
     "path": "/purchases/payout-receipts",
-    "contentHash": "e3fa4b4c19b1959ebedb3b8169df72571bafa89d65d64ef235f47d4a431aa735",
-    "learnedAt": "2026-09-30T21:51:32.118Z"
+    "contentHash": "20632be11d329aa7ac0bad38b3dec73588a4e82713fd79e5def62747dad72557",
+    "learnedAt": "2026-10-03T20:34:46.766Z"
   },
   "/purchases/purchase-orders": {
     "path": "/purchases/purchase-orders",
-    "contentHash": "9e281462a67c23e8dee722a8c66c8b5bbbda4ee94dcef0de3a995f044fe0bf8e",
-    "learnedAt": "2026-09-30T21:51:34.709Z"
+    "contentHash": "d7675c91c216f15ec23dc19d646f8d91d2ef5d111e3433c96b6c7f9da104aa4f",
+    "learnedAt": "2026-10-03T20:34:49.501Z"
   },
   "/purchases/purchase-orders/new": {
     "path": "/purchases/purchase-orders/new",
-    "contentHash": "463d66eba10842a0d3239bd049e32b834e26bd7927b279dd7be87348d052cee0",
-    "learnedAt": "2026-09-30T21:51:36.676Z"
+    "contentHash": "4bfcf2ee47d5b9bce8573e5b9235766d418596184b3c1099ba2d4dbffc949752",
+    "learnedAt": "2026-10-03T20:34:51.251Z"
   },
   "/purchases/debit-notes": {
     "path": "/purchases/debit-notes",
-    "contentHash": "a84be9176c02f6be325d20520d5eea753f837ed929899c5dc56e832ce93a0278",
-    "learnedAt": "2026-09-30T21:51:39.552Z"
+    "contentHash": "b6d760f0aaebb3bb9a2588c7db9f7990d21b619125cc2ffbfd4b79c083abb068",
+    "learnedAt": "2026-10-03T20:34:53.889Z"
   },
   "/purchases/debit-notes/new": {
     "path": "/purchases/debit-notes/new",
@@ -131,28 +131,28 @@
   },
   "/purchases/hire-best-vendors": {
     "path": "/purchases/hire-best-vendors",
-    "contentHash": "73c692a652c51f780647684fec700d58921355d5880d33d1e8a0108552a59fe1",
-    "learnedAt": "2026-09-30T21:51:43.233Z"
+    "contentHash": "cc422981d26067ef7094cbc2ecf81abd7d75d420771e957eaa87058208176d42",
+    "learnedAt": "2026-10-03T20:34:57.621Z"
   },
   "/purchases/hire-best-vendors/new": {
     "path": "/purchases/hire-best-vendors/new",
-    "contentHash": "0c7543a40f1aada182209221fad6f44123775ff2165934814894c494a0bad95b",
-    "learnedAt": "2026-09-30T21:51:44.955Z"
+    "contentHash": "3fb833eb98205a152b7f1687295d881de9e3e5a3b5cd0e535d183f7ad55dd985",
+    "learnedAt": "2026-10-03T20:34:59.370Z"
   },
   "/expenses": {
     "path": "/expenses",
-    "contentHash": "6e8f050a0d4a484d784f84c89bcf9431f3d439f168a33f8dacef983fbaf5c8b1",
-    "learnedAt": "2026-09-30T21:51:46.405Z"
+    "contentHash": "0a7ccde43220a815ad64ca6f350b6a1d7b87d1bf24a69f3a2e67c305b37949f7",
+    "learnedAt": "2026-10-03T20:35:00.946Z"
   },
   "/products": {
     "path": "/products",
-    "contentHash": "2e451a0eb2303285b6d099c60c7fa3450458dc90cd43e21970c41c3693a10139",
-    "learnedAt": "2026-09-21T21:39:37.034Z"
+    "contentHash": "7f9401b09263dedbc4b7ebc9d12fbd7b8731cdd26c96a2a5945b179c25ee90f8",
+    "learnedAt": "2026-10-03T20:35:02.436Z"
   },
   "/inventory/warehouses": {
     "path": "/inventory/warehouses",
-    "contentHash": "8203a9af20f4433d73ffc049eb9f6603a9b09eab057175c16402ac40966a43eb",
-    "learnedAt": "2026-09-30T21:51:49.436Z"
+    "contentHash": "fea6e95fd1a5368ea1c8c7080fc8e28da20e5dc3e5f8841dc5545108a94d3001",
+    "learnedAt": "2026-10-03T20:35:04.057Z"
   },
   "/inventory/product-wise-pl": {
     "path": "/inventory/product-wise-pl",
@@ -666,8 +666,8 @@
   },
   "/blog/lawyer-legal-services-invoice-template": {
     "path": "/blog/lawyer-legal-services-invoice-template",
-    "contentHash": "9ab53891b19f14cffb8fd1d0dbcb36e66bfe5c962507d891a3b5333e3581e3d5",
-    "learnedAt": "2026-09-28T03:21:39.332Z"
+    "contentHash": "f5db5774cfd8e41f6b885fea260121e7f72bf2850d02b686dfb13545cad0c151",
+    "learnedAt": "2026-10-03T20:33:08.451Z"
   },
   "/blog/export-invoice-format-india": {
     "path": "/blog/export-invoice-format-india",
